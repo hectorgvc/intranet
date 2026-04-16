@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intranet PROMESE/CAL — Medicinas que dan Calidad de Vida</title>
+<meta name="description" content="Portal interno de PROMESE/CAL - Programa de Medicamentos Esenciales y Central de Apoyo a la Logística de Insumos">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/config/tailwind.config.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="font-inter text-gris-texto bg-gris-fondo">
+
+<!-- Toast & Modals -->
+<div id="toast" class="toast"></div>
+<div id="sidebarOverlay" class="overlay" onclick="toggleSidebar()"></div>
+
+<div class="flex min-h-screen">
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar bg-[#0f4c5c] flex flex-col fixed md:sticky top-0 h-screen z-50">
+    <!-- Logo area -->
+    <div class="px-5 py-4 border-b border-[rgba(255,255,255,0.1)] flex items-center justify-center bg-white m-3 rounded-xl shadow-lg border border-gray-100/10">
+      <img src="assets/Logo-promesecal.png" alt="PROMESE/CAL Logo" class="max-w-full h-auto max-h-[60px] object-contain" />
+    </div>
+
+    <!-- Nav links -->
+    <nav class="flex-1 py-4 px-2 space-y-1 overflow-y-auto">
+      <a href="#" class="sidebar-link active rounded-md" data-view="inicio" onclick="navigateTo('inicio', this)"><i data-lucide="home" class="w-5 h-5"></i> Inicio</a>
+      <a href="#" class="sidebar-link rounded-md" data-view="portales" onclick="navigateTo('portales', this)"><i data-lucide="grid" class="w-5 h-5"></i> Integraciones</a>
+      <a href="#" class="sidebar-link rounded-md" data-view="directorio" onclick="navigateTo('directorio', this)"><i data-lucide="users" class="w-5 h-5"></i> Directorio</a>
+      <a href="#" class="sidebar-link rounded-md" data-view="nomenclaturas" onclick="navigateTo('nomenclaturas', this)"><i data-lucide="monitor" class="w-5 h-5"></i> Equipos IT</a>
+      <a href="#" class="sidebar-link rounded-md" data-view="firma" onclick="navigateTo('firma', this)"><i data-lucide="mail-check" class="w-5 h-5"></i> Firma Correo</a>
+      <a href="#" class="sidebar-link rounded-md mt-6!" data-view="admin" onclick="navigateTo('admin', this)"><i data-lucide="settings" class="w-5 h-5"></i> Admin Hub</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 min-h-screen relative w-full overflow-hidden">
+    <!-- Mobile Header -->
+    <header class="md:hidden bg-[#0f4c5c] text-white p-3 flex items-center justify-between sticky top-0 z-30 shadow-md">
+      <button onclick="toggleSidebar()"><i data-lucide="menu" class="w-6 h-6"></i></button>
+      <div class="bg-white rounded px-2 py-1 flex items-center h-10">
+        <img src="assets/Logo-promesecal.png" alt="PROMESE/CAL" class="h-full object-contain max-w-[150px]">
+      </div>
+      <div class="w-6"></div>
+    </header>
+
+    <div class="p-4 md:p-8 max-w-[1300px] mx-auto w-full">
+
+      <!-- ================================ -->
+      <!-- VISTA 1: INICIO (Dashboard) -->
+      <!-- ================================ -->
+      <div id="view-inicio" class="view active">
+        <!-- Global Search -->
+        <div class="mb-6 relative z-10 w-full rounded-full bg-white flex items-center px-5 py-3.5 border border-gray-200 shadow-sm transition hover:shadow-md focus-within:shadow-md focus-within:border-[#2a7d7b]">
+          <i data-lucide="search" class="w-5 h-5 text-gray-400 mr-3"></i>
+          <input type="text" placeholder="Buscar portales, contactos o nomenclaturas..." class="flex-1 bg-transparent border-none outline-none text-sm font-medium" onkeydown="if(event.key==='Enter') navigateTo('directorio')">
+        </div>
+        
+        <div id="dashboardContent"></div>
+      </div>
+
+      <!-- ================================ -->
+      <!-- VISTA 2: PORTALES -->
+      <!-- ================================ -->
+      <div id="view-portales" class="view">
+        <div class="mb-6">
+          <h2 class="text-3xl font-bold text-[#111] uppercase tracking-tight">Portales y Herramientas</h2>
+          <p class="text-gray-500 mt-1">Sistemas institucionales y reportes externos</p>
+        </div>
+        <div class="card p-6">
+          <div id="portalesContainer" class="space-y-10"></div>
+        </div>
+      </div>
+
+      <!-- ================================ -->
+      <!-- VISTA 3: DIRECTORIO -->
+      <!-- ================================ -->
+      <div id="view-directorio" class="view">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+          <div>
+            <h2 class="text-3xl font-bold text-[#111] uppercase tracking-tight">Directorio Telefónico</h2>
+            <p class="text-gray-500 mt-1">Base de contactos y extensiones institucionales</p>
+          </div>
+          <button onclick="exportDirectorioCSV()" class="btn-outline flex items-center gap-2"><i data-lucide="download" class="w-4 h-4"></i> Exportar</button>
+        </div>
+        
+        <div class="card p-5 mb-5 flex flex-col md:flex-row gap-4 bg-white border border-gray-200">
+          <input id="dirSearch" type="text" placeholder="Buscar por nombre, cargo o extensión..." class="input-field flex-1" oninput="renderDirectorio()">
+          <select id="dirDeptFilter" class="input-field md:w-72" onchange="renderDirectorio()"><option value="">Todos los departamentos</option></select>
+        </div>
+        
+        <div class="card overflow-x-auto border-gray-200">
+            <table class="data-table" style="width: 100%; min-width: 100%; table-layout: auto;">
+              <thead>
+                <tr>
+                  <th style="width: 80px; white-space: nowrap;">Extensión</th>
+                  <th style="width: 20%; min-width: 200px;">Nombre Completo</th>
+                  <th style="width: 12%;">Cargo</th>
+                  <th style="width: 22%; min-width: 220px;">Departamento</th>
+                  <th style="width: 130px; white-space: nowrap;">Teléfono/Flota</th>
+                  <th style="width: 25%; min-width: 200px; text-align: left;">Correo</th>
+                </tr>
+              </thead>
+            <tbody id="directorioBody"></tbody>
+          </table>
+        </div>
+        <div id="directorioPagination" class="flex items-center justify-between mt-4"></div>
+      </div>
+
+      <!-- ================================ -->
+      <!-- VISTA 4: NOMENCLATURAS -->
+      <!-- ================================ -->
+      <div id="view-nomenclaturas" class="view">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+          <h2 class="text-3xl font-bold text-[#111] uppercase tracking-tight">Nomenclaturas IT</h2>
+          <button onclick="exportNomenclaturaCSV()" class="btn-outline flex items-center gap-2"><i data-lucide="download" class="w-4 h-4"></i> Exportar</button>
+        </div>
+        
+        <div class="card p-5 mb-5 flex flex-col md:flex-row gap-4 bg-white border border-gray-200">
+          <input id="nomSearch" type="text" placeholder="Buscar nomenclaturas..." class="input-field flex-1" oninput="renderNomenclaturas()">
+          <select id="nomDeptFilter" class="input-field md:w-72" onchange="renderNomenclaturas()"><option value="">Todos los departamentos</option></select>
+        </div>
+        
+        <div class="card overflow-x-auto border-gray-200">
+          <table class="data-table">
+            <thead><tr><th>Departamento</th><th>Nomenclatura</th><th>Usuario Asignado</th></tr></thead>
+            <tbody id="nomenclaturaBody"></tbody>
+          </table>
+        </div>
+        <div id="nomenclaturaPagination" class="flex items-center justify-between mt-4"></div>
+      </div>
+
+      <!-- ================================ -->
+      <!-- VISTA 5: FIRMA -->
+      <!-- ================================ -->
+      <div id="view-firma" class="view">
+        <div class="mb-6">
+          <h2 class="text-3xl font-bold text-[#111] uppercase tracking-tight">Generador de Firma Central</h2>
+          <p class="text-gray-500 mt-1">Estándar visual de correos de PROMESE/CAL</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="card p-8 border-gray-200">
+            <h3 class="font-bold text-lg mb-5 text-[#0f4c5c]">Información del Empleado</h3>
+            <div class="space-y-4">
+              <input id="firmaNombre" type="text" placeholder="Nombre Completo" class="input-field" oninput="updateFirmaPreview()">
+              <input id="firmaCargo" type="text" placeholder="Cargo que desempeña" class="input-field" oninput="updateFirmaPreview()">
+              <input id="firmaUnidad" type="text" placeholder="Unidad Organizativa" class="input-field" oninput="updateFirmaPreview()">
+              <input id="firmaExt" type="text" placeholder="Ext. 0000" class="input-field" oninput="updateFirmaPreview()">
+              <input id="firmaFlota" type="text" placeholder="Flota (809) ..." class="input-field" oninput="updateFirmaPreview()">
+              <input id="firmaCorreo" type="email" placeholder="Correo (calculado automático)" class="input-field" oninput="updateFirmaPreview()">
+            </div>
+            <button onclick="copiarFirma()" class="btn-primary w-full mt-6 py-3 font-bold text-base bg-[#e63329] hover:bg-[#c8241b]">📋 Copiar firma para Outlook</button>
+          </div>
+          <div>
+            <div id="firmaPreview" class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 overflow-x-auto flex justify-start items-start min-h-[300px]"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================================ -->
+      <!-- VISTA 6: ADMIN -->
+      <!-- ================================ -->
+      <div id="view-admin" class="view">
+        <div id="adminLogin" class="max-w-md mx-auto mt-20 card p-8 text-center border-gray-200 shadow-lg">
+          <div class="w-16 h-16 bg-[#eefbfa] rounded-full flex items-center justify-center mx-auto mb-5 text-[#2a7d7b]">
+            <i data-lucide="shield" class="w-8 h-8"></i>
+          </div>
+          <h2 class="text-2xl font-bold mb-2">Panel de Control</h2>
+          <p class="text-sm text-gray-500 mb-6">Confirme sus credenciales para acceder</p>
+          <input id="adminPassword" type="password" placeholder="Contraseña de autorización" class="input-field mb-4 text-center" onkeydown="if(event.key==='Enter')loginAdmin()">
+          <button onclick="loginAdmin()" class="btn-primary w-full py-2.5">Autenticar</button>
+          <p id="adminError" class="text-[#e63329] text-sm mt-3 hidden font-medium">Acceso denegado</p>
+        </div>
+        
+        <div id="adminPanel" class="hidden">
+          <div class="flex items-center border-b border-gray-200 mb-6 justify-between gap-4 flex-wrap">
+            <div class="flex">
+              <button class="admin-tab active" onclick="switchAdminTab('noticias', this)">Noticias (Hero)</button>
+              <button class="admin-tab" onclick="switchAdminTab('directorio', this)">Directorio</button>
+              <button class="admin-tab" onclick="switchAdminTab('nomenclaturas', this)">Nomenclaturas</button>
+              <button class="admin-tab" onclick="switchAdminTab('portalesAdmin', this)">Portal Links</button>
+            </div>
+            <button onclick="logoutAdmin()" class="text-sm font-semibold text-[#e63329] hover:underline pb-2 px-2 flex items-center gap-2"><i data-lucide="log-out" class="w-4 h-4"></i> Cerrar Sesión</button>
+          </div>
+          <div id="adminContentContainer"></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<!-- Scripts -->
+<script src="js/ldap_data.js"></script>
+<script src="js/state.js"></script>
+<script src="js/services.js"></script>
+<script src="js/router.js"></script>
+<script src="js/controllers/dashboard.js"></script>
+<script src="js/controllers/portales.js"></script>
+<script src="js/controllers/directorio.js"></script>
+<script src="js/controllers/nomenclaturas.js"></script>
+<script src="js/controllers/firma.js"></script>
+<script src="js/controllers/admin.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
