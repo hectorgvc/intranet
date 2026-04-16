@@ -1,0 +1,13 @@
+[
+  { "fecha": "2026-01-01", "nombre": "Año Nuevo" },
+  { "fecha": "2026-01-06", "nombre": "Día de los Santos Reyes" },
+  { "fecha": "2026-01-21", "nombre": "Día de la Altagracia" },
+  { "fecha": "2026-01-26", "nombre": "Día de Juan Pablo Duarte" },
+  { "fecha": "2026-02-27", "nombre": "Día de la Independencia" },
+  { "fecha": "2026-04-03", "nombre": "Viernes Santo" },
+  { "fecha": "2026-05-01", "nombre": "Día del Trabajo" },
+  { "fecha": "2026-08-16", "nombre": "Día de la Restauración" },
+  { "fecha": "2026-09-24", "nombre": "Día de las Mercedes" },
+  { "fecha": "2026-11-06", "nombre": "Día de la Constitución" },
+  { "fecha": "2026-12-25", "nombre": "Navidad" }
+]
