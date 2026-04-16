@@ -32,12 +32,12 @@ function buildFirmaHTML({ nombre, cargo, unidad, ext, flota, correo }) {
   const nombreColor = nombre  ? '#00788a' : '#aaa';
   const cargoStyle  = cargo   ? 'font-weight:bold;' : 'color:#aaa;';
 
-  return `<div id="promese-firma-root" style="background:#fff;padding:8px 0;">
-<table id="promese-main" style="width:690px;border-collapse:collapse;background:#fff;" cellpadding="0" cellspacing="0">
+  return `<div id="promese-firma-root" style="background:#fff;padding:8px 0;max-width:100%;">
+<table id="promese-main" style="width:620px;border-collapse:collapse;background:#fff;" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
   <!-- DATOS -->
-  <td id="promese-data" style="border-right:2px solid red;width:350px;vertical-align:top;padding-right:10px;">
+  <td id="promese-data" style="border-right:2px solid red;width:360px;vertical-align:top;padding-right:10px;">
     <span style="font-family:'Gill Sans MT',sans-serif;font-size:13pt;font-weight:bold;color:${nombreColor};">${nombreHTML}</span><br/>
     <span style="font-family:'Gill Sans MT',sans-serif;font-size:11pt;${cargoStyle}">${cargoHTML}</span><br/>
     <span style="font-family:'Gill Sans MT',sans-serif;font-size:11pt;">${unidadHTML}</span><br/>
@@ -59,8 +59,8 @@ function buildFirmaHTML({ nombre, cargo, unidad, ext, flota, correo }) {
     </table>
   </td>
   <!-- LOGO -->
-  <td style="padding-left:20px;vertical-align:middle;text-align:center;">
-    <img src="${LOGO}" alt="PROMESE/CAL" style="display:block;width:240px;height:auto;margin-left:20px;" />
+  <td style="padding-left:15px;vertical-align:middle;text-align:center;width:240px;">
+    <img src="${LOGO}" alt="PROMESE/CAL" style="display:block;width:220px;height:auto;margin:0 auto;" />
   </td>
 </tr>
 <!-- FOOTER -->
