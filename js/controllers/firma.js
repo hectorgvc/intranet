@@ -33,11 +33,11 @@ function buildFirmaHTML({ nombre, cargo, unidad, ext, flota, correo }) {
   const cargoStyle  = cargo   ? 'font-weight:bold;' : 'color:#aaa;';
 
   return `<div id="promese-firma-root" style="background:#fff;padding:8px 0;max-width:100%;">
-<table id="promese-main" style="width:620px;border-collapse:collapse;background:#fff;" cellpadding="0" cellspacing="0">
+<table id="promese-main" style="max-width:620px;width:100%;border-collapse:collapse;background:#fff;" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
   <!-- DATOS -->
-  <td id="promese-data" style="border-right:2px solid red;width:360px;vertical-align:top;padding-right:10px;">
+  <td id="promese-data" style="border-right:2px solid red;width:58%;min-width:280px;vertical-align:top;padding-right:10px;">
     <span style="font-family:'Gill Sans MT',sans-serif;font-size:13pt;font-weight:bold;color:${nombreColor};">${nombreHTML}</span><br/>
     <span style="font-family:'Gill Sans MT',sans-serif;font-size:11pt;${cargoStyle}">${cargoHTML}</span><br/>
     <span style="font-family:'Gill Sans MT',sans-serif;font-size:11pt;">${unidadHTML}</span><br/>
@@ -59,8 +59,8 @@ function buildFirmaHTML({ nombre, cargo, unidad, ext, flota, correo }) {
     </table>
   </td>
   <!-- LOGO -->
-  <td style="padding-left:15px;vertical-align:middle;text-align:center;width:240px;">
-    <img src="${LOGO}" alt="PROMESE/CAL" style="display:block;width:220px;height:auto;margin:0 auto;" />
+  <td style="padding-left:15px;vertical-align:middle;text-align:center;width:42%;min-width:180px;">
+    <img src="${LOGO}" alt="PROMESE/CAL" style="display:block;max-width:220px;width:100%;height:auto;margin:0 auto;" />
   </td>
 </tr>
 <!-- FOOTER -->
