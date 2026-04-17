@@ -213,6 +213,15 @@ let dirPage = 1;
 let nomPage = 1;
 let adminLoggedIn = false;
 
+// Roles de Admin Hub
+// 'it'   → acceso total
+// 'rrhh' → Noticias + Menú del Día + Desvinculaciones
+const ADMIN_PASSWORDS = {
+  it: 'dtic2025',
+  rrhh: 'rrhh2025'
+};
+let adminRole = null;
+
 // Calendar state
 let calYear = new Date().getFullYear();
 let calMonth = new Date().getMonth();
@@ -222,4 +231,38 @@ function saveData() {
   localStorage.setItem('promese_nomenclaturas', JSON.stringify(nomenclaturas));
   localStorage.setItem('promese_portales', JSON.stringify(portales));
   localStorage.setItem('promese_noticias', JSON.stringify(noticias));
+}
+
+// ── Helpers: Menú del Día ──────────────────────────────────────────────
+function getMenuDelDia() {
+  try {
+    const raw = localStorage.getItem('promese_menu_dia');
+    return raw ? JSON.parse(raw) : null;
+  } catch (e) {
+    console.log('Error leyendo menú del día:', e);
+    return null;
+  }
+}
+
+function saveMenuDelDia(data) {
+  localStorage.setItem('promese_menu_dia', JSON.stringify(data));
+}
+
+function clearMenuDelDia() {
+  localStorage.removeItem('promese_menu_dia');
+}
+
+// ── Helpers: Desvinculaciones ───────────────────────────────────────────
+function getDesvinculaciones() {
+  try {
+    const raw = localStorage.getItem('promese_desvinculaciones');
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    console.log('Error leyendo desvinculaciones:', e);
+    return [];
+  }
+}
+
+function saveDesvinculaciones(arr) {
+  localStorage.setItem('promese_desvinculaciones', JSON.stringify(arr || []));
 }

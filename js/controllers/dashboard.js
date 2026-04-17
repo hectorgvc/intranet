@@ -46,7 +46,7 @@ function renderDashboard() {
       <div class="hero-content">
         <h1 class="text-5xl font-extrabold mb-3 tracking-tight">${saludo}, ${userName}!</h1>
         <p class="text-lg opacity-90 mb-8 font-medium tracking-wide max-w-lg leading-relaxed">Revisa las novedades de hoy en PROMESE/CAL. Accede a herramientas y gestiona tus recursos de trabajo institucionales.</p>
-        <button class="bg-white text-[#0f4c5c] font-bold py-3.5 px-8 rounded-full transition shadow-md hover:shadow-lg hover:bg-gray-50 text-sm tracking-wide">VER NOTICIAS</button>
+        <button onclick="openMenuDelDiaPopup()" class="bg-white text-[#0f4c5c] font-bold py-3.5 px-8 rounded-full transition shadow-md hover:shadow-lg hover:bg-gray-50 text-sm tracking-wide">VER MENÚ DEL DÍA</button>
       </div>
       <div class="hero-bg border-l-8 border-[#0a3541]">
         <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Office workers">
@@ -153,6 +153,42 @@ function generateCalendarDays() {
     html += `<div class="${className}" ${tooltip}>${i}</div>`;
   }
   return html;
+}
+
+function openMenuDelDiaPopup() {
+  const menu = getMenuDelDia();
+  if (!menu || !menu.src) {
+    showToast('⚠️ No hay menú del día disponible');
+    return;
+  }
+
+  const old = document.getElementById('menuDiaModal');
+  if (old) old.remove();
+
+  const modal = document.createElement('div');
+  modal.id = 'menuDiaModal';
+  modal.style.position = 'fixed';
+  modal.style.inset = '0';
+  modal.style.background = 'rgba(0,0,0,.65)';
+  modal.style.zIndex = '1000';
+  modal.style.display = 'flex';
+  modal.style.alignItems = 'center';
+  modal.style.justifyContent = 'center';
+  modal.style.padding = '20px';
+
+  modal.innerHTML = `
+    <div style="background:#fff;border-radius:12px;max-width:900px;width:100%;max-height:90vh;overflow:auto;position:relative;padding:16px;">
+      <button onclick="document.getElementById('menuDiaModal').remove()" style="position:absolute;top:10px;right:10px;border:none;background:#e5e7eb;border-radius:999px;width:32px;height:32px;font-weight:700;cursor:pointer;">✕</button>
+      <h3 style="font-size:18px;font-weight:700;margin:0 0 10px 0;color:#0f4c5c;">Menú del Día</h3>
+      <img src="${menu.src}" alt="Menú del Día" style="width:100%;height:auto;border-radius:8px;border:1px solid #e5e7eb;" />
+    </div>
+  `;
+
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal) modal.remove();
+  });
+
+  document.body.appendChild(modal);
 }
 
 function generateFeriadosList() {
