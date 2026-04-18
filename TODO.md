@@ -31,6 +31,8 @@
   - [x] Home: mostrar máximo 4 noticias
   - [x] Home: agregar “Ver más” con modal de contenido completo
   - [x] Compatibilidad con noticias antiguas sin `detalle`
+  - [x] Permitir HTML seguro en detalle (whitelist + sanitización básica)
+  - [x] Render HTML en Home/Modal con estilos de contenido enriquecido
   - [x] Ajustar legibilidad visual de tabla Desvinculaciones (fuentes/márgenes/evitar cortes)
 
 - [x] 7) Mejoras solicitadas: seguimiento AD en Desvinculaciones

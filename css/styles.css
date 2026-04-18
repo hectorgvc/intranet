@@ -146,6 +146,20 @@ body { background: #f4f6f8; color: #2d2d2d; overflow-x: hidden; }
 }
 
 /* Desvinculaciones: estados y estadísticas */
+.news-rich-content p { margin: 0 0 10px 0; }
+.news-rich-content ul,
+.news-rich-content ol { margin: 0 0 10px 20px; }
+.news-rich-content li { margin: 0 0 4px 0; }
+.news-rich-content a { color: #0f4c5c; text-decoration: underline; font-weight: 600; }
+.news-rich-content blockquote {
+  border-left: 3px solid #0f4c5c;
+  padding-left: 10px;
+  margin: 0 0 12px 0;
+  color: #374151;
+}
+.news-rich-content h3,
+.news-rich-content h4 { margin: 0 0 8px 0; color: #0f4c5c; font-weight: 700; }
+
 .status-chip {
   display: inline-flex;
   align-items: center;

@@ -31,9 +31,13 @@ function renderDashboard() {
       <div>
         <h3 class="news-title">${n.titulo}</h3>
         <p class="text-[13px] text-gray-500 mb-2 line-clamp-2">
-          ${(n.detalle && n.detalle.trim())
-            ? n.detalle
-            : `Novedades y comunicados internos desde el departamento de ${n.autor}.`}
+          ${(() => {
+            const raw = (n.detalle && n.detalle.trim())
+              ? n.detalle
+              : `Novedades y comunicados internos desde el departamento de ${n.autor}.`;
+            const plain = toPlainTextFromHtml(raw);
+            return plain.length > 180 ? plain.slice(0, 180) + '…' : plain;
+          })()}
         </p>
         <div class="news-meta">
           <img src="https://ui-avatars.com/api/?name=${n.autor}&background=random&color=fff" class="news-author-avatar">
@@ -163,6 +167,54 @@ function generateCalendarDays() {
   return html;
 }
 
+function sanitizeNewsHtml(html) {
+  const tpl = document.createElement('template');
+  tpl.innerHTML = String(html || '');
+
+  const allowed = new Set(['P', 'BR', 'STRONG', 'EM', 'UL', 'OL', 'LI', 'A', 'H3', 'H4', 'BLOCKQUOTE']);
+  const all = tpl.content.querySelectorAll('*');
+
+  all.forEach(el => {
+    if (!allowed.has(el.tagName)) {
+      const txt = document.createTextNode(el.textContent || '');
+      el.replaceWith(txt);
+      return;
+    }
+
+    [...el.attributes].forEach(attr => {
+      const name = attr.name.toLowerCase();
+      const value = String(attr.value || '');
+
+      if (name.startsWith('on')) el.removeAttribute(attr.name);
+      if (name === 'style') el.removeAttribute('style');
+
+      if (el.tagName === 'A') {
+        if (name === 'href') {
+          const safe = /^https?:\/\//i.test(value) || value.startsWith('mailto:') || value.startsWith('#');
+          if (!safe) el.removeAttribute('href');
+        } else if (!['href', 'target', 'rel'].includes(name)) {
+          el.removeAttribute(attr.name);
+        }
+      } else {
+        el.removeAttribute(attr.name);
+      }
+    });
+
+    if (el.tagName === 'A') {
+      if (!el.getAttribute('target')) el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
+  return tpl.innerHTML;
+}
+
+function toPlainTextFromHtml(html) {
+  const div = document.createElement('div');
+  div.innerHTML = sanitizeNewsHtml(html);
+  return (div.textContent || div.innerText || '').replace(/\s+/g, ' ').trim();
+}
+
 function openNoticiaModal(id) {
   const n = (noticias || []).find(x => x.id === id);
   if (!n) return showToast('⚠️ Noticia no encontrada');
@@ -171,7 +223,7 @@ function openNoticiaModal(id) {
   if (old) old.remove();
 
   const detalle = (n.detalle && n.detalle.trim())
-    ? n.detalle
+    ? sanitizeNewsHtml(n.detalle)
     : `Novedades y comunicados internos desde el departamento de ${n.autor}.`;
 
   const modal = document.createElement('div');
@@ -191,7 +243,7 @@ function openNoticiaModal(id) {
       <img src="${n.imagen}" alt="${n.titulo}" style="width:100%;height:auto;max-height:320px;object-fit:cover;border-radius:8px;border:1px solid #e5e7eb;margin-bottom:12px;" />
       <h3 style="font-size:20px;font-weight:800;margin:0 0 8px 0;color:#0f4c5c;">${n.titulo}</h3>
       <p style="font-size:13px;color:#6b7280;margin:0 0 14px 0;">${n.autor} · ${n.fecha}</p>
-      <div style="font-size:15px;line-height:1.7;color:#111;white-space:pre-wrap;">${detalle}</div>
+      <div class="news-rich-content" style="font-size:15px;line-height:1.7;color:#111;">${detalle}</div>
     </div>
   `;
 
