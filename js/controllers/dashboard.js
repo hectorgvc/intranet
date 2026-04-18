@@ -23,19 +23,27 @@ function renderDashboard() {
   const totalPort = portales.length;
   const timeNow = now.toLocaleTimeString('es-DO', { hour: '2-digit', minute: '2-digit' });
 
-  // News Generate
-  const newsHtml = noticias.map(n => `
+  // News Generate (máximo últimas 4)
+  const latestNews = (noticias || []).slice(0, 4);
+  const newsHtml = latestNews.map(n => `
     <div class="news-card">
       <img src="${n.imagen}" alt="News preview" class="news-img">
       <div>
         <h3 class="news-title">${n.titulo}</h3>
-        <p class="text-[13px] text-gray-500 mb-2 line-clamp-2">Novedades y comunicados internos desde el departamento de ${n.autor}.</p>
+        <p class="text-[13px] text-gray-500 mb-2 line-clamp-2">
+          ${(n.detalle && n.detalle.trim())
+            ? n.detalle
+            : `Novedades y comunicados internos desde el departamento de ${n.autor}.`}
+        </p>
         <div class="news-meta">
           <img src="https://ui-avatars.com/api/?name=${n.autor}&background=random&color=fff" class="news-author-avatar">
           <span>${n.autor}</span>
           <span>·</span>
           <span>${n.fecha}</span>
         </div>
+        <button onclick="openNoticiaModal(${n.id})" class="mt-3 text-[#0f4c5c] font-semibold text-sm hover:underline">
+          Ver más
+        </button>
       </div>
     </div>
   `).join('');
@@ -153,6 +161,45 @@ function generateCalendarDays() {
     html += `<div class="${className}" ${tooltip}>${i}</div>`;
   }
   return html;
+}
+
+function openNoticiaModal(id) {
+  const n = (noticias || []).find(x => x.id === id);
+  if (!n) return showToast('⚠️ Noticia no encontrada');
+
+  const old = document.getElementById('noticiaModal');
+  if (old) old.remove();
+
+  const detalle = (n.detalle && n.detalle.trim())
+    ? n.detalle
+    : `Novedades y comunicados internos desde el departamento de ${n.autor}.`;
+
+  const modal = document.createElement('div');
+  modal.id = 'noticiaModal';
+  modal.style.position = 'fixed';
+  modal.style.inset = '0';
+  modal.style.background = 'rgba(0,0,0,.65)';
+  modal.style.zIndex = '1000';
+  modal.style.display = 'flex';
+  modal.style.alignItems = 'center';
+  modal.style.justifyContent = 'center';
+  modal.style.padding = '20px';
+
+  modal.innerHTML = `
+    <div style="background:#fff;border-radius:12px;max-width:920px;width:100%;max-height:90vh;overflow:auto;position:relative;padding:16px;">
+      <button onclick="document.getElementById('noticiaModal').remove()" style="position:absolute;top:10px;right:10px;border:none;background:#e5e7eb;border-radius:999px;width:32px;height:32px;font-weight:700;cursor:pointer;">✕</button>
+      <img src="${n.imagen}" alt="${n.titulo}" style="width:100%;height:auto;max-height:320px;object-fit:cover;border-radius:8px;border:1px solid #e5e7eb;margin-bottom:12px;" />
+      <h3 style="font-size:20px;font-weight:800;margin:0 0 8px 0;color:#0f4c5c;">${n.titulo}</h3>
+      <p style="font-size:13px;color:#6b7280;margin:0 0 14px 0;">${n.autor} · ${n.fecha}</p>
+      <div style="font-size:15px;line-height:1.7;color:#111;white-space:pre-wrap;">${detalle}</div>
+    </div>
+  `;
+
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal) modal.remove();
+  });
+
+  document.body.appendChild(modal);
 }
 
 function openMenuDelDiaPopup() {

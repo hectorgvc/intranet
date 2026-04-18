@@ -102,22 +102,24 @@ function buildAdminNoticias() {
         <input id="anTitle" type="text" placeholder="Título del aviso" class="input-field md:col-span-2">
         <input id="anAuthor" type="text" placeholder="Autor / Departamento (Ej. RRHH)" class="input-field">
         <input id="anImage" type="text" placeholder="URL de la imagen (Opcional)" class="input-field">
+        <textarea id="anDetail" placeholder="Detalle de la noticia (texto extendido para 'Ver más')" class="input-field md:col-span-2 min-h-[110px]"></textarea>
       </div>
       <button onclick="saveNoticia()" class="btn-primary w-full md:w-auto">Publicar Comunicado</button>
     </div>
     <div class="card overflow-x-auto border-gray-200">
       <table class="data-table">
-        <thead><tr><th>Título</th><th>Autor</th><th>Fecha Publicación</th><th>Acciones</th></tr></thead>
+        <thead><tr><th>Título</th><th>Autor</th><th>Detalle</th><th>Fecha Publicación</th><th>Acciones</th></tr></thead>
         <tbody>
           ${noticias.map(n => `
             <tr>
               <td class="font-bold text-[#111] max-w-[200px] truncate" title="${n.titulo}">${n.titulo}</td>
               <td class="text-sm font-medium text-gray-600">${n.autor}</td>
+              <td class="text-sm text-gray-600">${(n.detalle || '').slice(0, 90)}${(n.detalle || '').length > 90 ? '…' : ''}</td>
               <td class="text-sm border-l-0">${n.fecha}</td>
               <td><button onclick="deleteNoticia(${n.id})" class="text-[#e63329] border border-[#e63329] rounded px-3 py-1 hover:bg-red-50 text-xs font-bold uppercase transition">Eliminar</button></td>
             </tr>
           `).join('')}
-          ${noticias.length === 0 ? '<tr><td colspan="4" class="text-center py-6 text-gray-500 italic">No hay comunicados activos.</td></tr>' : ''}
+          ${noticias.length === 0 ? '<tr><td colspan="5" class="text-center py-6 text-gray-500 italic">No hay comunicados activos.</td></tr>' : ''}
         </tbody>
       </table>
     </div>
@@ -128,6 +130,7 @@ function saveNoticia() {
   const t = document.getElementById('anTitle').value.trim();
   const a = document.getElementById('anAuthor').value.trim() || 'Institucional';
   const i = document.getElementById('anImage').value.trim() || `https://ui-avatars.com/api/?name=${a}&background=2a7d7b&color=fff&size=200`;
+  const d = document.getElementById('anDetail').value.trim();
 
   if (!t) return showToast('⚠️ El título es obligatorio');
 
@@ -136,11 +139,14 @@ function saveNoticia() {
 
   noticias.unshift({
     id: Date.now(),
-    titulo: t, autor: a, imagen: i,
+    titulo: t,
+    autor: a,
+    imagen: i,
+    detalle: d,
     fecha: `${now.getDate()} ${meses[now.getMonth()]} ${now.getFullYear()}`
   });
 
-  if (noticias.length > 5) noticias.pop();
+  if (noticias.length > 4) noticias.pop();
   saveData();
   showToast('✅ Aviso publicado en el Dashboard');
   switchAdminTab('noticias');

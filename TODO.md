@@ -1,4 +1,4 @@
-# TODO - Ajustes Admin Hub RRHH + Menú del Día + Desvinculaciones
+# TODO - Ajustes Admin Hub RRHH + Menú del Día + Desvinculaciones + Mini CMS Noticias
 
 - [x] 1) Extender estado global (`js/state.js`)
   - [x] Agregar roles y contraseñas (`ADMIN_PASSWORDS`, `adminRole`)
@@ -23,11 +23,19 @@
 - [ ] 5) Verificación rápida
   - [ ] Validar flujos RRHH e IT
   - [ ] Validar persistencia en `localStorage`
+
+- [ ] 6) Mini CMS de Noticias (nuevo)
+  - [x] Admin: agregar campo detalle largo en formulario
+  - [x] Admin: guardar detalle y limitar colección a 4
+  - [x] Admin: mostrar resumen de detalle en tabla
+  - [x] Home: mostrar máximo 4 noticias
+  - [x] Home: agregar “Ver más” con modal de contenido completo
+  - [x] Compatibilidad con noticias antiguas sin `detalle`
   - [x] Ajustar legibilidad visual de tabla Desvinculaciones (fuentes/márgenes/evitar cortes)
 
-- [ ] 6) Mejoras solicitadas: seguimiento AD en Desvinculaciones
-  - [ ] Agregar estado por registro (`pendiente_ad` / `procesado_ad`)
-  - [ ] Agregar panel de estadísticas (total/pendientes/procesados/%)
-  - [ ] Agregar columna Estado + acciones para cambiar estado
-  - [ ] Incluir estado en exportación e importación
-  - [ ] Ordenar listado con pendientes primero
+- [x] 7) Mejoras solicitadas: seguimiento AD en Desvinculaciones
+  - [x] Agregar estado por registro (`pendiente_ad` / `procesado_ad`)
+  - [x] Agregar panel de estadísticas (total/pendientes/procesados/%)
+  - [x] Agregar columna Estado + acciones para cambiar estado
+  - [x] Incluir estado en exportación e importación
+  - [x] Ordenar listado con pendientes primero
