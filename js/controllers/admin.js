@@ -95,16 +95,20 @@ function switchAdminTab(tabId, btn) {
 // ADMIN: Noticias (Hero Dashboard)
 // ---------------------------
 function buildAdminNoticias() {
+  const editing = Number(window.editingNoticiaId || 0);
   return `
     <div class="card p-6 mb-6 shadow-sm border border-gray-200">
-      <h3 class="font-bold text-lg mb-4 text-[#0f4c5c] flex items-center gap-2"><i data-lucide="megaphone" class="w-5 h-5"></i> Agregar Nuevo Comunicado</h3>
+      <h3 class="font-bold text-lg mb-4 text-[#0f4c5c] flex items-center gap-2"><i data-lucide="megaphone" class="w-5 h-5"></i> ${editing ? 'Editar Comunicado' : 'Agregar Nuevo Comunicado'}</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
         <input id="anTitle" type="text" placeholder="Título del aviso" class="input-field md:col-span-2">
         <input id="anAuthor" type="text" placeholder="Autor / Departamento (Ej. RRHH)" class="input-field">
         <input id="anImage" type="text" placeholder="URL de la imagen (Opcional)" class="input-field">
         <textarea id="anDetail" placeholder="Detalle de la noticia (texto extendido para 'Ver más')" class="input-field md:col-span-2 min-h-[110px]"></textarea>
       </div>
-      <button onclick="saveNoticia()" class="btn-primary w-full md:w-auto">Publicar Comunicado</button>
+      <div class="flex flex-wrap gap-3">
+        <button id="newsSubmitBtn" onclick="saveNoticia()" class="btn-primary w-full md:w-auto">${editing ? 'Actualizar Comunicado' : 'Publicar Comunicado'}</button>
+        ${editing ? '<button onclick="cancelEditNoticia()" class="btn-outline w-full md:w-auto">Cancelar edición</button>' : ''}
+      </div>
     </div>
     <div class="card overflow-x-auto border-gray-200">
       <table class="data-table">
@@ -116,7 +120,10 @@ function buildAdminNoticias() {
               <td class="text-sm font-medium text-gray-600">${n.autor}</td>
               <td class="text-sm text-gray-600">${(n.detalle || '').slice(0, 90)}${(n.detalle || '').length > 90 ? '…' : ''}</td>
               <td class="text-sm border-l-0">${n.fecha}</td>
-              <td><button onclick="deleteNoticia(${n.id})" class="text-[#e63329] border border-[#e63329] rounded px-3 py-1 hover:bg-red-50 text-xs font-bold uppercase transition">Eliminar</button></td>
+              <td class="flex flex-wrap gap-2">
+                <button onclick="editNoticia(${n.id})" class="text-[#0f4c5c] border border-[#0f4c5c] rounded px-3 py-1 hover:bg-[#eefbfa] text-xs font-bold uppercase transition">Editar</button>
+                <button onclick="deleteNoticia(${n.id})" class="text-[#e63329] border border-[#e63329] rounded px-3 py-1 hover:bg-red-50 text-xs font-bold uppercase transition">Eliminar</button>
+              </td>
             </tr>
           `).join('')}
           ${noticias.length === 0 ? '<tr><td colspan="5" class="text-center py-6 text-gray-500 italic">No hay comunicados activos.</td></tr>' : ''}
@@ -134,6 +141,30 @@ function saveNoticia() {
 
   if (!t) return showToast('⚠️ El título es obligatorio');
 
+  const editingId = Number(window.editingNoticiaId || 0);
+
+  if (editingId) {
+    const idx = noticias.findIndex(n => Number(n.id) === editingId);
+    if (idx === -1) {
+      window.editingNoticiaId = null;
+      showToast('⚠️ No se encontró la noticia a editar');
+      return switchAdminTab('noticias');
+    }
+
+    noticias[idx] = {
+      ...noticias[idx],
+      titulo: t,
+      autor: a,
+      imagen: i,
+      detalle: d
+    };
+
+    saveData();
+    window.editingNoticiaId = null;
+    showToast('✅ Aviso actualizado');
+    return switchAdminTab('noticias');
+  }
+
   const now = new Date();
   const meses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
 
@@ -149,6 +180,33 @@ function saveNoticia() {
   if (noticias.length > 4) noticias.pop();
   saveData();
   showToast('✅ Aviso publicado en el Dashboard');
+  switchAdminTab('noticias');
+}
+
+function editNoticia(id) {
+  const n = (noticias || []).find(x => Number(x.id) === Number(id));
+  if (!n) return showToast('⚠️ No se encontró la noticia');
+
+  window.editingNoticiaId = Number(id);
+  switchAdminTab('noticias');
+
+  setTimeout(() => {
+    const t = document.getElementById('anTitle');
+    const a = document.getElementById('anAuthor');
+    const i = document.getElementById('anImage');
+    const d = document.getElementById('anDetail');
+
+    if (t) t.value = n.titulo || '';
+    if (a) a.value = n.autor || '';
+    if (i) i.value = n.imagen || '';
+    if (d) d.value = n.detalle || '';
+
+    if (t) t.focus();
+  }, 0);
+}
+
+function cancelEditNoticia() {
+  window.editingNoticiaId = null;
   switchAdminTab('noticias');
 }
 

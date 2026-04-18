@@ -33,6 +33,7 @@
   - [x] Compatibilidad con noticias antiguas sin `detalle`
   - [x] Permitir HTML seguro en detalle (whitelist + sanitización básica)
   - [x] Render HTML en Home/Modal con estilos de contenido enriquecido
+  - [x] Permitir editar artículos de noticias desde Admin (sin recrear)
   - [x] Ajustar legibilidad visual de tabla Desvinculaciones (fuentes/márgenes/evitar cortes)
 
 - [x] 7) Mejoras solicitadas: seguimiento AD en Desvinculaciones
