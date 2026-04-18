@@ -168,11 +168,18 @@ function generateCalendarDays() {
 }
 
 function sanitizeNewsHtml(html) {
-  const tpl = document.createElement('template');
-  tpl.innerHTML = String(html || '');
+  const raw = String(html || '');
+  const doc = new DOMParser().parseFromString(raw, 'text/html');
 
-  const allowed = new Set(['P', 'BR', 'STRONG', 'EM', 'UL', 'OL', 'LI', 'A', 'H3', 'H4', 'BLOCKQUOTE']);
-  const all = tpl.content.querySelectorAll('*');
+  const container = document.createElement('template');
+  container.innerHTML = doc.body ? doc.body.innerHTML : raw;
+
+  const allowed = new Set([
+    'P', 'BR', 'STRONG', 'EM', 'UL', 'OL', 'LI', 'A',
+    'H1', 'H2', 'H3', 'H4', 'BLOCKQUOTE', 'IMG'
+  ]);
+
+  const all = container.content.querySelectorAll('*');
 
   all.forEach(el => {
     if (!allowed.has(el.tagName)) {
@@ -185,28 +192,51 @@ function sanitizeNewsHtml(html) {
       const name = attr.name.toLowerCase();
       const value = String(attr.value || '');
 
-      if (name.startsWith('on')) el.removeAttribute(attr.name);
-      if (name === 'style') el.removeAttribute('style');
+      if (name.startsWith('on')) {
+        el.removeAttribute(attr.name);
+        return;
+      }
+
+      if (name === 'style') {
+        el.removeAttribute('style');
+        return;
+      }
 
       if (el.tagName === 'A') {
         if (name === 'href') {
           const safe = /^https?:\/\//i.test(value) || value.startsWith('mailto:') || value.startsWith('#');
-          if (!safe) el.removeAttribute('href');
+          if (!safe || /^javascript:/i.test(value)) el.removeAttribute('href');
         } else if (!['href', 'target', 'rel'].includes(name)) {
           el.removeAttribute(attr.name);
         }
-      } else {
-        el.removeAttribute(attr.name);
+        return;
       }
+
+      if (el.tagName === 'IMG') {
+        if (name === 'src') {
+          const safeImg = /^https?:\/\//i.test(value) || value.startsWith('data:image/');
+          if (!safeImg || /^javascript:/i.test(value)) el.removeAttribute('src');
+        } else if (name !== 'alt') {
+          el.removeAttribute(attr.name);
+        }
+        return;
+      }
+
+      // Para el resto, no permitir atributos
+      el.removeAttribute(attr.name);
     });
 
     if (el.tagName === 'A') {
       if (!el.getAttribute('target')) el.setAttribute('target', '_blank');
       el.setAttribute('rel', 'noopener noreferrer');
     }
+
+    if (el.tagName === 'IMG' && !el.getAttribute('alt')) {
+      el.setAttribute('alt', 'Imagen de noticia');
+    }
   });
 
-  return tpl.innerHTML;
+  return container.innerHTML;
 }
 
 function toPlainTextFromHtml(html) {
