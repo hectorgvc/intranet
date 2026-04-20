@@ -46,12 +46,6 @@ const DEFAULT_DIRECTORIO = RAW_DIR.trim().split('\n').filter(Boolean).map((line,
   return { id: idx+1, nombre, cargo, departamento: depto, extension: ext, correo };
 });
 
-const DEFAULT_NOMENCLATURAS = [
-  { id: 1, departamento: 'DIRECCIÓN GENERAL', nomenclatura: 'SCCDIRGRALPC01', usuario: 'Adolfo Perez' },
-  { id: 2, departamento: 'DEPARTAMENTO JURIDICO', nomenclatura: 'SCDCDEPJURIPC01', usuario: 'Sin usuario' },
-  { id: 3, departamento: 'TECNOLOGIA DE LA INFORMACION', nomenclatura: 'SCDIVASTIPC01', usuario: 'Luis Vargas' },
-];
-
 const DEFAULT_NOTICIAS = [
   { id: 1, titulo: 'Jornada de Vacunación contra la Influenza 2026', autor: 'Gestión Humana', fecha: '14 Abr 2026', imagen: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=300&q=80' },
   { id: 2, titulo: 'Actualización del sistema Dynamics 365 completada exitosamente', autor: 'DTIC', fecha: '12 Abr 2026', imagen: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=300&q=80' },
@@ -68,7 +62,6 @@ const ADMIN_PASSWORDS = {
 
 let feriados = [];
 let directorio = (typeof LDAP_DATA !== 'undefined') ? [...LDAP_DATA] : [...DEFAULT_DIRECTORIO];
-let nomenclaturas = [...DEFAULT_NOMENCLATURAS];
 let portales = [...DEFAULT_PORTALES];
 let noticias = [...DEFAULT_NOTICIAS];
 
@@ -78,7 +71,6 @@ let adminRole = null; // 'it' | 'rrhh'
 
 // Paginación
 let dirPage = 1;
-let nomPage = 1;
 
 // Estado del calendario navegable
 let calYear  = new Date().getFullYear();
@@ -87,16 +79,14 @@ let calMonth = new Date().getMonth();
 // ── Carga desde localStorage ─────────────────────────────────────────
 try {
   const sDir  = localStorage.getItem('promese_directorio');   if (sDir)  directorio    = JSON.parse(sDir);
-  const sNom  = localStorage.getItem('promese_nomenclaturas'); if (sNom)  nomenclaturas = JSON.parse(sNom);
   const sPor  = localStorage.getItem('promese_portales');      if (sPor)  portales      = JSON.parse(sPor);
   const sNot  = localStorage.getItem('promese_noticias');      if (sNot)  noticias      = JSON.parse(sNot);
 } catch(e) { console.log('Error parseando localStorage, usando defaults', e); }
 
 function saveData() {
-  localStorage.setItem('promese_directorio',    JSON.stringify(directorio));
-  localStorage.setItem('promese_nomenclaturas', JSON.stringify(nomenclaturas));
-  localStorage.setItem('promese_portales',      JSON.stringify(portales));
-  localStorage.setItem('promese_noticias',      JSON.stringify(noticias));
+  localStorage.setItem('promese_directorio', JSON.stringify(directorio));
+  localStorage.setItem('promese_portales', JSON.stringify(portales));
+  localStorage.setItem('promese_noticias', JSON.stringify(noticias));
 }
 
 // ── Helpers: Menú del Día ────────────────────────────────────────────

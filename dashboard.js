@@ -11,7 +11,6 @@ function renderDashboard() {
   const now = new Date();
 
   const totalEmp  = directorio.length;
-  const totalEq   = nomenclaturas.length;
   const totalPort = portales.length;
   const timeNow   = now.toLocaleTimeString('es-DO', { hour: '2-digit', minute: '2-digit' });
 
@@ -149,8 +148,8 @@ function renderDashboard() {
         <div class="val">${totalEmp}<small>activos</small></div>
       </div>
       <div class="kpi-card bg-[#226563]">
-        <h4>Equipos IT (Nom.)</h4>
-        <div class="val">${totalEq}<small>unds.</small></div>
+        <h4>Noticias Activas</h4>
+        <div class="val">${noticias.length}<small>avisos</small></div>
       </div>
       <div class="kpi-card bg-[#eab308] text-[#111]">
         <h4>Sistemas Conectados</h4>
