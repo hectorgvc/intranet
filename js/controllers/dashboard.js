@@ -15,10 +15,20 @@ function rotateHeroSlide() {
   if (!slider) return;
 
   const slides = slider.querySelectorAll('.hero-slide');
-  slides.forEach((slide, i) => {
-    slide.style.transform = i === heroSlideIndex ? 'translateX(0)' : 'translateX(100%)';
-    slide.style.opacity = i === heroSlideIndex ? '1' : '0';
-  });
+  const currentSlide = slides.find((_, i) => i !== heroSlideIndex);
+  const nextSlide = slides[heroSlideIndex];
+
+  // Fade Out imagen actual (0.4s)
+  if (currentSlide) {
+    currentSlide.style.opacity = '0';
+  }
+
+  // Cambiar src y hacer Fade In de la imagen nueva (0.4s)
+  setTimeout(() => {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === heroSlideIndex ? '1' : '0';
+    });
+  }, 400);
 }
 
 function startHeroSlider() {
@@ -89,7 +99,7 @@ function renderDashboard() {
       <div class="hero-slider border-l-8 border-[#0a3541]">
         <div class="hero-overlay"></div>
         ${HERO_SLIDES.map((src, i) => `
-          <div class="hero-slide" style="transform: translateX(${i === 0 ? '0' : '100%'}); opacity: ${i === 0 ? '1' : '0'};">
+          <div class="hero-slide" style="opacity: ${i === 0 ? '1' : '0'};">
             <img src="${src}" alt="Hero slide ${i + 1}">
           </div>
         `).join('')}
