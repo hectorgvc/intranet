@@ -10,25 +10,26 @@ const HERO_SLIDES = [
 ];
 
 function rotateHeroSlide() {
-  heroSlideIndex = (heroSlideIndex + 1) % HERO_SLIDES.length;
   const slider = document.querySelector('.hero-slider');
   if (!slider) return;
 
   const slides = slider.querySelectorAll('.hero-slide');
-  const currentSlide = slides.find((_, i) => i !== heroSlideIndex);
+  if (slides.length < 2) return;
+
+  // Calcular siguiente slide
+  const prevIndex = heroSlideIndex;
+  heroSlideIndex = (heroSlideIndex + 1) % HERO_SLIDES.length;
+
+  const prevSlide = slides[prevIndex];
   const nextSlide = slides[heroSlideIndex];
 
-  // Fade Out imagen actual (0.4s)
-  if (currentSlide) {
-    currentSlide.style.opacity = '0';
-  }
+  // Fade Out suave de la imagen actual (0.5s)
+  prevSlide.style.transition = 'opacity 0.5s ease-in-out';
+  prevSlide.style.opacity = '0';
 
-  // Cambiar src y hacer Fade In de la imagen nueva (0.4s)
-  setTimeout(() => {
-    slides.forEach((slide, i) => {
-      slide.style.opacity = i === heroSlideIndex ? '1' : '0';
-    });
-  }, 400);
+  // Fade In suave de la imagen nueva (0.5s)
+  nextSlide.style.transition = 'opacity 0.5s ease-in-out';
+  nextSlide.style.opacity = '1';
 }
 
 function startHeroSlider() {
