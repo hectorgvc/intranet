@@ -1,5 +1,31 @@
 // ---> [ MÓDULO: DASHBOARD (THE TRUST STYLE) ] <---
 
+// Hero Slider State
+let heroSlideIndex = 0;
+let heroSlideInterval = null;
+
+const HERO_SLIDES = [
+  'assets/hero/fachada-promese.png',
+  'assets/hero/farmacia-sample.png'
+];
+
+function rotateHeroSlide() {
+  heroSlideIndex = (heroSlideIndex + 1) % HERO_SLIDES.length;
+  const slider = document.querySelector('.hero-slider');
+  if (!slider) return;
+
+  const slides = slider.querySelectorAll('.hero-slide');
+  slides.forEach((slide, i) => {
+    slide.style.transform = i === heroSlideIndex ? 'translateX(0)' : 'translateX(100%)';
+    slide.style.opacity = i === heroSlideIndex ? '1' : '0';
+  });
+}
+
+function startHeroSlider() {
+  if (heroSlideInterval) clearInterval(heroSlideInterval);
+  heroSlideInterval = setInterval(rotateHeroSlide, 7000);
+}
+
 function renderDashboard() {
   const container = document.getElementById('dashboardContent');
   if(!container) return;
@@ -19,7 +45,7 @@ function renderDashboard() {
 
   // KPI calculations
   const totalEmp = directorio.length;
-  const totalEq = nomenclaturas.length;
+  const totalNot = noticias.length;
   const totalPort = portales.length;
   const timeNow = now.toLocaleTimeString('es-DO', { hour: '2-digit', minute: '2-digit' });
 
@@ -60,8 +86,13 @@ function renderDashboard() {
         <p class="text-lg opacity-90 mb-8 font-medium tracking-wide max-w-lg leading-relaxed">Revisa las novedades de hoy en PROMESE/CAL. Accede a herramientas y gestiona tus recursos de trabajo institucionales.</p>
         <button onclick="openMenuDelDiaPopup()" class="bg-white text-[#0f4c5c] font-bold py-3.5 px-8 rounded-full transition shadow-md hover:shadow-lg hover:bg-gray-50 text-sm tracking-wide">VER MENÚ DEL DÍA</button>
       </div>
-      <div class="hero-bg border-l-8 border-[#0a3541]">
-        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Office workers">
+      <div class="hero-slider border-l-8 border-[#0a3541]">
+        <div class="hero-overlay"></div>
+        ${HERO_SLIDES.map((src, i) => `
+          <div class="hero-slide" style="transform: translateX(${i === 0 ? '0' : '100%'}); opacity: ${i === 0 ? '1' : '0'};">
+            <img src="${src}" alt="Hero slide ${i + 1}">
+          </div>
+        `).join('')}
       </div>
     </div>
 
@@ -119,8 +150,8 @@ function renderDashboard() {
         <div class="val">${totalEmp}<small>activos</small></div>
       </div>
       <div class="kpi-card bg-[#226563]">
-        <h4>Equipos IT (Nom.)</h4>
-        <div class="val">${totalEq}<small>unds.</small></div>
+        <h4>Noticias Activas</h4>
+        <div class="val">${totalNot}<small>activas</small></div>
       </div>
       <div class="kpi-card bg-[#eab308] text-[#111]">
         <h4>Sistemas Conectados</h4>
@@ -134,6 +165,7 @@ function renderDashboard() {
   `;
 
   if(typeof lucide !== 'undefined') lucide.createIcons();
+  startHeroSlider();
 }
 
 function calPrevMonth() {

@@ -21,7 +21,6 @@ function navigateTo(view, linkEl) {
 
   // Lifecycle
   if (view === 'directorio') renderDirectorio();
-  if (view === 'nomenclaturas') renderNomenclaturas();
   if (view === 'portales') renderPortales();
   if (view === 'inicio') renderDashboard();
   if (view === 'firma') updateFirmaPreview();
