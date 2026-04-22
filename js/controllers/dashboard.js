@@ -92,12 +92,12 @@ function renderDashboard() {
   // HTML Structure matching the image
   container.innerHTML = `
     <div class="hero-banner shadow-lg">
-      <div class="hero-content">
-        <h1 class="text-5xl font-extrabold mb-3 tracking-tight">${saludo}, ${userName}!</h1>
-        <p class="text-lg opacity-90 mb-8 font-medium tracking-wide max-w-lg leading-relaxed">Revisa las novedades de hoy en PROMESE/CAL. Accede a herramientas y gestiona tus recursos de trabajo institucionales.</p>
-        <button onclick="openMenuDelDiaPopup()" class="bg-white text-[#0f4c5c] font-bold py-3.5 px-8 rounded-full transition shadow-md hover:shadow-lg hover:bg-gray-50 text-sm tracking-wide">VER MENÚ DEL DÍA</button>
+      <div class="hero-content w-full md:w-1/2 text-center md:text-left px-4 md:px-8 flex flex-col justify-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold mb-3 tracking-tight">${saludo}, ${userName}!</h1>
+        <p class="text-base md:text-lg opacity-90 mb-6 md:mb-8 font-medium tracking-wide max-w-lg leading-relaxed mx-auto md:mx-0">Revisa las novedades de hoy en PROMESE/CAL. Accede a herramientas y gestiona tus recursos de trabajo institucionales.</p>
+        <button onclick="openMenuDelDiaPopup()" class="bg-white text-[#0f4c5c] font-bold py-3.5 px-8 rounded-full transition shadow-md hover:shadow-lg hover:bg-gray-50 text-sm tracking-wide w-full md:w-auto">VER MENÚ DEL DÍA</button>
       </div>
-      <div class="hero-slider border-l-8 border-[#0a3541]">
+      <div class="hero-slider border-l-8 border-[#0a3541] w-full md:w-1/2 h-48 md:h-96">
         <div class="hero-overlay"></div>
         ${HERO_SLIDES.map((src, i) => `
           <div class="hero-slide" style="opacity: ${i === 0 ? '1' : '0'};">
