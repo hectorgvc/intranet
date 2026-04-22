@@ -95,7 +95,7 @@ function renderDashboard() {
       <div class="hero-content w-full md:w-1/2 text-center md:text-left px-4 md:px-8 flex flex-col justify-center">
         <div class="relative z-10 w-full max-w-sm rounded-full bg-white flex items-center px-4 py-2.5 border border-gray-200 shadow-sm transition hover:shadow-md focus-within:shadow-md focus-within:border-[#2a7d7b] mb-4">
           <i data-lucide="search" class="w-5 h-5 text-gray-400 mr-3"></i>
-          <input type="text" placeholder="Buscar portales o contactos..." class="flex-1 bg-transparent border-none outline-none text-sm font-medium" onkeydown="if(event.key==='Enter') navigateTo('directorio')">
+          <input type="text" placeholder="Buscar portales o contactos..." class="flex-1 bg-transparent border-none outline-none text-sm font-medium text-black placeholder-gray-500" onkeydown="if(event.key==='Enter') navigateTo('directorio')">
         </div>
         <h1 class="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight">${saludo}, Equipo!</h1>
         <h2 class="text-3xl md:text-4xl font-bold text-[#e63329] mb-3">Intranet Institucional</h2>
