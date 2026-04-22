@@ -3,8 +3,11 @@
 function getFilteredDirectorio() {
   const search = document.getElementById('dirSearch')?.value?.trim()?.toLowerCase() || '';
   const dept = document.getElementById('dirDeptFilter')?.value?.trim() || '';
-  
+
   return directorio.filter(d => {
+    // Solo mostrar usuarios con teléfono y extensión válidos
+    if (!d.telefono?.trim() || !d.extension?.trim()) return false;
+
     const dDept = String(d.departamento || '').trim();
     const matchSearch = !search || Object.values(d).some(v => String(v).toLowerCase().includes(search));
     const matchDept = !dept || dDept.toLowerCase() === dept.toLowerCase();
