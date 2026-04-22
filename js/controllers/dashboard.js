@@ -98,7 +98,7 @@ function renderDashboard() {
           <input type="text" placeholder="Buscar portales o contactos..." class="flex-1 bg-transparent border-none outline-none text-sm font-medium" onkeydown="if(event.key==='Enter') navigateTo('directorio')">
         </div>
         <h1 class="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight">${saludo}, Equipo!</h1>
-        <h2 class="text-3xl md:text-4xl font-bold text-[#2a7d7b] mb-3">Intranet Institucional</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#e63329] mb-3">Intranet Institucional</h2>
         <p class="text-lg opacity-90 mb-8 font-medium tracking-wide max-w-lg leading-relaxed">Un espacio creado para conectarnos, informarnos y trabajar mejor.</p>
         <button onclick="openMenuDelDiaPopup()" class="bg-white text-[#0f4c5c] font-bold py-3.5 px-8 rounded-full transition shadow-md hover:shadow-lg hover:bg-gray-50 text-sm tracking-wide w-full md:w-auto">VER MENÚ DEL DÍA</button>
       </div>
