@@ -5,10 +5,10 @@ function renderPortales() {
   if(!container) return;
 
   // Agrupar por categoria formal indicada en los requerimientos
-  const categories = [...new Set(portales.map(p => p.categoria))];
-  
+  const categories = [...new Set(portales.filter(p => p.categoria !== 'Aplicaciones Externas (Gobierno)').map(p => p.categoria))];
+
   container.innerHTML = categories.map(cat => {
-    const items = portales.filter(p => p.categoria === cat);
+    const items = portales.filter(p => p.categoria === cat && p.categoria !== 'Aplicaciones Externas (Gobierno)');
     return `
       <div class="mb-10 last:mb-0">
         <h3 class="text-[17px] font-bold text-[#0f4c5c] mb-6 tracking-wide flex items-center gap-2">

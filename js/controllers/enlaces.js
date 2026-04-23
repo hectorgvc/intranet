@@ -4,7 +4,6 @@ function renderEnlaces() {
   const container = document.getElementById('enlacesContainer');
   if (!container) return;
 
-  // Filtrar solo "Aplicaciones Externas (Gobierno)" de portales
   const enlacesGobierno = portales.filter(p => p.categoria === 'Aplicaciones Externas (Gobierno)');
 
   if (enlacesGobierno.length === 0) {
@@ -12,9 +11,8 @@ function renderEnlaces() {
     return;
   }
 
-  container.innerHTML = enlacesGobierno.map(portal => `
+  container.innerHTML = `
     <div>
-      <h3 class="text-lg font-bold text-[#50788A] mb-4">${portal.categoria}</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         ${enlacesGobierno.map(p => `
           <a href="${p.url}" target="_blank" class="card p-6 hover:shadow-lg transition cursor-pointer group">
@@ -32,7 +30,7 @@ function renderEnlaces() {
         `).join('')}
       </div>
     </div>
-  `).join('');
+  `;
 
   if (typeof lucide !== 'undefined') lucide.createIcons();
 }

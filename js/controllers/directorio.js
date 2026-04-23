@@ -28,12 +28,12 @@ function renderDirectorio() {
   
   tbody.innerHTML = pageData.length ? pageData.map(d => `
     <tr>
-      <td class="font-mono text-[13px] font-bold text-[#0f4c5c]">${d.extension}</td>
-      <td class="font-bold text-[#111] text-[14px]">${d.nombre}</td>
-      <td class="text-gray-600 text-[13px] font-medium">${d.cargo}</td>
-      <td><span class="inline-block bg-[#f0f7f7] text-[#2a7d7b] px-2.5 py-1 rounded-[4px] text-[11px] font-bold tracking-wider uppercase">${d.departamento}</span></td>
-      <td class="text-gray-600 text-[13px] font-mono">${d.telefono || '-'}</td>
-      <td><a href="mailto:${d.correo}" class="text-[#2a7d7b] hover:text-[#e63329] hover:underline font-medium">${d.correo}</a></td>
+      <td class="font-mono text-[15px] font-bold text-[#0f4c5c]">${d.extension}</td>
+      <td class="font-bold text-[#111] text-[16px]">${d.nombre}</td>
+      <td class="text-gray-600 text-[15px] font-medium">${d.cargo}</td>
+      <td><span class="inline-block bg-[#f0f7f7] text-[#2a7d7b] px-2.5 py-1 rounded-[4px] text-[13px] font-bold tracking-wider uppercase">${d.departamento}</span></td>
+      <td class="text-gray-600 text-[15px] font-mono">${d.telefono || '-'}</td>
+      <td><a href="mailto:${d.correo}" class="text-[#2a7d7b] hover:text-[#e63329] hover:underline font-medium text-[15px]">${d.correo}</a></td>
     </tr>
   `).join('') : '<tr><td colspan="6" class="text-center text-gray-500 py-10 italic">No se encontraron colaboradores en el directorio</td></tr>';
 
