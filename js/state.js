@@ -191,15 +191,30 @@ const DEFAULT_NOTICIAS = [
   { id: 3, titulo: 'Inauguración de nueva Farmacia del Pueblo en Santiago', autor: 'Dirección General', fecha: '10 Abr 2026', imagen: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=300&q=80' }
 ];
 
+const DEFAULT_CAPACITACIONES = [
+  {
+    id: 1,
+    titulo: 'Tutorial de Outlook 365',
+    descripcion: 'Aprende a usar el correo institucional, calendario y contactos en Outlook 365',
+    autor: 'Departamento IT',
+    tipo: 'video',
+    videoId: 'qUYVEsv4EUg',
+    fecha: '2026-04-23',
+    duracion: '15 min'
+  }
+];
+
 let feriados = [];
 let directorio = (typeof LDAP_DATA !== 'undefined') ? [...LDAP_DATA] : [...DEFAULT_DIRECTORIO];
 let portales = [...DEFAULT_PORTALES];
 let noticias = [...DEFAULT_NOTICIAS];
+let capacitaciones = [...DEFAULT_CAPACITACIONES];
 
 try {
   const sDir = localStorage.getItem('promese_directorio'); if(sDir) directorio = JSON.parse(sDir);
   const sPor = localStorage.getItem('promese_portales'); if(sPor) portales = JSON.parse(sPor);
   const sNot = localStorage.getItem('promese_noticias'); if(sNot) noticias = JSON.parse(sNot);
+  const sCap = localStorage.getItem('promese_capacitaciones'); if(sCap) capacitaciones = JSON.parse(sCap);
 } catch(e) { console.log('Error parseando localStorage, usando defaults', e); }
 
 let dirPage = 1;
@@ -222,6 +237,7 @@ function saveData() {
   localStorage.setItem('promese_directorio', JSON.stringify(directorio));
   localStorage.setItem('promese_portales', JSON.stringify(portales));
   localStorage.setItem('promese_noticias', JSON.stringify(noticias));
+  localStorage.setItem('promese_capacitaciones', JSON.stringify(capacitaciones));
 }
 
 // ── Helpers: Menú del Día ──────────────────────────────────────────────

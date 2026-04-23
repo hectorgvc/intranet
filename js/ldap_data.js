@@ -29,30 +29,30 @@ const LDAP_DATA = [
     },
     {
         "id":  4,
+        "extension":  "Ext.1108",
         "nombre":  "Sofia Altagracia Frias Antigua",
-        "telefono":  "(829)932-3606",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "849-763-3696",
+        "correo":  "frias.sofia@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "frias.sofia@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  5,
+        "extension":  "Ext.1048",
         "nombre":  "Diego Balbuena Acosta",
-        "telefono":  "(829)930-3260",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "849-255-0648",
+        "correo":  "acosta.diego@promesecal.gob.do",
         "cargo":  "Encargado",
-        "correo":  "acosta.diego@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  6,
+        "extension":  "Ext.1116",
         "nombre":  "Yissette Altagracia Mejia Vittini",
-        "telefono":  "(829)903-3725",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "809-999-6076",
+        "correo":  "mejia.yissette@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "mejia.yissette@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  7,
@@ -84,9 +84,9 @@ const LDAP_DATA = [
     {
         "id":  10,
         "nombre":  "Leudys Camacho Martinez",
-        "telefono":  "",
+        "telefono":  "8293088551",
         "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "Direccion de TIC",
+        "extension":  "N/A",
         "cargo":  "Soporte Tecnico",
         "correo":  "camacho.leudys@promesecal.gob.do"
     },
@@ -101,12 +101,12 @@ const LDAP_DATA = [
     },
     {
         "id":  12,
-        "extension":  "Ext.1019",
         "nombre":  "Hector Gregory Vélez Comas",
         "telefono":  "",
-        "correo":  "velez.hector@promesecal.gob.do",
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
+        "extension":  "",
         "cargo":  "Soporte Tecnico",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
+        "correo":  "velez.hector@promesecal.gob.do"
     },
     {
         "id":  13,
@@ -201,9 +201,9 @@ const LDAP_DATA = [
     {
         "id":  23,
         "nombre":  "Johanna Mariel Sanchez Flores",
-        "telefono":  "(809)850-8869",
+        "telefono":  "809-850-8869",
         "departamento":  "Dirección General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Asesora",
         "correo":  "sanchez.johanna@promesecal.gob.do"
     },
@@ -344,12 +344,12 @@ const LDAP_DATA = [
     },
     {
         "id":  39,
+        "extension":  "Ext.1033",
         "nombre":  "Junior Alberto Vasquez",
-        "telefono":  "(809)805-0974",
-        "departamento":  "Almacén General",
-        "extension":  "",
+        "telefono":  "809-805-0974",
+        "correo":  "vasquez.junior@promesecal.gob.do",
         "cargo":  "Auxiliar",
-        "correo":  "vasquez.junior@promesecal.gob.do"
+        "departamento":  "Almacén General"
     },
     {
         "id":  40,
@@ -380,19 +380,19 @@ const LDAP_DATA = [
     },
     {
         "id":  43,
+        "extension":  "Ext.1634",
         "nombre":  "Ariel Jose Cruz Hernandez",
         "telefono":  "",
-        "departamento":  "Sección de Ingresos",
-        "extension":  "",
+        "correo":  "cruz.ariel@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "cruz.ariel@promesecal.gob.do"
+        "departamento":  "Sección de Ingresos"
     },
     {
         "id":  44,
         "nombre":  "Jafreisy Nathalia Baez Manzanillo",
         "telefono":  "",
         "departamento":  "Seguridad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Secretaria",
         "correo":  "baez.jafre@promesecal.gob.do"
     },
@@ -419,18 +419,18 @@ const LDAP_DATA = [
         "nombre":  "Bianca Yajahira Espinal Fulcar",
         "telefono":  "829-774-6453",
         "departamento":  "Jurídica",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista Legal",
         "correo":  "espinal.bianca@promesecal.gob.do"
     },
     {
         "id":  48,
+        "extension":  "Ext.1113",
         "nombre":  "Luz Ysaura Gonzalez Adames",
-        "telefono":  "",
-        "departamento":  "Fiscalización",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "gonzalez.luz@promesecal.gob.do",
         "cargo":  "Supervisora de Mesa",
-        "correo":  "gonzalez.luz@promesecal.gob.do"
+        "departamento":  "Fiscalización"
     },
     {
         "id":  49,
@@ -507,27 +507,27 @@ const LDAP_DATA = [
     {
         "id":  57,
         "nombre":  "Leyda Josefina Nuñez Santos",
-        "telefono":  "(829)283-5045",
+        "telefono":  "829-787-8164",
         "departamento":  "Administrativo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "nunez.leyda@promesecal.gob.do"
     },
     {
         "id":  58,
+        "extension":  "Ext.2202",
         "nombre":  "Randy Lissette Guzman Adames",
-        "telefono":  "",
-        "departamento":  "Presupuesto",
-        "extension":  "Presupuesto",
+        "telefono":  "N/A",
+        "correo":  "guzman.randy@promesecal.gob.do",
         "cargo":  "Contador",
-        "correo":  "guzman.randy@promesecal.gob.do"
+        "departamento":  "Presupuesto"
     },
     {
         "id":  59,
         "nombre":  "Yoleidy Duran",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Contabilidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Contadora II",
         "correo":  "duran.yoleidy@promesecal.gob.do"
     },
@@ -542,102 +542,102 @@ const LDAP_DATA = [
     },
     {
         "id":  61,
+        "extension":  "Ext.1270",
         "nombre":  "Karina Elizabeth Paredes Santos",
-        "telefono":  "(829)806-3689",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "829-806-3689",
+        "correo":  "paredes.karina@promesecal.gob.do",
         "cargo":  "Analista de Nomina",
-        "correo":  "paredes.karina@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  62,
+        "extension":  "Ext.1215",
         "nombre":  "Gisela Veronica Matias Mendez",
-        "telefono":  "(809)964-4775",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "809-658-1625",
+        "correo":  "matias.gisela@promesecal.gob.do",
         "cargo":  "Encargada Capacitacion",
-        "correo":  "matias.gisela@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  63,
         "nombre":  "Wendy Margarita Santana de Angomas",
-        "telefono":  "",
+        "telefono":  "829-285-8975",
         "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Recepcionista",
         "correo":  "santana.wendy@promesecal.gob.do"
     },
     {
         "id":  64,
+        "extension":  "Ext.1224",
         "nombre":  "Garys Miguel Paniagua Canario",
-        "telefono":  "",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "809-973-2428",
+        "correo":  "paniagua.garys@promesecal.gob.do",
         "cargo":  "Encargado de Gestión de Personal",
-        "correo":  "paniagua.garys@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  65,
+        "extension":  "Ext.1219",
         "nombre":  "Estefany Morillo Romero",
-        "telefono":  "",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "809-658-2847",
+        "correo":  "morillo.estefany@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "morillo.estefany@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  66,
+        "extension":  "Ext.1272",
         "nombre":  "Elida Yosaira Feliz Perez",
-        "telefono":  "(829)430-9661",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "829-430-9661",
+        "correo":  "feliz.elida@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "feliz.elida@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  67,
+        "extension":  "Ext.1224",
         "nombre":  "Dionmy Maricely Vidal Estevez",
-        "telefono":  "",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "809-916-9063",
+        "correo":  "vidal.dionmy@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "vidal.dionmy@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  68,
         "nombre":  "Ana Julia Valdez Minyety",
-        "telefono":  "(829)686-9983",
+        "telefono":  "829-686-9983",
         "departamento":  "Jurídica",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista Legal",
         "correo":  "valdez.ana@promesecal.gob.do"
     },
     {
         "id":  69,
+        "extension":  "Ext.1169",
         "nombre":  "Modesto Antonio Batista Zabala",
-        "telefono":  "",
-        "departamento":  "Jurídica",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "batista.modesto@promesecal.gob.do",
         "cargo":  "Analista Legal",
-        "correo":  "batista.modesto@promesecal.gob.do"
+        "departamento":  "Jurídica"
     },
     {
         "id":  70,
+        "extension":  "Ext.1165",
         "nombre":  "Harolin Yuneibis Pujols Perez",
-        "telefono":  "",
-        "departamento":  "Jurídica",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "pujols.harolin@promesecal.gob.do",
         "cargo":  "Asistente",
-        "correo":  "pujols.harolin@promesecal.gob.do"
+        "departamento":  "Jurídica"
     },
     {
         "id":  71,
+        "extension":  "Ext.1006",
         "nombre":  "Elena Maduro Jazmin",
-        "telefono":  "",
-        "departamento":  "Jurídica",
-        "extension":  "",
+        "telefono":  "849-880-4158",
+        "correo":  "maduro.elena@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "maduro.elena@promesecal.gob.do"
+        "departamento":  "Jurídica"
     },
     {
         "id":  72,
@@ -668,30 +668,30 @@ const LDAP_DATA = [
     },
     {
         "id":  75,
+        "extension":  "Ext.1168",
         "nombre":  "Ana Katiuska Ramirez Rojas",
-        "telefono":  "(809)499-1775",
-        "departamento":  "Jurídica",
-        "extension":  "",
+        "telefono":  "809-499-1775",
+        "correo":  "ramirez.katiuska@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "ramirez.katiuska@promesecal.gob.do"
+        "departamento":  "Jurídica"
     },
     {
         "id":  76,
+        "extension":  "Ext.1166",
         "nombre":  "Luis Boyer Medina",
-        "telefono":  "",
-        "departamento":  "Jurídica",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "boyer.luis@promesecal.gob.do",
         "cargo":  "Analista Legal",
-        "correo":  "boyer.luis@promesecal.gob.do"
+        "departamento":  "Jurídica"
     },
     {
         "id":  77,
+        "extension":  "Ext.1120",
         "nombre":  "Yocasta Nileysi Castaño Diaz",
-        "telefono":  "",
-        "departamento":  "Dirección General",
-        "extension":  "",
+        "telefono":  "809-991-0280",
+        "correo":  "castano.yocasta@promesecal.gob.do",
         "cargo":  "Secretaria",
-        "correo":  "castano.yocasta@promesecal.gob.do"
+        "departamento":  "Dirección General"
     },
     {
         "id":  78,
@@ -705,20 +705,20 @@ const LDAP_DATA = [
     {
         "id":  79,
         "nombre":  "Suleica Nadiusca Sanchez Erazo",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Sub DIreccion General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Secretaria",
         "correo":  "sanchez.suleica@promesecal.gob.do"
     },
     {
         "id":  80,
+        "extension":  "Ext.1011",
         "nombre":  "Dilenny Montero Cabrera",
-        "telefono":  "(829)920-3182",
-        "departamento":  "Dirección General",
-        "extension":  "",
+        "telefono":  "829-562-9081",
+        "correo":  "montero.dilenny@promesecal.gob.do",
         "cargo":  "Secretaria",
-        "correo":  "montero.dilenny@promesecal.gob.do"
+        "departamento":  "Dirección General"
     },
     {
         "id":  81,
@@ -740,64 +740,64 @@ const LDAP_DATA = [
     },
     {
         "id":  83,
+        "extension":  "Ext.1190",
         "nombre":  "Carlos Alberto Padilla Duran",
         "telefono":  "",
-        "departamento":  "Dirección General",
-        "extension":  "",
+        "correo":  "padilla.carlos@promesecal.gob.do",
         "cargo":  "SubDirector",
-        "correo":  "padilla.carlos@promesecal.gob.do"
+        "departamento":  "Dirección General"
     },
     {
         "id":  84,
+        "extension":  "Ext.1629",
         "nombre":  "Andrea Candida Difo Marte",
-        "telefono":  "",
-        "departamento":  "Sub-Direccion General",
-        "extension":  "",
+        "telefono":  "809-905-3812",
+        "correo":  "difo.andrea@promesecal.gob.do",
         "cargo":  "Sub-Director",
-        "correo":  "difo.andrea@promesecal.gob.do"
+        "departamento":  "Sub-Direccion General"
     },
     {
         "id":  85,
+        "extension":  "Ext.1052",
         "nombre":  "Laura Lorret Ogando Taveras",
-        "telefono":  "",
-        "departamento":  "Acceso a la Información",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "ogando.laura@promesecal.gob.do",
         "cargo":  "Auxiliar",
-        "correo":  "ogando.laura@promesecal.gob.do"
+        "departamento":  "Acceso a la Información"
     },
     {
         "id":  86,
         "nombre":  "Ivelisse Aurora Rodriguez Jimenez",
-        "telefono":  "",
+        "telefono":  "809-361-1920",
         "departamento":  "Decomiso y Devoluciones",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Verificadora",
-        "correo":  ""
+        "correo":  "rodriguez.ivelisse@promesecal.gob.do"
     },
     {
         "id":  87,
         "nombre":  "Sobeida Maria Tiburcio Bautista",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Comunicaciones",
-        "extension":  "Comunicaciones",
+        "extension":  "N/A",
         "cargo":  "Recepcionista",
         "correo":  "tiburcio.sobeida@promesecal.gob.do"
     },
     {
         "id":  88,
+        "extension":  "Ext.1605",
         "nombre":  "Melody Maria Mota Calderon",
-        "telefono":  "",
-        "departamento":  "Comunicaciones",
-        "extension":  "Comunicaciones",
+        "telefono":  "809-876-7203",
+        "correo":  "mota.melody@promesecal.gob.do",
         "cargo":  "Recepcionista",
-        "correo":  "mota.melody@promesecal.gob.do"
+        "departamento":  "Comunicaciones"
     },
     {
         "id":  89,
         "nombre":  "Johnny Armando Romero Rosario",
-        "telefono":  "(809)258-9271",
+        "telefono":  "809-258-9271",
         "departamento":  "Comunicaciones",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar Administrativo",
         "correo":  "romero.johnny@promesecal.gob.do"
     },
@@ -806,68 +806,68 @@ const LDAP_DATA = [
         "nombre":  "Genesis Argentina Martinez Ramirez",
         "telefono":  "",
         "departamento":  "Comunicaciones",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Recepcionista",
         "correo":  "martinez.genesis@promesecal.gob.do"
     },
     {
         "id":  91,
+        "extension":  "Ext.1223",
         "nombre":  "Francisco de la Cruz Sanchez",
-        "telefono":  "(829)986-3165",
-        "departamento":  "Dirección General",
-        "extension":  "",
+        "telefono":  "829-986-3165",
+        "correo":  "delacruz.francisco@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "delacruz.francisco@promesecal.gob.do"
+        "departamento":  "Dirección General"
     },
     {
         "id":  92,
+        "extension":  "Ext.1307",
         "nombre":  "Anyelo Javier Mercedes",
-        "telefono":  "",
-        "departamento":  "Comunicaciones",
-        "extension":  "",
+        "telefono":  "829-697-6123",
+        "correo":  "mercedes.anyelo@promesecal.gob.do",
         "cargo":  "Tecnico Administrativo",
-        "correo":  "mercedes.anyelo@promesecal.gob.do"
+        "departamento":  "Comunicaciones"
     },
     {
         "id":  93,
         "nombre":  "Alonzo Brand Aquino",
-        "telefono":  "",
+        "telefono":  "849-255-0692",
         "departamento":  "Comunicaciones",
-        "extension":  "Comunicaciones",
+        "extension":  "N/A",
         "cargo":  "Diseñador Pagina Web",
         "correo":  "aquino.alonzo@promesecal.gob.do"
     },
     {
         "id":  94,
+        "extension":  "Ext.1023",
         "nombre":  "Yessica Natalie Henry Mondesi",
-        "telefono":  "829-792-3743",
-        "departamento":  "Bienestar Social",
-        "extension":  "",
+        "telefono":  "809-658-0592",
+        "correo":  "henry.yessica@promesecal.gob.do",
         "cargo":  "Técnico Administrativo",
-        "correo":  "henry.yessica@promesecal.gob.do"
+        "departamento":  "Bienestar Social"
     },
     {
         "id":  95,
+        "extension":  "Ext.1139",
         "nombre":  "Manuela Maria Jimenez Moscoso",
-        "telefono":  "(829)633-7690",
-        "departamento":  "Bienestar Social",
-        "extension":  "",
+        "telefono":  "849-763-3693",
+        "correo":  "jimenez.manuela@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "jimenez.manuela@promesecal.gob.do"
+        "departamento":  "Bienestar Social"
     },
     {
         "id":  96,
         "nombre":  "Laritza Miguelina Dominguez Heredia",
-        "telefono":  "(829)721-5592",
+        "telefono":  "809-904-8566",
         "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "dominguez.laritza@promesecal.gob.do"
     },
     {
         "id":  97,
         "nombre":  "Eulalia Reyes Peralta",
-        "telefono":  "",
+        "telefono":  "849-763-2827",
         "departamento":  "Institucional",
         "extension":  "",
         "cargo":  "Colaborador",
@@ -876,108 +876,108 @@ const LDAP_DATA = [
     {
         "id":  98,
         "nombre":  "Alexandra Nicolasa Garcia Marte",
-        "telefono":  "(809)966-1411",
+        "telefono":  "809-876-6727",
         "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "FARMACEUTICA",
         "correo":  "garcia.alexandra@promesecal.gob.do"
     },
     {
         "id":  99,
         "nombre":  "Ramon Ignacio Diaz Mojica",
-        "telefono":  "(809)653-7218",
+        "telefono":  "809-653-7218",
         "departamento":  "Inventario",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar",
         "correo":  "diaz.ramon@promesecal.gob.do"
     },
     {
         "id":  100,
         "nombre":  "Luisa Maria Penzo de Almonte",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Control de Calidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista de Inspección de Calidad",
         "correo":  "penzo.luisa@promesecal.gob.do"
     },
     {
         "id":  101,
+        "extension":  "Ext.1249",
         "nombre":  "Leocadia Moronta Espinal",
-        "telefono":  "(809)991-7163",
-        "departamento":  "Dirección General",
-        "extension":  "",
+        "telefono":  "849-763-2790",
+        "correo":  "moronta.leocadia@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "moronta.leocadia@promesecal.gob.do"
+        "departamento":  "Dirección General"
     },
     {
         "id":  102,
+        "extension":  "Ext.1247",
         "nombre":  "Indira Miosotis De Jesus De Jesus",
-        "telefono":  "(809)695-1597",
-        "departamento":  "Control de Calidad",
-        "extension":  "",
+        "telefono":  "809-961-7218",
+        "correo":  "dejesus.indira@promesecal.gob.do",
         "cargo":  "Asistente Administrativa",
-        "correo":  "dejesus.indira@promesecal.gob.do"
+        "departamento":  "Control de Calidad"
     },
     {
         "id":  103,
         "nombre":  "Hilario Rodriguez Evangelista",
-        "telefono":  "(809)935-8544",
+        "telefono":  "809-876-6694",
         "departamento":  "Dirección General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "rodriguez.hilario@promesecal.gob.do"
     },
     {
         "id":  104,
         "nombre":  "Cristina Isabel Garces Montero",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Control de Calidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista de Farmacia",
         "correo":  "garces.cristina@promesecal.gob.do"
     },
     {
         "id":  105,
         "nombre":  "Antonio Puello Plasencia",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Control de Calidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Inspector de Ampollas y Viales",
         "correo":  "puello.antonio@promesecal.gob.do"
     },
     {
         "id":  106,
+        "extension":  "Ext.1250",
         "nombre":  "Ana Raquel de la Cruz Feliz",
-        "telefono":  "809-816-4565",
-        "departamento":  "Dirección General",
-        "extension":  "",
+        "telefono":  "849-804-7691",
+        "correo":  "delacruz.ana@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "delacruz.ana@promesecal.gob.do"
+        "departamento":  "Dirección General"
     },
     {
         "id":  107,
         "nombre":  "Alicia Elena Florian Castro",
-        "telefono":  "(829)930-2272",
+        "telefono":  "809-876-6470",
         "departamento":  "Control de Calidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista Farmaceutico",
         "correo":  "florian.alicia@promesecal.gob.do"
     },
     {
         "id":  108,
+        "extension":  "Ext.1163",
         "nombre":  "Ruth Delania Tavarez Luciano",
-        "telefono":  "(849)244-7040",
-        "departamento":  "Dirección General",
-        "extension":  "",
+        "telefono":  "809-991-0274",
+        "correo":  "tavarez.ruth@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "tavarez.ruth@promesecal.gob.do"
+        "departamento":  "Dirección General"
     },
     {
         "id":  109,
         "nombre":  "Ramon Jonathan Mella Hidalgo",
-        "telefono":  "",
+        "telefono":  "829-846-4353",
         "departamento":  "Dirección General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "mella.ramon@promesecal.gob.do"
     },
@@ -992,45 +992,45 @@ const LDAP_DATA = [
     },
     {
         "id":  111,
+        "extension":  "Ext.1041",
         "nombre":  "Anyeri Andreina Vigay",
-        "telefono":  "1025",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "telefono":  "",
+        "correo":  "vigay.anyeri@promesecal.gob.do",
         "cargo":  "Asistente Administrativo",
-        "correo":  "vigay.anyeri@promesecal.gob.do"
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
     },
     {
         "id":  112,
+        "extension":  "Ext.5000",
         "nombre":  "Mesa de Ayuda",
-        "telefono":  "",
-        "departamento":  "Institucional",
-        "extension":  "",
+        "telefono":  "5000",
+        "correo":  "mesadeayuda@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "mesadeayuda@promesecal.gob.do"
+        "departamento":  "Institucional"
     },
     {
         "id":  113,
+        "extension":  "Ext.1051",
         "nombre":  "Juan Daniel Taveras Frometa",
         "telefono":  "",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "correo":  "taveras.juan@promesecal.gob.do",
         "cargo":  "Soporte Tecnico",
-        "correo":  "taveras.juan@promesecal.gob.do"
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
     },
     {
         "id":  114,
+        "extension":  "Ext.1066",
         "nombre":  "Jefferson Alberto Almonte Then",
-        "telefono":  "",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "almonte.jefferson@promesecal.gob.do",
         "cargo":  "Encargado",
-        "correo":  "almonte.jefferson@promesecal.gob.do"
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
     },
     {
         "id":  115,
         "extension":  "Ext.1017",
         "nombre":  "Hector Manuel Mesa Garcia",
-        "telefono":  "",
+        "telefono":  "N/A",
         "correo":  "mesa.hector@promesecal.gob.do",
         "cargo":  "Programador I",
         "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
@@ -1038,416 +1038,416 @@ const LDAP_DATA = [
     {
         "id":  116,
         "nombre":  "Luther Antonio Cepeda Guzman",
-        "telefono":  "(809)590-6492",
+        "telefono":  "809-590-6492",
         "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitador",
         "correo":  "cepeda.luther@promesecal.gob.do"
     },
     {
         "id":  117,
         "nombre":  "Justina Rafaela Alejo Garcia",
-        "telefono":  "(809)913-3314",
+        "telefono":  "809-991-0690",
         "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitador",
         "correo":  "alejo.justina@promesecal.gob.do"
     },
     {
         "id":  118,
+        "extension":  "Ext.1090",
         "nombre":  "Julisa Norberto Rosario",
-        "telefono":  "",
-        "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "telefono":  "809-964-5111",
+        "correo":  "norberto.julisa@promesecal.gob.do",
         "cargo":  "Directora",
-        "correo":  "norberto.julisa@promesecal.gob.do"
+        "departamento":  "Tramites y Servicios"
     },
     {
         "id":  119,
         "nombre":  "Elizabeth Sanchez Diaz",
-        "telefono":  "",
+        "telefono":  "829-308-9602",
         "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista",
         "correo":  "sanchez.elizabeth@promesecal.gob.do"
     },
     {
         "id":  120,
         "nombre":  "Clemente Zabala Pinales",
-        "telefono":  "(829)697-1815",
+        "telefono":  "829-697-1815",
         "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista",
         "correo":  "Zabala.Clemente@promesecal.gob.do"
     },
     {
         "id":  121,
         "nombre":  "Blanca Iris Mejia Mercedes",
-        "telefono":  "(809)964-6620",
+        "telefono":  "849-255-0696",
         "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista",
         "correo":  "mejia.blanca@promesecal.gob.do"
     },
     {
         "id":  122,
+        "extension":  "Ext.1030",
         "nombre":  "Arelis Julissa Jimenez Lora",
-        "telefono":  "809-431-7462",
-        "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "telefono":  "809-876-6720",
+        "correo":  "jimenez.arelis@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "jimenez.arelis@promesecal.gob.do"
+        "departamento":  "Tramites y Servicios"
     },
     {
         "id":  123,
         "nombre":  "Alejandrina Antonia Mora Paulino",
-        "telefono":  "(809)876-7068",
+        "telefono":  "809-876-7068",
         "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista de Requerimiento y Logistica",
         "correo":  "mora.alejandrina@promesecal.gob.do"
     },
     {
         "id":  124,
+        "extension":  "Ext.1087",
         "nombre":  "Juana María Pumarol Peña",
-        "telefono":  "",
-        "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "telefono":  "809-858-4194",
+        "correo":  "pumarol.juana@promesecal.gob.do",
         "cargo":  "Analista de Atención a Cliente",
-        "correo":  "pumarol.juana@promesecal.gob.do"
+        "departamento":  "Tramites y Servicios"
     },
     {
         "id":  125,
         "nombre":  "Heidy Francisca Hidalgo Figueroa",
-        "telefono":  "",
+        "telefono":  "809-993-3169",
         "departamento":  "Tramites y Servicios",
-        "extension":  "Direccion de Tramites y Servicios",
+        "extension":  "N/A",
         "cargo":  "Analista de Servicio al Cliente",
         "correo":  "hidalgo.heidy@promesecal.gob.do"
     },
     {
         "id":  126,
+        "extension":  "Ext.1098",
         "nombre":  "Yanet Rafaela Saint Hilaire Ovalle",
-        "telefono":  "",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "809-658-0652",
+        "correo":  "sainthilaire.yanet@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "sainthilaire.yanet@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  127,
+        "extension":  "Ext.1097",
         "nombre":  "Remis Maria Fulcar Quevedo",
-        "telefono":  "(829)284-5479",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "849-763-3689",
+        "correo":  "fulcar.remis@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "fulcar.remis@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  128,
+        "extension":  "Ext.1022",
         "nombre":  "Paola Jaquez Capellan",
-        "telefono":  "",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "jaquez.paola@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "jaquez.paola@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  129,
         "nombre":  "Maria Elena Tapia",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "tapia.maria@promesecal.gob.do"
     },
     {
         "id":  130,
         "nombre":  "Juan Bienvenido Moncion Agramonte",
-        "telefono":  "",
+        "telefono":  "809-968-5492",
         "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitador",
         "correo":  "moncion.juan@promesecal.gob.do"
     },
     {
         "id":  131,
+        "extension":  "Ext.1401",
         "nombre":  "Daniel Antonio Medina Reyes",
-        "telefono":  "",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "809-991-0485",
+        "correo":  "medina.daniel@promesecal.gob.do",
         "cargo":  "Analista de Operaciones",
-        "correo":  "medina.daniel@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  132,
+        "extension":  "Ext.1190",
         "nombre":  "Kerlayner Cuevas Mendez",
-        "telefono":  "(829)570-9990",
-        "departamento":  "Planificación y Desarrollo",
-        "extension":  "",
+        "telefono":  "809-922-4566",
+        "correo":  "cuevas.kerlayner@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "cuevas.kerlayner@promesecal.gob.do"
+        "departamento":  "Planificación y Desarrollo"
     },
     {
         "id":  133,
+        "extension":  "Ext.1191",
         "nombre":  "Juana Rosario Lugo",
-        "telefono":  "(849)882-6749",
-        "departamento":  "Planificación y Desarrollo",
-        "extension":  "",
+        "telefono":  "829-922-4534",
+        "correo":  "rosario.juana@promesecal.gob.do",
         "cargo":  "Encargada Desarrollo Institucional",
-        "correo":  "rosario.juana@promesecal.gob.do"
+        "departamento":  "Planificación y Desarrollo"
     },
     {
         "id":  134,
+        "extension":  "Ext.1100",
         "nombre":  "Yuneyri Maria Contreras Torres",
-        "telefono":  "(849)881-1938",
-        "departamento":  "Planificación y Desarrollo",
-        "extension":  "",
+        "telefono":  "849-642-7800",
+        "correo":  "contreras.yuneyri@promesecal.gob.do",
         "cargo":  "Analista",
-        "correo":  "contreras.yuneyri@promesecal.gob.do"
+        "departamento":  "Planificación y Desarrollo"
     },
     {
         "id":  135,
+        "extension":  "Ext.1192",
         "nombre":  "Sineyda Margarita Guzman",
-        "telefono":  "",
-        "departamento":  "Gestion de Calidad",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "guzman.sineyda@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "guzman.sineyda@promesecal.gob.do"
+        "departamento":  "Gestion de Calidad"
     },
     {
         "id":  136,
+        "extension":  "Ext.1205",
         "nombre":  "Mariela Perez",
-        "telefono":  "",
-        "departamento":  "Comunicaciones",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "perez.mariela@promesecal.gob.do",
         "cargo":  "Secretaria",
-        "correo":  "perez.mariela@promesecal.gob.do"
+        "departamento":  "Comunicaciones"
     },
     {
         "id":  137,
         "nombre":  "Dennis Margarita Cuello Pichardo",
-        "telefono":  "(809)708-0617",
+        "telefono":  "809-708-0617",
         "departamento":  "Planificación y Desarrollo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar Administrativa",
         "correo":  "cuello.dennis@promesecal.gob.do"
     },
     {
         "id":  138,
+        "extension":  "Ext.1196",
         "nombre":  "Miguelina Reynoso Moreno",
-        "telefono":  "",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "849-642-7821",
+        "correo":  "reynoso.miguelina@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "reynoso.miguelina@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  139,
+        "extension":  "Ext.1402",
         "nombre":  "Jeidy Laura Mendoza Feliz",
-        "telefono":  "",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "telefono":  "829-308-8547",
+        "correo":  "mendoza.jeidy@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "mendoza.jeidy@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  140,
+        "extension":  "Ext.1159",
         "nombre":  "Esmirnalee Santana Ortega",
         "telefono":  "",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "correo":  "santana.esmirnalee@promesecal.gob.do",
         "cargo":  "Analista de Compras y Medicamentos",
-        "correo":  "santana.esmirnalee@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  141,
+        "extension":  "Ext.1205",
         "nombre":  "Paola Santa Farias Pacians",
-        "telefono":  "(829)629-7230",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "829-629-7230",
+        "correo":  "farias.paola@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "farias.paola@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  142,
+        "extension":  "Ext.1203",
         "nombre":  "Kency Joel Caminero Gutierrez",
-        "telefono":  "",
-        "departamento":  "Licitaciones",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "caminero.kency@promesecal.gob.do",
         "cargo":  "Asistente Administrativo I",
-        "correo":  "caminero.kency@promesecal.gob.do"
+        "departamento":  "Licitaciones"
     },
     {
         "id":  143,
+        "extension":  "Ext.1176",
         "nombre":  "Elizabeth de la Cruz Telleria",
-        "telefono":  "",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "telefono":  "829-255-0688",
+        "correo":  "delacruz.elizabeth@promesecal.gob.do",
         "cargo":  "Secretaria",
-        "correo":  "delacruz.elizabeth@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  144,
         "nombre":  "Carmen Dinorah Pimentel Baez",
-        "telefono":  "(829)351-5166",
+        "telefono":  "829-351-5166",
         "departamento":  "Administrativo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "pimentel.carmen@promesecal.gob.do"
     },
     {
         "id":  145,
+        "extension":  "Ext.1629",
         "nombre":  "Brenda Almonte Rivera",
         "telefono":  "",
-        "departamento":  "Licitaciones",
-        "extension":  "",
+        "correo":  "almonte.brenda@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "almonte.brenda@promesecal.gob.do"
+        "departamento":  "Licitaciones"
     },
     {
         "id":  146,
+        "extension":  "Ext.1290",
         "nombre":  "Frederick Anthony Velasquez Guzman",
         "telefono":  "",
-        "departamento":  "Financiero",
-        "extension":  "",
+        "correo":  "velasquez.frederick@promesecal.gob.do",
         "cargo":  "Digitador",
-        "correo":  "velasquez.frederick@promesecal.gob.do"
+        "departamento":  "Financiero"
     },
     {
         "id":  147,
         "nombre":  "Hilda Uniris Geronimo Ferreras",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Administrativo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "geronimo.hilda@promesecal.gob.do"
     },
     {
         "id":  148,
+        "extension":  "Ext.1143",
         "nombre":  "Jesuscita Feliz de Martinez",
-        "telefono":  "(829)770-7484",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "809-876-5914",
+        "correo":  "feliz.jesucita@promesecal.gob.do",
         "cargo":  "Coordinadora",
-        "correo":  "feliz.jesucita@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  149,
+        "extension":  "Ext.1134",
         "nombre":  "Johanna Baez Contreras de Delgado",
-        "telefono":  "",
-        "departamento":  "Financiero",
-        "extension":  "",
+        "telefono":  "809-861-8881",
+        "correo":  "baez.johanna@promesecal.gob.do",
         "cargo":  "Secretaria",
-        "correo":  "baez.johanna@promesecal.gob.do"
+        "departamento":  "Financiero"
     },
     {
         "id":  150,
+        "extension":  "Ext.1079",
         "nombre":  "Gisell Alfonsina Guerrero Juma",
-        "telefono":  "",
-        "departamento":  "Servicios Generales",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "guerrero.gisell@promesecal.gob.do",
         "cargo":  "Secretaria",
-        "correo":  "guerrero.gisell@promesecal.gob.do"
+        "departamento":  "Servicios Generales"
     },
     {
         "id":  151,
+        "extension":  "Ext.1202",
         "nombre":  "Adalkira Altagracia De la Rosa Javier",
-        "telefono":  "(849)650-6306",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "809-876-6408",
+        "correo":  "delarosa.adalkira@promesecal.gob.do",
         "cargo":  "SECRETARIA I",
-        "correo":  "delarosa.adalkira@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  152,
         "nombre":  "Arelis Roa Beriguete",
-        "telefono":  "(809)817-5577",
+        "telefono":  "809-817-5577",
         "departamento":  "Sección de Ingresos",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "roa.arelis@promesecal.gob.do"
     },
     {
         "id":  153,
         "nombre":  "Lidia Albania Torres Peña",
-        "telefono":  "(809)209-7116",
+        "telefono":  "809-209-7116",
         "departamento":  "Administrativo",
-        "extension":  "",
-        "cargo":  "Colaborador",
+        "extension":  "N/A",
+        "cargo":  "Auxiliar Administrativo",
         "correo":  "torres.lidia@promesecal.gob.do"
     },
     {
         "id":  154,
+        "extension":  "Ext.1070",
         "nombre":  "Maria Cristina Prado de Benitez",
-        "telefono":  "(809)863-1123",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "829-569-5172",
+        "correo":  "prado.maria@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "prado.maria@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  155,
+        "extension":  "Ext.1187",
         "nombre":  "Manuel Emilio Florian Mendez",
-        "telefono":  "",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "florian.manuel@promesecal.gob.do",
         "cargo":  "Encargado",
-        "correo":  "florian.manuel@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  156,
         "nombre":  "Juan Bautista Vasquez Guzman",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Seccion de Inventarios de Insumo para la Salud",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Seccion de Inventario",
         "correo":  "vasquez.juan@promesecal.gob.do"
     },
     {
         "id":  157,
         "nombre":  "Jorge Luis Perez Gerardo",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Administrativo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "perez.jorge@promesecal.gob.do"
     },
     {
         "id":  158,
+        "extension":  "Ext.1188",
         "nombre":  "Maria Altagracia Frias Geraldo",
-        "telefono":  "(809)350-0651",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "809-350-0651",
+        "correo":  "frias.maria@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "frias.maria@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  159,
+        "extension":  "Ext.1150",
         "nombre":  "Enolin Rocio Matos Florián de Ramírez",
-        "telefono":  "",
-        "departamento":  "Cuentas por Pagar",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "matos.enolin@promesecal.gob.do",
         "cargo":  "Contadora",
-        "correo":  "matos.enolin@promesecal.gob.do"
+        "departamento":  "Cuentas por Pagar"
     },
     {
         "id":  160,
         "nombre":  "Julia Elena Giron Fernandez",
         "telefono":  "",
         "departamento":  "Contabilidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Contadora",
         "correo":  "giron.julia@promesecal.gob.do"
     },
     {
         "id":  161,
+        "extension":  "Ext.1148",
         "nombre":  "Kenia Maria Germosen Vasquez",
-        "telefono":  "(849)919-9439",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "849-919-9439",
+        "correo":  "germosen.kenia@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "germosen.kenia@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  162,
@@ -1461,79 +1461,79 @@ const LDAP_DATA = [
     {
         "id":  163,
         "nombre":  "Rosa Josefina Rosario Tejada",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Financiero",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Contador I",
         "correo":  "rosario.rosa@promesecal.gob.do"
     },
     {
         "id":  164,
         "nombre":  "Santa Margarita Feliz Feliz",
-        "telefono":  "(809)696-4450",
+        "telefono":  "809-696-4450",
         "departamento":  "Administrativo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Contadora",
         "correo":  "feliz.santa@promesecal.gob.do"
     },
     {
         "id":  165,
         "nombre":  "Virgilia del Carmen Rodriguez Gutierrez",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Administrativo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "rodriguez.virgilia@promesecal.gob.do"
     },
     {
         "id":  166,
+        "extension":  "Ext.1150",
         "nombre":  "Yafanny Albania Mora Martinez",
-        "telefono":  "(809)416-3828",
-        "departamento":  "Cuentas por Pagar",
-        "extension":  "",
+        "telefono":  "829-566-7935",
+        "correo":  "mora.yafanny@promesecal.gob.do",
         "cargo":  "Auxiliar Contabilidad",
-        "correo":  "mora.yafanny@promesecal.gob.do"
+        "departamento":  "Cuentas por Pagar"
     },
     {
         "id":  167,
         "nombre":  "Eligia Duverge Corporan",
-        "telefono":  "(809)602-1836",
+        "telefono":  "809-602-1836",
         "departamento":  "Administrativo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "duverge.eligia@promesecal.gob.do"
     },
     {
         "id":  168,
+        "extension":  "Ext.1086",
         "nombre":  "Glarivel de los Milagros Siri Ramos",
-        "telefono":  "(829)283-5226",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "829-283-5226",
+        "correo":  "siri.glarivel@promesecal.gob.do",
         "cargo":  "Contador 1",
-        "correo":  "siri.glarivel@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  169,
+        "extension":  "Ext.1148",
         "nombre":  "Johanny Margarita Rodriguez De Jesus",
-        "telefono":  "(809)914-3262",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "809-914-3262",
+        "correo":  "rodriguez.johanny@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "rodriguez.johanny@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  170,
+        "extension":  "Ext.1091",
         "nombre":  "Jose del Carmen Ureña Ferreira",
-        "telefono":  "(809)214-9352",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "809-214-9352",
+        "correo":  "urena.jose@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "urena.jose@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  171,
         "nombre":  "Melania Almonte Mojena",
-        "telefono":  "(829)878-1350",
+        "telefono":  "809-658-0571",
         "departamento":  "Administrativo",
         "extension":  "",
         "cargo":  "Colaborador",
@@ -1542,178 +1542,178 @@ const LDAP_DATA = [
     {
         "id":  172,
         "nombre":  "Joeliz Pamela Carrasco Carrasco",
-        "telefono":  "",
+        "telefono":  "829-603-3702",
         "departamento":  "Contabilidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar",
         "correo":  "carrasco.joeliz@promesecal.gob.do"
     },
     {
         "id":  173,
         "nombre":  "Milagros Alejandra Linares de Arias",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Control de Bienes",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar",
         "correo":  "linares.milagros@promesecal.gob.do"
     },
     {
         "id":  174,
         "nombre":  "Nahuel Alexander Rodriguez Langomas",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Contabilidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar",
         "correo":  "rodriguez.nahuel@promesecal.gob.do"
     },
     {
         "id":  175,
+        "extension":  "Ext.1406",
         "nombre":  "Onelys Dahian Medrano Feliz de Sosa",
-        "telefono":  "",
-        "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "medrano.onelys@promesecal.gob.do",
         "cargo":  "Auxiliar",
-        "correo":  "medrano.onelys@promesecal.gob.do"
+        "departamento":  "Farmacia del Pueblo"
     },
     {
         "id":  176,
         "nombre":  "Rosa Portes Santana",
-        "telefono":  "(809)873-5135",
+        "telefono":  "809-873-5135",
         "departamento":  "Administrativo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "portes.rosa@promesecal.gob.do"
     },
     {
         "id":  177,
+        "extension":  "Ext.1626",
         "nombre":  "Yovanina Coronado de Dominici",
-        "telefono":  "",
-        "departamento":  "Tramites y Servicios Santiago",
-        "extension":  "",
+        "telefono":  "809-658-0508",
+        "correo":  "coronado.yovanina@promesecal.gob.do",
         "cargo":  "Analista",
-        "correo":  "coronado.yovanina@promesecal.gob.do"
+        "departamento":  "Tramites y Servicios Santiago"
     },
     {
         "id":  178,
+        "extension":  "Ext.1624",
         "nombre":  "Yessenia Altagracia Minier de Inoa",
-        "telefono":  "(829)622-8675",
-        "departamento":  "Tramites y Servicios Santiago",
-        "extension":  "",
+        "telefono":  "809-805-1864",
+        "correo":  "minier.yessenia@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "minier.yessenia@promesecal.gob.do"
+        "departamento":  "Tramites y Servicios Santiago"
     },
     {
         "id":  179,
+        "extension":  "Ext.1625",
         "nombre":  "Madeyvi Inmaculada Madera Rodriguez",
-        "telefono":  "(849)360-6868",
-        "departamento":  "Tramites y Servicios Santiago",
-        "extension":  "",
+        "telefono":  "809-658-2841",
+        "correo":  "madera.madeyvi@promesecal.gob.do",
         "cargo":  "Digitador",
-        "correo":  "madera.madeyvi@promesecal.gob.do"
+        "departamento":  "Tramites y Servicios Santiago"
     },
     {
         "id":  180,
+        "extension":  "Ext.1620",
         "nombre":  "Starlin Felipe Toribio",
-        "telefono":  "",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "telefono":  "809-991-0603",
+        "correo":  "toribio.starlin@promesecal.gob.do",
         "cargo":  "Soporte Tecnico",
-        "correo":  "toribio.starlin@promesecal.gob.do"
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
     },
     {
         "id":  181,
+        "extension":  "Ext.1623",
         "nombre":  "Alfonsina de Jesus Méndez Reyes",
-        "telefono":  "",
-        "departamento":  "Recursos Humanos Santiago",
-        "extension":  "",
+        "telefono":  "829-797-3160",
+        "correo":  "mendez.alfonsina@promesecal.gob.do",
         "cargo":  "Analista",
-        "correo":  "mendez.alfonsina@promesecal.gob.do"
+        "departamento":  "Recursos Humanos Santiago"
     },
     {
         "id":  182,
+        "extension":  "Ext.1602",
         "nombre":  "Juan Pablo Ureña Gonzalez",
-        "telefono":  "",
-        "departamento":  "Operaciones y Logística - Almacén Santiago",
-        "extension":  "",
+        "telefono":  "829-849-0674",
+        "correo":  "urena.juan@promesecal.gob.do",
         "cargo":  "Encargado",
-        "correo":  "urena.juan@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística - Almacén Santiago"
     },
     {
         "id":  183,
+        "extension":  "Ext.1618",
         "nombre":  "Lissette Maria Nuñez Fernandez",
-        "telefono":  "",
-        "departamento":  "Operaciones y Logística - Almacén Santiago",
-        "extension":  "",
+        "telefono":  "829-921-7210",
+        "correo":  "nunez.lissette@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "nunez.lissette@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística - Almacén Santiago"
     },
     {
         "id":  184,
+        "extension":  "Ext.1151",
         "nombre":  "Massiel Altagracia Cruz Santos",
-        "telefono":  "",
-        "departamento":  "Operación y Logística Santiago",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "cruz.massiel@promesecal.gob.do",
         "cargo":  "Digitadora",
-        "correo":  "cruz.massiel@promesecal.gob.do"
+        "departamento":  "Operación y Logística Santiago"
     },
     {
         "id":  185,
+        "extension":  "Ext.1627",
         "nombre":  "Yeuri Manuel Cabrera Vasquez",
-        "telefono":  "",
-        "departamento":  "Operaciones y Logística - Almacén Santiago",
-        "extension":  "",
+        "telefono":  "809-876-5811",
+        "correo":  "cabrera.yeuri@promesecal.gob.do",
         "cargo":  "Auxiliar",
-        "correo":  "cabrera.yeuri@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística - Almacén Santiago"
     },
     {
         "id":  186,
+        "extension":  "Ext.1632",
         "nombre":  "José Dolores Vasquez Alcantara",
-        "telefono":  "",
-        "departamento":  "Unidad de Ingeniería e Infraestructura Santiago",
-        "extension":  "",
+        "telefono":  "809-889-0123",
+        "correo":  "vasquez.jose@promesecal.gob.do",
         "cargo":  "Supervisor de Mejora y Acondicionamiento Físico",
-        "correo":  "vasquez.jose@promesecal.gob.do"
+        "departamento":  "Unidad de Ingeniería e Infraestructura Santiago"
     },
     {
         "id":  187,
+        "extension":  "Ext.1634",
         "nombre":  "Gissell Altagracia Rodríguez Cerda",
-        "telefono":  "",
-        "departamento":  "Administrativo Archivos y Correspondencia Santiago",
-        "extension":  "",
+        "telefono":  "809-601-9310",
+        "correo":  "rodriguez.gissell@promesecal.gob.do",
         "cargo":  "Recepcionista",
-        "correo":  "rodriguez.gissell@promesecal.gob.do"
+        "departamento":  "Administrativo Archivos y Correspondencia Santiago"
     },
     {
         "id":  188,
         "nombre":  "Mendelssohn Rafael Pichardo Guzmán",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Seguridad Santiago",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Encargado",
         "correo":  "pichardo.Mendelssohn@promesecal.gob.do"
     },
     {
         "id":  189,
         "nombre":  "Mariana Morales Rojas",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Almacén General Los Alcarrizos",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Secretaria",
         "correo":  "morales.mariana@promesecal.gob.do"
     },
     {
         "id":  190,
         "nombre":  "Michelle Alejandra Acevedo de los Santos",
-        "telefono":  "",
+        "telefono":  "829-810-4274",
         "departamento":  "Operaciones y Logísticas - Almacén Monumental",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisor de Mesa",
         "correo":  "acevedo.michelle@promesecal.gob.do"
     },
     {
         "id":  191,
         "nombre":  "Jose Manuel Beriguete Perez",
-        "telefono":  "",
+        "telefono":  "849-255-0674",
         "departamento":  "Dirección General",
         "extension":  "",
         "cargo":  "Colaborador",
@@ -1721,37 +1721,37 @@ const LDAP_DATA = [
     },
     {
         "id":  192,
+        "extension":  "Ext.1405",
         "nombre":  "Altagracia Marianyi Pérez Lluberes",
-        "telefono":  "(829)308-2344",
-        "departamento":  "Administrativo",
-        "extension":  "",
-        "cargo":  "Colaborador",
-        "correo":  "perez.marianyi@promesecal.gob.do"
+        "telefono":  "829-308-2344",
+        "correo":  "perez.marianyi@promesecal.gob.do",
+        "cargo":  "SUPERVISOR DE OBRAS, CONST. Y SERVICIOS",
+        "departamento":  "Direccion Administrativa Financiera"
     },
     {
         "id":  193,
+        "extension":  "Ext.1183",
         "nombre":  "Amaury Jose Felix Arias",
-        "telefono":  "(809)703-3551",
-        "departamento":  "Ingeniería e Infraestructura",
-        "extension":  "",
+        "telefono":  "829-308-2299",
+        "correo":  "arias.amaury@promesecal.gob.do",
         "cargo":  "Arquitecto - Supervisor de Obras,",
-        "correo":  "arias.amaury@promesecal.gob.do"
+        "departamento":  "Ingeniería e Infraestructura"
     },
     {
         "id":  194,
         "nombre":  "Jorge Arturo Sierra del Valle",
         "telefono":  "",
         "departamento":  "Obras, Construcciones y Servicios",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisor",
         "correo":  "sierra.jorge@promesecal.gob.do"
     },
     {
         "id":  195,
         "nombre":  "Rafael Encarnacion",
-        "telefono":  "(809)867-2475",
+        "telefono":  "829-909-5909",
         "departamento":  "Administrativo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "encarnacion.rafael@promesecal.gob.do"
     },
@@ -1767,54 +1767,54 @@ const LDAP_DATA = [
     {
         "id":  197,
         "nombre":  "Francisco Aracena Frias",
-        "telefono":  "829-875-4152",
+        "telefono":  "809-899-9408",
         "departamento":  "Ingeniería e Infraestructura",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisor",
         "correo":  "aracena.francisco@promesecal.gob.do"
     },
     {
         "id":  198,
         "nombre":  "Roque Medina Pachano",
-        "telefono":  "",
+        "telefono":  "829-908-4421",
         "departamento":  "Ingeniería e Infraestructura",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisor",
         "correo":  "medina.roque@promesecal.gob.do"
     },
     {
         "id":  199,
+        "extension":  "Ext.1192",
         "nombre":  "Carlos Antonio Arias Hernandez",
-        "telefono":  "",
-        "departamento":  "Ingeniería e Infraestructura",
-        "extension":  "",
+        "telefono":  "809-906-4308",
+        "correo":  "arias.carlos@promesecal.gob.do",
         "cargo":  "Supervisor",
-        "correo":  "arias.carlos@promesecal.gob.do"
+        "departamento":  "Ingeniería e Infraestructura"
     },
     {
         "id":  200,
         "nombre":  "Yolanny Alexandra Santos Bautista",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Ingeniería e Infraestructura",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Secretaria",
         "correo":  "santos.yolanny@promesecal.gob.do"
     },
     {
         "id":  201,
+        "extension":  "Ext.1063",
         "nombre":  "Beato Diaz",
-        "telefono":  "",
-        "departamento":  "Servicios Generales",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "diaz.beato@promesecal.gob.do",
         "cargo":  "Mayordomo",
-        "correo":  "diaz.beato@promesecal.gob.do"
+        "departamento":  "Servicios Generales"
     },
     {
         "id":  202,
         "nombre":  "Ramona Bencosme Faña",
-        "telefono":  "(809)876-6442",
+        "telefono":  "809-876-6442",
         "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
         "correo":  "bencosme.ramona@promesecal.gob.do"
     },
@@ -1829,30 +1829,30 @@ const LDAP_DATA = [
     },
     {
         "id":  204,
+        "extension":  "Ext.1031",
         "nombre":  "Ketty Grisert Perez Santana",
-        "telefono":  "809-876-5852",
-        "departamento":  "Seccion Servicios Generales",
-        "extension":  "",
+        "telefono":  "809-658-0587",
+        "correo":  "perez.ketty@promesecal.gob.do",
         "cargo":  "Tecnico administrativo",
-        "correo":  "perez.ketty@promesecal.gob.do"
+        "departamento":  "Seccion Servicios Generales"
     },
     {
         "id":  205,
         "nombre":  "Xiojeidis Polanco Jimenez",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Servicios Generales",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar Administrativo",
         "correo":  "polanco.xiojeidis@promesecal.gob.do"
     },
     {
         "id":  206,
+        "extension":  "Ext.1060",
         "nombre":  "Julio Cesar Beltre Zabala",
-        "telefono":  "(829)875-7168",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "809-876-7029",
+        "correo":  "beltre.julio@promesecal.gob.do",
         "cargo":  "Encargado",
-        "correo":  "beltre.julio@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  207,
@@ -1865,12 +1865,12 @@ const LDAP_DATA = [
     },
     {
         "id":  208,
+        "extension":  "Ext.1115",
         "nombre":  "Kariny Johanna Nuñez Peguero",
-        "telefono":  "",
-        "departamento":  "Transportación",
-        "extension":  "",
+        "telefono":  "809-991-0317",
+        "correo":  "nunez.kariny@promesecal.gob.do",
         "cargo":  "Tecnico Administrativo",
-        "correo":  "nunez.kariny@promesecal.gob.do"
+        "departamento":  "Transportación"
     },
     {
         "id":  209,
@@ -1883,246 +1883,246 @@ const LDAP_DATA = [
     },
     {
         "id":  210,
+        "extension":  "Ext.1208",
         "nombre":  "Yudelka Yluminada Gautreaux Lugo",
-        "telefono":  "",
-        "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "telefono":  "829-936-6323",
+        "correo":  "gautreaux.yudelka@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "gautreaux.yudelka@promesecal.gob.do"
+        "departamento":  "Farmacia del Pueblo"
     },
     {
         "id":  211,
+        "extension":  "Ext.1031",
         "nombre":  "Nicole Andreina Cepeda Castillo",
-        "telefono":  "",
-        "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "telefono":  "809-658-0537",
+        "correo":  "cepeda.nicole@promesecal.gob.do",
         "cargo":  "Secretaria",
-        "correo":  "cepeda.nicole@promesecal.gob.do"
+        "departamento":  "Farmacia del Pueblo"
     },
     {
         "id":  212,
         "nombre":  "Annette Yanil Vasquez de Almonte",
-        "telefono":  "(809)904-6454",
+        "telefono":  "809-866-1158",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "Direccion de Farmacias",
+        "extension":  "N/A",
         "cargo":  "Analistas",
         "correo":  "vasquez.annette@promesecal.gob.do"
     },
     {
         "id":  213,
+        "extension":  "Ext.1631",
         "nombre":  "Ana María De Aza Rodríguez",
-        "telefono":  "",
-        "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "telefono":  "809-883-7440",
+        "correo":  "deaza.ana@promesecal.gob.do",
         "cargo":  "Analista de la Información",
-        "correo":  "deaza.ana@promesecal.gob.do"
+        "departamento":  "Farmacia del Pueblo"
     },
     {
         "id":  214,
+        "extension":  "Ext.1270",
         "nombre":  "Dominga Bautista Payano",
-        "telefono":  "(829)279-1174",
-        "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "telefono":  "829-279-1174",
+        "correo":  "bautista.dominga@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "bautista.dominga@promesecal.gob.do"
+        "departamento":  "Farmacia del Pueblo"
     },
     {
         "id":  215,
         "nombre":  "Glenis Yahaira Diaz Silvestre",
-        "telefono":  "",
+        "telefono":  "809-991-0458",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "Dirección de Farmacias",
+        "extension":  "N/A",
         "cargo":  "Auxiliar",
         "correo":  "diaz.glenis@promesecal.gob.do"
     },
     {
         "id":  216,
         "nombre":  "Yacer Altagracia Jimenez Arvelo",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitadora",
         "correo":  "jimenez.yacer@promesecal.gob.do"
     },
     {
         "id":  217,
+        "extension":  "Ext.1096",
         "nombre":  "Sergio Junior Baez Matos",
-        "telefono":  "(809)875-8677",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "809-890-8177",
+        "correo":  "baez.sergio@promesecal.gob.do",
         "cargo":  "Digitador",
-        "correo":  "baez.sergio@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  218,
+        "extension":  "Ext.1262",
         "nombre":  "Yubeiry del Carmen Rodriguez Bautista",
-        "telefono":  "(809)775-2939",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "809-775-2939",
+        "correo":  "rodriguez.yubeiry@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "rodriguez.yubeiry@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  219,
+        "extension":  "Ext.1103",
         "nombre":  "Fatima Arelis Mendez Madera",
-        "telefono":  "",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "809-399-5453",
+        "correo":  "mendez.fatima@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "mendez.fatima@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  220,
         "nombre":  "Rosa Lina Adames Acosta",
-        "telefono":  "(849)367-3757",
+        "telefono":  "849-367-3757",
         "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar",
         "correo":  "adames.rosa@promesecal.gob.do"
     },
     {
         "id":  221,
         "nombre":  "Claudio Enmanuel Castillo Volquez",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Decomiso y Devoluciones",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitador",
         "correo":  "castillo.claudio@promesecal.gob.do"
     },
     {
         "id":  222,
+        "extension":  "Ext.1083",
         "nombre":  "Gladys Miguelina Almonte Gonzales",
-        "telefono":  "(809)905-1220",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "809-905-1220",
+        "correo":  "almonte.gladys@promesecal.gob.do",
         "cargo":  "ENCARGADO",
-        "correo":  "almonte.gladys@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  223,
+        "extension":  "Ext.1010",
         "nombre":  "Mery de Jesus",
-        "telefono":  "(829)577-0159",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "829-577-0159",
+        "correo":  "dejesus.mery@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "dejesus.mery@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  224,
+        "extension":  "Ext.1015",
         "nombre":  "Petra Isabel Sanchez Jimenez",
-        "telefono":  "(809)978-7545",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "849-763-2806",
+        "correo":  "sanchez.petra@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "sanchez.petra@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  225,
         "nombre":  "Rosita Fontana Crisostomo",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Decomiso y Devoluciones",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Verificadora",
         "correo":  "fontana.rosita@promesecal.gob.do"
     },
     {
         "id":  226,
+        "extension":  "Ext.1162",
         "nombre":  "Aristides Amaury Segura Medina",
-        "telefono":  "(809)308-2302",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "telefono":  "829-308-2302",
+        "correo":  "segura.aristides@promesecal.gob.do",
         "cargo":  "Coordinador",
-        "correo":  "segura.aristides@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  227,
+        "extension":  "Ext.1611",
         "nombre":  "Danelis Antonia Mendoza Valerio",
-        "telefono":  "",
-        "departamento":  "Almacén Regional Norte",
-        "extension":  "",
+        "telefono":  "809-983-2160",
+        "correo":  "mendoza.danelis@promesecal.gob.do",
         "cargo":  "Auxiliar",
-        "correo":  "mendoza.danelis@promesecal.gob.do"
+        "departamento":  "Almacén Regional Norte"
     },
     {
         "id":  228,
+        "extension":  "Ext.1058",
         "nombre":  "Felix Jounior Vasquez Sena",
-        "telefono":  "",
-        "departamento":  "Almacén General",
-        "extension":  "",
+        "telefono":  "809-991-0671",
+        "correo":  "vasquez.felix@promesecal.gob.do",
         "cargo":  "Auxiliar",
-        "correo":  "vasquez.felix@promesecal.gob.do"
+        "departamento":  "Almacén General"
     },
     {
         "id":  229,
         "nombre":  "Jeannette Altagracia Abreu Abreu",
         "telefono":  "",
         "departamento":  "Almacén General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista de Almacen",
         "correo":  "abreu.jeannette@promesecal.gob.do"
     },
     {
         "id":  230,
+        "extension":  "Ext.1102",
         "nombre":  "Jon Jairo Polanco Arache",
-        "telefono":  "",
-        "departamento":  "Almacén General",
-        "extension":  "",
+        "telefono":  "829-273-8948",
+        "correo":  "polanco.jon@promesecal.gob.do",
         "cargo":  "Auxiliar",
-        "correo":  "polanco.jon@promesecal.gob.do"
+        "departamento":  "Almacén General"
     },
     {
         "id":  231,
         "nombre":  "Luis Arturo Peralta Rosario",
-        "telefono":  "",
+        "telefono":  "809-658-1622",
         "departamento":  "Almacén General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar",
         "correo":  "peralta.luis@promesecal.gob.do"
     },
     {
         "id":  232,
         "nombre":  "Mayreni Mejia Morel",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Almacén General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisor",
         "correo":  "mejia.mayreni@promesecal.gob.do"
     },
     {
         "id":  233,
         "nombre":  "Niurkelin Herrera Cuevas",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Fiscalización",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisora de Mesa",
         "correo":  "herrera.niurkelin@promesecal.gob.do"
     },
     {
         "id":  234,
         "nombre":  "Raysa Ermita Gonzalez Garcia",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Almacén General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Encargada Jaula CONAVIHSIDA",
         "correo":  "gonzalez.raysa@promesecal.gob.do"
     },
     {
         "id":  235,
         "nombre":  "Yosjanis Feliz de Calderon",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Almacén General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Encargada",
         "correo":  "feliz.yosjanis@promesecal.gob.do"
     },
     {
         "id":  236,
+        "extension":  "Ext.1086",
         "nombre":  "Rosanna Marioby Sarmiento Gonzalez",
-        "telefono":  "",
-        "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "telefono":  "809-975-1917",
+        "correo":  "sarmiento.rosanna@promesecal.gob.do",
         "cargo":  "Secretaria I",
-        "correo":  "sarmiento.rosanna@promesecal.gob.do"
+        "departamento":  "Tramites y Servicios"
     },
     {
         "id":  237,
@@ -2136,45 +2136,45 @@ const LDAP_DATA = [
     {
         "id":  238,
         "nombre":  "Ana Carolina Encarnación Montero",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Financiero",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitador",
         "correo":  "encarnacion.ana@promesecal.gob.do"
     },
     {
         "id":  239,
+        "extension":  "Ext.1207",
         "nombre":  "Digna Maria Bourdier Alvarado",
-        "telefono":  "",
-        "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "telefono":  "829-723-5761",
+        "correo":  "bourdier.digna@promesecal.gob.do",
         "cargo":  "Digitador",
-        "correo":  "bourdier.digna@promesecal.gob.do"
+        "departamento":  "Farmacia del Pueblo"
     },
     {
         "id":  240,
         "nombre":  "Oliver De Jesus Tejada Lopez",
-        "telefono":  "809-238-1851",
+        "telefono":  "809-805-1667",
         "departamento":  "Financiero",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitador",
         "correo":  "tejada.oliver@promesecal.gob.do"
     },
     {
         "id":  241,
         "nombre":  "Sarah Altagracia Polanco Marte",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Financiero",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitador",
         "correo":  "polanco.sarah@promesecal.gob.do"
     },
     {
         "id":  242,
         "nombre":  "Victor Manuel Calzado Martinez",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Financiero",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitador",
         "correo":  "calzado.victor@promesecal.gob.do"
     },
@@ -2190,36 +2190,36 @@ const LDAP_DATA = [
     {
         "id":  244,
         "nombre":  "Rosa Sanchez",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Farmaceutica",
         "correo":  "sanchez.rosa@promesecal.gob.do"
     },
     {
         "id":  245,
         "nombre":  "Yokasta Altagracia Soto Aybar",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista Direccion Tecnologia",
         "correo":  "soto.yokasta@promesecal.gob.do"
     },
     {
         "id":  246,
         "nombre":  "Milagros Ventura Sosa",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Comunicaciones",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Relacionista Publico",
         "correo":  "ventura.milagros@promesecal.gob.do"
     },
     {
         "id":  247,
         "nombre":  "Karolina Velez Martinez",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Seguridad Militar",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Asistente Administrativo",
         "correo":  "velez.karolina@promesecal.gob.do"
     },
@@ -2228,34 +2228,34 @@ const LDAP_DATA = [
         "nombre":  "Jessica Del Rosario Gerbacio",
         "telefono":  "",
         "departamento":  "Seguridad Militar",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Asistente Administrativo",
         "correo":  "delrosario.jessica@promesecal.gob.do"
     },
     {
         "id":  249,
+        "extension":  "Ext.1170",
         "nombre":  "Carolyn Penn de Brito",
-        "telefono":  "",
-        "departamento":  "Jurídica",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "penn.carolyn@promesecal.gob.do",
         "cargo":  "Analista Legal",
-        "correo":  "penn.carolyn@promesecal.gob.do"
+        "departamento":  "Jurídica"
     },
     {
         "id":  250,
+        "extension":  "Ext.1154",
         "nombre":  "Geral Jose Taveras Parra",
-        "telefono":  "",
-        "departamento":  "Licitaciones",
-        "extension":  "Licitaciones",
+        "telefono":  "N/A",
+        "correo":  "taveras.geral@promesecal.gob.do",
         "cargo":  "Tecnico de Muestras",
-        "correo":  "taveras.geral@promesecal.gob.do"
+        "departamento":  "Licitaciones"
     },
     {
         "id":  251,
         "nombre":  "Rosa Angela Vidal Acosta",
-        "telefono":  "(829)477-4936",
+        "telefono":  "829-477-4936",
         "departamento":  "Muestra",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Encargada",
         "correo":  "vidal.rosa@promesecal.gob.do"
     },
@@ -2279,64 +2279,64 @@ const LDAP_DATA = [
     },
     {
         "id":  254,
+        "extension":  "Ext.1261",
         "nombre":  "Alejandro Carlos Mejia",
-        "telefono":  "",
-        "departamento":  "Fiscalización",
-        "extension":  "Departamento de Fiscalizacion",
+        "telefono":  "849-763-3866",
+        "correo":  "mejia.alejandro@promesecal.gob.do",
         "cargo":  "Coordinador",
-        "correo":  "mejia.alejandro@promesecal.gob.do"
+        "departamento":  "Departamento de Fiscalización"
     },
     {
         "id":  255,
+        "extension":  "Ext.1088",
         "nombre":  "Griselda Antonia Martinez Flores",
-        "telefono":  "(829)779-2007",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "829-779-2007",
+        "correo":  "martinez.griselda@promesecal.gob.do",
         "cargo":  "Tecnico Administrativo",
-        "correo":  "martinez.griselda@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  256,
+        "extension":  "Ext.1291",
         "nombre":  "Carmen del Rosario Gerbacio",
         "telefono":  "",
-        "departamento":  "Fiscalización",
-        "extension":  "",
+        "correo":  "delrosario.carmen@promesecal.gob.do",
         "cargo":  "Supervisora de Mesa",
-        "correo":  "delrosario.carmen@promesecal.gob.do"
+        "departamento":  "Fiscalización"
     },
     {
         "id":  257,
         "nombre":  "Yordaliza Minaya",
-        "telefono":  "",
+        "telefono":  "829-558-5270",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista de la Información",
         "correo":  "minaya.yordaliza@promesecal.gob.do"
     },
     {
         "id":  258,
+        "extension":  "Ext.1401",
         "nombre":  "Elizabeth Gerardo Disla",
-        "telefono":  "",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "telefono":  "829-562-4423",
+        "correo":  "gerardo.elizabeth@promesecal.gob.do",
         "cargo":  "Analista de Compras",
-        "correo":  "gerardo.elizabeth@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  259,
+        "extension":  "Ext.1085",
         "nombre":  "Manuela Dolores Suarez de Mercedes",
-        "telefono":  "",
-        "departamento":  "Tramites y Servicios",
-        "extension":  "Tramites y Servicios",
+        "telefono":  "809-862-5567",
+        "correo":  "suarez.manuela@promesecal.gob.do",
         "cargo":  "Analista de Servicio al Cliente",
-        "correo":  ""
+        "departamento":  "Tramites y Servicios"
     },
     {
         "id":  260,
         "nombre":  "Yessica Maria Familia Gomez",
-        "telefono":  "",
+        "telefono":  "809-805-2124",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar Administrativa",
         "correo":  "familia.yessica@promesecal.gob.do"
     },
@@ -2361,38 +2361,38 @@ const LDAP_DATA = [
     {
         "id":  263,
         "nombre":  "Winifer Maria Alvarez",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Tramites y Servicios Santiago",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista",
         "correo":  "alvarez.winifer@promesecal.gob.do"
     },
     {
         "id":  264,
+        "extension":  "Ext.1519",
         "nombre":  "Jocasta Isabel Mejía Tellerias",
-        "telefono":  "",
-        "departamento":  "Fiscalización",
-        "extension":  "",
+        "telefono":  "849-763-4155",
+        "correo":  "mejia.jocasta@promesecal.gob.do",
         "cargo":  "Fiscalizadora",
-        "correo":  ""
+        "departamento":  "Fiscalización"
     },
     {
         "id":  265,
+        "extension":  "Ext.1402",
         "nombre":  "Dalma Rafenny Rodriguez Mata",
         "telefono":  "",
-        "departamento":  "Administrativo - Santiago",
-        "extension":  "",
+        "correo":  "rodriguez.dalma@promesecal.gob.do",
         "cargo":  "Asistente Administrativa",
-        "correo":  "rodriguez.dalma@promesecal.gob.do"
+        "departamento":  "Administrativo - Santiago"
     },
     {
         "id":  266,
+        "extension":  "Ext.1019",
         "nombre":  "Jose Junior Rodriguez Santana",
-        "telefono":  "",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "Direccion de TIC",
+        "telefono":  "809-706-8223",
+        "correo":  "rodriguez.jose@promesecal.gob.do",
         "cargo":  "Soporte Tecnico",
-        "correo":  ""
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
     },
     {
         "id":  267,
@@ -2405,19 +2405,19 @@ const LDAP_DATA = [
     },
     {
         "id":  268,
+        "extension":  "Ext.1020",
         "nombre":  "Roger Alberto Veloz Mejia",
-        "telefono":  "",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "Direccion TIC",
+        "telefono":  "809-658-0572",
+        "correo":  "veloz.roger@promesecal.gob.do",
         "cargo":  "Soporte Tecnico",
-        "correo":  ""
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
     },
     {
         "id":  269,
         "nombre":  "Francsico Arias Sanchez",
         "telefono":  "",
         "departamento":  "Jurídica",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Encargado Litigios",
         "correo":  "arias.francisco@promesecal.gob.do"
     },
@@ -2433,20 +2433,20 @@ const LDAP_DATA = [
     {
         "id":  271,
         "nombre":  "Jose Alexander Hilario",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Jurídica",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista Legal",
-        "correo":  ""
+        "correo":  "hilario.jose@promesecal.gob.do"
     },
     {
         "id":  272,
         "nombre":  "Dennya Altagracia López De Los Santos",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "Direccion Farmacia del Pueblo",
+        "extension":  "N/A",
         "cargo":  "Analista de Procesos",
-        "correo":  ""
+        "correo":  "lopez.dennya@promesecal.gob.do"
     },
     {
         "id":  273,
@@ -2460,11 +2460,11 @@ const LDAP_DATA = [
     {
         "id":  274,
         "nombre":  "Steven Alejandro Paguero Vilomar",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Licitaciones",
-        "extension":  "Departamento de Licitaciones",
+        "extension":  "N/A",
         "cargo":  "Auxiliar",
-        "correo":  ""
+        "correo":  "peguero.steven@promesecal.gob.do"
     },
     {
         "id":  275,
@@ -2525,43 +2525,43 @@ const LDAP_DATA = [
         "nombre":  "Yirelis Estefania Melendez Castillo",
         "telefono":  "849-351-2215",
         "departamento":  "Control de Calidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Farmaceutica",
         "correo":  "melendez.yirelis@promesecal.gob.do"
     },
     {
         "id":  282,
         "nombre":  "Maribel Gonzalez Martinez de Frometa",
-        "telefono":  "829-713-6934",
+        "telefono":  "809-658-0584",
         "departamento":  "Fiscalización",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Coordinadora",
         "correo":  "gonzalez.maribel@promesecal.gob.do"
     },
     {
         "id":  283,
+        "extension":  "Ext.1629",
         "nombre":  "Romex Alexander De La Cruz Vasquez",
-        "telefono":  "",
-        "departamento":  "Fiscalización",
-        "extension":  "",
+        "telefono":  "809-991-0676",
+        "correo":  "Romex Alexander@promesecal.gob,do",
         "cargo":  "Fiscalizador",
-        "correo":  "Romex Alexander@promesecal.gob,do"
+        "departamento":  "Fiscalización"
     },
     {
         "id":  284,
+        "extension":  "Ext.1407",
         "nombre":  "Jerika German Santana",
-        "telefono":  "849-212-8684",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "809-658-2845",
+        "correo":  "german.jerika@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "german.jerika@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  285,
         "nombre":  "Carlos Genikeissary Alcantara Beliard",
         "telefono":  "849-445-7314",
         "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Soporte Tecnico",
         "correo":  "alcantara.carlos@promesecal.gob.do"
     },
@@ -2579,7 +2579,7 @@ const LDAP_DATA = [
         "nombre":  "Dolca Nerydes Caro Castillo",
         "telefono":  "829-616-5318",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Asistente Administrativo",
         "correo":  "caro.dolca@promesecal.gob.do"
     },
@@ -2588,36 +2588,36 @@ const LDAP_DATA = [
         "nombre":  "Jazmin Orquidea Garcia Valenzuela",
         "telefono":  "",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar Administrativo",
         "correo":  "garcia.jazmin@promesecal.gob.do"
     },
     {
         "id":  289,
+        "extension":  "Ext.1083",
         "nombre":  "Nelson Lorenzo Reyes Jimenez",
         "telefono":  "829-388-5520",
-        "departamento":  "Tramites y Servicios",
-        "extension":  "",
+        "correo":  "reyes.nelson@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "reyes.nelson@promesecal.gob.do"
+        "departamento":  "Tramites y Servicios"
     },
     {
         "id":  290,
         "nombre":  "Sardis Denisa Mejia Peguero",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Institucional",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
-        "correo":  ""
+        "correo":  "mejia.sardis@promesecal.gob.do"
     },
     {
         "id":  291,
+        "extension":  "Ext.1247",
         "nombre":  "Edwin Manuel Feliz Volquez",
-        "telefono":  "",
-        "departamento":  "Recepción de Insumos para la Salud",
-        "extension":  "",
+        "telefono":  "849-255-0651",
+        "correo":  "feliz.edwin@promesecal.gob.do",
         "cargo":  "Auxiliar",
-        "correo":  ""
+        "departamento":  "Recepción de Insumos para la Salud"
     },
     {
         "id":  292,
@@ -2631,18 +2631,18 @@ const LDAP_DATA = [
     {
         "id":  293,
         "nombre":  "Nataly Gissell Del Rosario Fabian",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Contabilidad",
-        "extension":  "Contabilidad",
+        "extension":  "N/A",
         "cargo":  "Contador",
         "correo":  "delrosario.nataly@promesecal.gob.do"
     },
     {
         "id":  294,
         "nombre":  "Katerin Maria Perez Cuevas",
-        "telefono":  "829-684-6591",
+        "telefono":  "849-255-0678",
         "departamento":  "Transportación",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar Administrativo",
         "correo":  "perez.katerin@promesecal.gob.do"
     },
@@ -2658,38 +2658,38 @@ const LDAP_DATA = [
     {
         "id":  296,
         "nombre":  "Ana Trinidad Morales de Gabot",
-        "telefono":  "",
+        "telefono":  "829-580-7712",
         "departamento":  "Planificación y Desarrollo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista",
         "correo":  "morales.ana@promesecal.gob.do"
     },
     {
         "id":  297,
+        "extension":  "Ext.1090",
         "nombre":  "Griselda Aracelys Peguero Mercedes",
         "telefono":  "",
-        "departamento":  "Bienestar Social",
-        "extension":  "",
+        "correo":  "peguero.griselda@promesecal.gob.do",
         "cargo":  "Analista",
-        "correo":  "peguero.griselda@promesecal.gob.do"
+        "departamento":  "Bienestar Social"
     },
     {
         "id":  298,
+        "extension":  "Ext.1016",
         "nombre":  "Elba Deneb Tio Marrero",
-        "telefono":  "",
-        "departamento":  "Dirección General",
-        "extension":  "Direccion General",
+        "telefono":  "809-804-5516",
+        "correo":  "tio.elba@promesecal.gob.do",
         "cargo":  "Asistente",
-        "correo":  ""
+        "departamento":  "Dirección General"
     },
     {
         "id":  299,
+        "extension":  "Ext.1258",
         "nombre":  "Madeline Gomez Paniagua",
         "telefono":  "829-774-1595",
-        "departamento":  "Jurídica",
-        "extension":  "",
+        "correo":  "gomez.madeline@promesecal.gob.do",
         "cargo":  "Analista Legal",
-        "correo":  "gomez.madeline@promesecal.gob.do"
+        "departamento":  "Jurídica"
     },
     {
         "id":  300,
@@ -2703,74 +2703,74 @@ const LDAP_DATA = [
     {
         "id":  301,
         "nombre":  "Evelyn Yohanna Lisset Alexis",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Financiero",
-        "extension":  "Finanzas",
+        "extension":  "N/A",
         "cargo":  "Contador",
         "correo":  "lisset.evelyn@promesecal.gob.do"
     },
     {
         "id":  302,
+        "extension":  "Ext.1102",
         "nombre":  "Eury Abraham Heredia Reyes",
         "telefono":  "",
-        "departamento":  "Seguridad",
-        "extension":  "Departamento de Seguridad",
+        "correo":  "heredia.eury@promesecal.gob.do",
         "cargo":  "Monitor de Seguridad",
-        "correo":  ""
+        "departamento":  "Seguridad"
     },
     {
         "id":  303,
+        "extension":  "Ext.1184",
         "nombre":  "Rossy Angelica Fajardo Dotel",
-        "telefono":  "",
-        "departamento":  "Almacén General",
-        "extension":  "",
+        "telefono":  "809-917-9508",
+        "correo":  "fajardo.rossy@promesecal.gob.do",
         "cargo":  "Secretaria",
-        "correo":  ""
+        "departamento":  "Almacén General"
     },
     {
         "id":  304,
         "nombre":  "Neftali Eleazar Sanchez Mendez",
         "telefono":  "829-839-7023",
         "departamento":  "Bienestar Social",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitador",
         "correo":  "sanchez.neftali@promesecal.gob.do"
     },
     {
         "id":  305,
+        "extension":  "Ext.1242",
         "nombre":  "Rosalia Rojas Grullon",
         "telefono":  "809-605-7440",
-        "departamento":  "Financiero",
-        "extension":  "Financiero",
+        "correo":  "rojas.rosalia@promesecal.gob.do",
         "cargo":  "Digitadora",
-        "correo":  "rojas.rosalia@promesecal.gob.do"
+        "departamento":  "Financiero"
     },
     {
         "id":  306,
+        "extension":  "Ext.1630",
         "nombre":  "Ana Ylsa Rodriguez de Cabral",
-        "telefono":  "",
-        "departamento":  "Institucional",
-        "extension":  "Operaciones y logistica",
+        "telefono":  "809-962-2883",
+        "correo":  "rodriguez.ana@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  ""
+        "departamento":  "Institucional"
     },
     {
         "id":  307,
         "nombre":  "Jelin Maria Araujo Angomas",
         "telefono":  "",
         "departamento":  "Almacén General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Farmaceutica",
-        "correo":  ""
+        "correo":  "araujo.jelin@promesecal.gob.do"
     },
     {
         "id":  308,
+        "extension":  "Ext.1260",
         "nombre":  "Jairo Antonio Ozoria Garcia",
-        "telefono":  "",
-        "departamento":  "Jurídica",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "ozoria.jairo@promesecal.gob.do",
         "cargo":  "Analista Legal",
-        "correo":  "ozoria.jairo@promesecal.gob.do"
+        "departamento":  "Jurídica"
     },
     {
         "id":  309,
@@ -2801,55 +2801,55 @@ const LDAP_DATA = [
     },
     {
         "id":  312,
+        "extension":  "Ext.1519",
         "nombre":  "Alanna Patricia Gonzalez De La Cruz",
-        "telefono":  "849-651-1905",
-        "departamento":  "Recursos Humanos",
-        "extension":  "Recursos Humanos",
+        "telefono":  "809-658-2820",
+        "correo":  "gonzalez.alanna@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "gonzalez.alanna@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  313,
         "nombre":  "Cristel Gonzalez Torres",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Contabilidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Contador",
         "correo":  "gonzalez.cristel@promesecal.gob.do"
     },
     {
         "id":  314,
         "nombre":  "Alquenia Rosario Sanchez",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Servicios Generales",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Contadora",
         "correo":  "rosario.alquenia@promesecal.gob.do"
     },
     {
         "id":  315,
         "nombre":  "Stephanie Mariel Arias Santana",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Presupuesto",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista Presupuesto",
         "correo":  "arias.stephanie@promesecal.gob.do"
     },
     {
         "id":  316,
         "nombre":  "Carlos Manuel Gonzalez Acevedo",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Contabilidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Contador",
         "correo":  "gonzalez.carlos@promesecal.gob.do"
     },
     {
         "id":  317,
         "nombre":  "Yajaira Samboy Soto",
-        "telefono":  "",
+        "telefono":  "809-991-0221",
         "departamento":  "Almacen Monumental",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisora de Mesa",
         "correo":  "samboy.yajaira@promesecal.gob.do"
     },
@@ -2864,17 +2864,17 @@ const LDAP_DATA = [
     },
     {
         "id":  319,
+        "extension":  "Ext.1146",
         "nombre":  "Gipsy Aedys Encarnacion Mañon",
         "telefono":  "829-497-4298",
-        "departamento":  "Contabilidad",
-        "extension":  "Contabilidad",
+        "correo":  "encarnacion.gipsy@promesecal.gob.do",
         "cargo":  "Contador",
-        "correo":  "encarnacion.gipsy@promesecal.gob.do"
+        "departamento":  "Contabilidad"
     },
     {
         "id":  320,
         "nombre":  "Yuberkys De Los Santos lugo",
-        "telefono":  "849-357-6732",
+        "telefono":  "849-255-0687",
         "departamento":  "Farmacia del Pueblo",
         "extension":  "Farmacia del Pueblo",
         "cargo":  "Auxiliar Administrativo",
@@ -2883,27 +2883,27 @@ const LDAP_DATA = [
     {
         "id":  321,
         "nombre":  "Monica Esther Rodriguez De Mercado",
-        "telefono":  "809-818-8901",
+        "telefono":  "829-603-9204",
         "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Farmaceutica",
         "correo":  "rodriguez.monica@promesecal.gob.do"
     },
     {
         "id":  322,
+        "extension":  "Ext.1217",
         "nombre":  "Francheska Virginia Jones Perez",
         "telefono":  "809-545-0547",
-        "departamento":  "Financiero",
-        "extension":  "Financiero",
+        "correo":  "jones.francheska@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "jones.francheska@promesecal.gob.do"
+        "departamento":  "Financiero"
     },
     {
         "id":  323,
         "nombre":  "Melissa Baldera Tapia",
-        "telefono":  "849-377-4594",
+        "telefono":  "829-908-3640",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "Direccion de Farmacia del Pueblo",
+        "extension":  "N/A",
         "cargo":  "Auxiliar Administrativo",
         "correo":  "baldera.melissa@promesecal.gob.do"
     },
@@ -2939,36 +2939,36 @@ const LDAP_DATA = [
         "nombre":  "Denys Perez Gerardo",
         "telefono":  "809-705-8945",
         "departamento":  "Contabilidad",
-        "extension":  "Contabilidad",
+        "extension":  "N/A",
         "cargo":  "Auxiliar Administractivo Interino",
         "correo":  "perez.denys@promesecal.gob.do"
     },
     {
         "id":  328,
+        "extension":  "Ext.2202",
         "nombre":  "Elizabeth Ureña Jimenez",
-        "telefono":  "",
-        "departamento":  "Sub-Dirección",
-        "extension":  "",
+        "telefono":  "829-903-4321",
+        "correo":  "urena.elizabeth@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "urena.elizabeth@promesecal.gob.do"
+        "departamento":  "Sub-Dirección"
     },
     {
         "id":  329,
+        "extension":  "Ext.1119",
         "nombre":  "Dileidy Morelia De Leon Perez",
         "telefono":  "829-933-9956",
-        "departamento":  "Farmacia del Pueblo",
-        "extension":  "Dirección de Farmacia del pueblo",
+        "correo":  "deleon.dileidy@promesecal.gob.do",
         "cargo":  "Tecnico Farmaceutico",
-        "correo":  "deleon.dileidy@promesecal.gob.do"
+        "departamento":  "Farmacia del Pueblo"
     },
     {
         "id":  330,
+        "extension":  "Ext.1153",
         "nombre":  "Carol Teresa Jimenez Roa",
         "telefono":  "849-919-4860",
-        "departamento":  "Sección de Ingresos",
-        "extension":  "",
+        "correo":  "jimenez.carol@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "jimenez.carol@promesecal.gob.do"
+        "departamento":  "Sección de Ingresos"
     },
     {
         "id":  331,
@@ -2993,36 +2993,36 @@ const LDAP_DATA = [
         "nombre":  "Wilmer Virgilio Reyes Matos",
         "telefono":  "829-585-2698",
         "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Soporte Tecnico",
         "correo":  "reyes.wilmer@promesecal.gob.do"
     },
     {
         "id":  334,
+        "extension":  "Ext.1051",
         "nombre":  "Bilerka Eduviges Marte",
         "telefono":  "849-889-4099",
-        "departamento":  "Financiero",
-        "extension":  "Financiero",
+        "correo":  "marte.bilerka@promesecal.gob.do",
         "cargo":  "Digitador",
-        "correo":  "marte.bilerka@promesecal.gob.do"
+        "departamento":  "Financiero"
     },
     {
         "id":  335,
+        "extension":  "Ext.1219",
         "nombre":  "Francia Julissa Concepcion Heureaux",
-        "telefono":  "",
-        "departamento":  "Dirección General",
-        "extension":  "Direcion General",
+        "telefono":  "849-255-0660",
+        "correo":  "concepcion.julissa@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "concepcion.julissa@promesecal.gob.do"
+        "departamento":  "Dirección General"
     },
     {
         "id":  336,
+        "extension":  "Ext.1409",
         "nombre":  "Mabriela Elizabeth Peralta Moquete",
-        "telefono":  "",
-        "departamento":  "Comunicaciones",
-        "extension":  "",
-        "cargo":  "N/A",
-        "correo":  "peralta.mabriela@promesecal.gob.do"
+        "telefono":  "829-559-7860",
+        "correo":  "peralta.mabriela@promesecal.gob.do",
+        "cargo":  "Tecnico Administrativa",
+        "departamento":  "Comunicaciones"
     },
     {
         "id":  337,
@@ -3035,37 +3035,37 @@ const LDAP_DATA = [
     },
     {
         "id":  338,
+        "extension":  "Ext.1059",
         "nombre":  "Enercida Altagracia Santiago Pereyra",
         "telefono":  "",
-        "departamento":  "Almacén General",
-        "extension":  "",
+        "correo":  "santiago.enercida@promesecal.gob.do",
         "cargo":  "Farmaceutica",
-        "correo":  "santiago.enercida@promesecal.gob.do"
+        "departamento":  "Almacén General"
     },
     {
         "id":  339,
+        "extension":  "Ext.1215",
         "nombre":  "Dinorah Jimenez Perez",
         "telefono":  "809-269-6808",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "correo":  "jimenez.dinorah@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "jimenez.dinorah@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  340,
+        "extension":  "Ext.1216",
         "nombre":  "Martha Johanna Ramos Medina",
-        "telefono":  "849-491-5267",
-        "departamento":  "Bienestar Social",
-        "extension":  "Bienestal Social",
+        "telefono":  "809-991-0471",
+        "correo":  "ramos.martha@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "ramos.martha@promesecal.gob.do"
+        "departamento":  "Bienestar Social"
     },
     {
         "id":  341,
         "nombre":  "Mel Alain Heredia Mejia",
         "telefono":  "829-870-3138",
         "departamento":  "Fiscalización",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisor de Mesa",
         "correo":  "heredia.mel@promesecal.gob.do"
     },
@@ -3074,16 +3074,16 @@ const LDAP_DATA = [
         "nombre":  "Gilberto Jonas Sanchez Grullon",
         "telefono":  "809-717-7125",
         "departamento":  "Control de Calidad",
-        "extension":  "Control de Calidad",
+        "extension":  "N/A",
         "cargo":  "Impestor de Calidad y Viales",
         "correo":  "sanchez.gilberto@promesecal.gob.do"
     },
     {
         "id":  343,
         "nombre":  "Dioberka Patricia Acevedo Villanueva",
-        "telefono":  "829-910-3485",
+        "telefono":  "809-999-5923",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar Administrativa",
         "correo":  "acevedo.dioberka@promesecal.gob.do"
     },
@@ -3098,21 +3098,21 @@ const LDAP_DATA = [
     },
     {
         "id":  345,
+        "extension":  "Ext.1052",
         "nombre":  "Dayana Jorge de Leon",
         "telefono":  "809-462-3688",
-        "departamento":  "Acceso a la Información",
-        "extension":  "",
+        "correo":  "jorge.dayana@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "jorge.dayana@promesecal.gob.do"
+        "departamento":  "Acceso a la Información"
     },
     {
         "id":  346,
+        "extension":  "Ext.1110",
         "nombre":  "Jose Luis Lopez Perez",
-        "telefono":  "",
-        "departamento":  "Institucional",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "lopez.jose@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  "lopez.jose@promesecal.gob.do"
+        "departamento":  "Institucional"
     },
     {
         "id":  347,
@@ -3125,120 +3125,120 @@ const LDAP_DATA = [
     },
     {
         "id":  348,
+        "extension":  "Ext.1218",
         "nombre":  "Luis Manuel Peña Feliz",
-        "telefono":  "809-907-0273",
-        "departamento":  "RECURSOS HUMANOS",
-        "extension":  "",
+        "telefono":  "809-931-8761",
+        "correo":  "luimap@hotmail.com",
         "cargo":  "DIRECTOR",
-        "correo":  "luimap@hotmail.com"
+        "departamento":  "RECURSOS HUMANOS"
     },
     {
         "id":  349,
+        "extension":  "Ext.1209",
         "nombre":  "Angela Mercedes Leger Luis",
-        "telefono":  "",
-        "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "telefono":  "809-949-0616",
+        "correo":  "leger.angela@promesecal.gob.do",
         "cargo":  "Directora Interina",
-        "correo":  "leger.angela@promesecal.gob.do"
+        "departamento":  "Farmacia del Pueblo"
     },
     {
         "id":  350,
+        "extension":  "Ext.1032",
         "nombre":  "Mercedes Selene Lama Castro",
         "telefono":  "809-223-8439",
-        "departamento":  "Cuentas por Cobrar",
-        "extension":  "",
+        "correo":  "lama.mercedes@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "lama.mercedes@promesecal.gob.do"
+        "departamento":  "Cuentas por Cobrar"
     },
     {
         "id":  351,
+        "extension":  "Ext.1535",
         "nombre":  "Eddy Alfredo Hernandez Perez",
-        "telefono":  "829-914-4514",
-        "departamento":  "Fiscalización",
-        "extension":  "",
+        "telefono":  "809-868-1086",
+        "correo":  "hernandez.eddy@promesecal.gob.do",
         "cargo":  "Encargado",
-        "correo":  "hernandez.eddy@promesecal.gob.do"
+        "departamento":  "Fiscalización"
     },
     {
         "id":  352,
         "nombre":  "Yunior De La Cruz Arias",
-        "telefono":  "809-392-3028",
+        "telefono":  "809-876-6460",
         "departamento":  "Fiscalización",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Fiscalizador",
         "correo":  "delacruz.yunior@promesecal.gob.do"
     },
     {
         "id":  353,
+        "extension":  "Ext.1159",
         "nombre":  "Francisco Alberto Vargas Ramirez",
         "telefono":  "829-380-9295",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "correo":  "vargas.francisco@promesecal.gob.do",
         "cargo":  "Director Admin Financiero",
-        "correo":  "vargas.francisco@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  354,
+        "extension":  "Ext.1111",
         "nombre":  "Mictor Emilio Fernandez de la Cruz",
         "telefono":  "829-456-6923",
-        "departamento":  "Dirección General",
-        "extension":  "",
+        "correo":  "fernandez.mictor@promesecal.gob.do",
         "cargo":  "Asesor",
-        "correo":  "fernandez.mictor@promesecal.gob.do"
+        "departamento":  "Dirección General"
     },
     {
         "id":  355,
+        "extension":  "Ext.1256",
         "nombre":  "Francisco Vasquez Concepcion",
         "telefono":  "809-253-7707",
-        "departamento":  "Jurídica",
-        "extension":  "",
+        "correo":  "vasquez.francisco@promesecal.gob.do",
         "cargo":  "Director Juridico",
-        "correo":  "vasquez.francisco@promesecal.gob.do"
+        "departamento":  "Jurídica"
     },
     {
         "id":  356,
+        "extension":  "Ext.1306",
         "nombre":  "Doris Magdalena Garcia Reyna",
-        "telefono":  "829-521-4733",
-        "departamento":  "Dirección General",
-        "extension":  "",
+        "telefono":  "809-873-1742",
+        "correo":  "garcia.doris@promesecal.gob.do",
         "cargo":  "Coordinadora",
-        "correo":  "garcia.doris@promesecal.gob.do"
+        "departamento":  "Dirección General"
     },
     {
         "id":  357,
         "nombre":  "Iram Mayobanex Galan Hernandez",
-        "telefono":  "849-881-1605",
+        "telefono":  "829-557-2143",
         "departamento":  "Seguridad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Gerente",
         "correo":  "galan.iram@promesecal.gob.do"
     },
     {
         "id":  358,
+        "extension":  "Ext.1269",
         "nombre":  "Lorena Florian Corniell",
-        "telefono":  "809-345-3446",
-        "departamento":  "Reclutamiento, Seleccion, Evaluacion",
-        "extension":  "",
+        "telefono":  "809-601-0071",
+        "correo":  "florian.lorena@promesecal.gob.do",
         "cargo":  "Auxiliar",
-        "correo":  "florian.lorena@promesecal.gob.do"
+        "departamento":  "Reclutamiento, Seleccion, Evaluacion"
     },
     {
         "id":  359,
+        "extension":  "Ext.1174",
         "nombre":  "Robert Dante Urbaez Cuevas",
-        "telefono":  "",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "telefono":  "809-968-2159",
+        "correo":  "urbaez.robert@promesecal.gob.do",
         "cargo":  "Encargado",
-        "correo":  "urbaez.robert@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  360,
+        "extension":  "Ext.1133",
         "nombre":  "Maria Esthel Vidal Lafontaine",
-        "telefono":  "829-604-2600",
-        "departamento":  "Financiero",
-        "extension":  "",
+        "telefono":  "809-991-0569",
+        "correo":  "vidal.maria@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "vidal.maria@promesecal.gob.do"
+        "departamento":  "Financiero"
     },
     {
         "id":  361,
@@ -3251,165 +3251,165 @@ const LDAP_DATA = [
     },
     {
         "id":  362,
+        "extension":  "Ext.1043",
         "nombre":  "Blanca Marie Fernandez Ramirez",
         "telefono":  "829-646-1616",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "correo":  "fernandez.blanca@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "fernandez.blanca@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  363,
         "nombre":  "Jeisson Mitchel Lebron Amparo",
         "telefono":  "829-262-2590",
         "departamento":  "Seguridad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Agente de Seguridad",
         "correo":  "lebron.jeisson@promesecal.gob.do"
     },
     {
         "id":  364,
+        "extension":  "Ext.1099",
         "nombre":  "Saulo Amaurys Suarez Alcantara",
-        "telefono":  "829-432-1208",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "809-869-5382",
+        "correo":  "suarez.saulo@promesecal.gob.do",
         "cargo":  "Director",
-        "correo":  "suarez.saulo@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  365,
         "nombre":  "Jennifer Mercedes Hernandez Bueno",
-        "telefono":  "849-222-2380",
+        "telefono":  "829-559-9873",
         "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar de Administrativa",
-        "correo":  ""
+        "correo":  "hernandez.jennifer@promesecal.gob.do"
     },
     {
         "id":  366,
+        "extension":  "Ext.1223",
         "nombre":  "Vielka Julissa Genao Lorenzo",
-        "telefono":  "809-8752157",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "829-559-1114",
+        "correo":  "genao.vielka@promesecal.gob.do",
         "cargo":  "Analista Legal",
-        "correo":  ""
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  367,
+        "extension":  "Ext.1308",
         "nombre":  "Paola Maireni Valdez Carreras",
-        "telefono":  "829-677-6980",
-        "departamento":  "Comunicaciones",
-        "extension":  "Relaciones Publico",
+        "telefono":  "829-568-5467",
+        "correo":  "valdez.paola@promesecal.gob.do",
         "cargo":  "Relacionador Publico",
-        "correo":  ""
+        "departamento":  "Comunicaciones"
     },
     {
         "id":  368,
+        "extension":  "Ext.1310",
         "nombre":  "Ana Sabrina Rosario Bisono",
-        "telefono":  "829-852-8287",
-        "departamento":  "Comunicaciones",
-        "extension":  "Analista de Redes Sociales",
+        "telefono":  "809-978-9803",
+        "correo":  "rosario.ana@promesecal.gob.do",
         "cargo":  "Analista de Redes Sociales",
-        "correo":  ""
+        "departamento":  "Comunicaciones"
     },
     {
         "id":  369,
         "nombre":  "Wilberto Alejandro Lopez Contin",
-        "telefono":  "809-634-2032",
+        "telefono":  "809-878-4548",
         "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Encargado",
-        "correo":  ""
+        "correo":  "lopez.wilberto@promesecal.gob.do"
     },
     {
         "id":  370,
+        "extension":  "Ext.1101",
         "nombre":  "Jhonattan Polanco Sosa",
-        "telefono":  "809-899-4073",
-        "departamento":  "Planificación y Desarrollo",
-        "extension":  "",
+        "telefono":  "809-914-4635",
+        "correo":  "polanco.jhonattan@promesecal.gob.do",
         "cargo":  "Director",
-        "correo":  ""
+        "departamento":  "Planificación y Desarrollo"
     },
     {
         "id":  371,
+        "extension":  "Ext.1185",
         "nombre":  "Tefi Katerine Batista Rivas",
-        "telefono":  "",
-        "departamento":  "Mejora y Acondicionamiento Físico",
-        "extension":  "",
+        "telefono":  "809-918-4758",
+        "correo":  "batista.tefi@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  ""
+        "departamento":  "Mejora y Acondicionamiento Físico"
     },
     {
         "id":  372,
+        "extension":  "Ext.1021",
         "nombre":  "Maximo Bolívar De Leon Tirado",
-        "telefono":  "",
-        "departamento":  "Almacén General",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "deleon.maximo@promesecal.gob.do",
         "cargo":  "Encardado",
-        "correo":  "deleon.maximo@promesecal.gob.do"
+        "departamento":  "Almacén General"
     },
     {
         "id":  373,
+        "extension":  "Ext.1059",
         "nombre":  "Anabell Nuñez Cruz",
-        "telefono":  "",
-        "departamento":  "Distribución de Insumos Para La Salud",
-        "extension":  "",
+        "telefono":  "809-901-6012",
+        "correo":  "nunez.anabell@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "nunez.anabell@promesecal.gob.do"
+        "departamento":  "Distribución de Insumos Para La Salud"
     },
     {
         "id":  374,
+        "extension":  "Ext.1078",
         "nombre":  "Xiomara Altagracia Pozo Mendez",
-        "telefono":  "",
-        "departamento":  "Sección de Ingresos",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "pozo.xiomara@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "pozo.xiomara@promesecal.gob.do"
+        "departamento":  "Sección de Ingresos"
     },
     {
         "id":  375,
+        "extension":  "Ext.1035",
         "nombre":  "Hamlet Samael Almanzar Jimenez",
-        "telefono":  "",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "almanzar.hamlet@promesecal.gob.do",
         "cargo":  "Director",
-        "correo":  "almanzar.hamlet@promesecal.gob.do"
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
     },
     {
         "id":  376,
         "nombre":  "Sandra Dayanara Caraballo Perez",
         "telefono":  "809-904-3116",
         "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  ""
+        "correo":  "caraballo.sandra@promesecal.gob.do"
     },
     {
         "id":  377,
         "nombre":  "Omaira Guerrero Vargas",
         "telefono":  "809-201-2000",
         "departamento":  "Jurídica",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Coordinadora",
-        "correo":  ""
+        "correo":  "guerrero.omaira@promesecal.gob.do"
     },
     {
         "id":  378,
         "nombre":  "Jorge Gustavo Santiago Terrero Mercedes",
         "telefono":  "829-857-4590",
         "departamento":  "Jurídica",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista",
-        "correo":  ""
+        "correo":  "terrero.jorge@promesecal.gob.do"
     },
     {
         "id":  379,
         "nombre":  "Hector Radhames Vasquez De La Cruz",
-        "telefono":  "",
+        "telefono":  "829-559-8321",
         "departamento":  "Comunicaciones",
-        "extension":  "Comunicaciones",
+        "extension":  "N/A",
         "cargo":  "Aux. Admim",
-        "correo":  "829-714-1335"
+        "correo":  "vasquez.hector@promesecal.gob.do"
     },
     {
         "id":  380,
@@ -3422,64 +3422,64 @@ const LDAP_DATA = [
     },
     {
         "id":  381,
+        "extension":  "Ext.1153",
         "nombre":  "Nelsi Patricia Urbaez Cuello",
-        "telefono":  "829-866-0204",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "telefono":  "809-817-4359",
+        "correo":  "urbaez.nelsi@promesecal.gob.do",
         "cargo":  "Coordinadora",
-        "correo":  "urbaez.nelsi@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  382,
+        "extension":  "Ext.1140",
         "nombre":  "Ingris Michel Reyes Novas",
-        "telefono":  "829-275-9947",
-        "departamento":  "Contabilidad",
-        "extension":  "Contabilidad",
+        "telefono":  "849-763-4239",
+        "correo":  "reyes.ingris@promesecal.gob.do",
         "cargo":  "Encargada de Contabilidad",
-        "correo":  ""
+        "departamento":  "Contabilidad"
     },
     {
         "id":  383,
+        "extension":  "Ext.1164",
         "nombre":  "Somiver Doranelly Garo Diaz",
-        "telefono":  "",
-        "departamento":  "Servicios Generales",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "garo.somiver@promesecal.gob.do",
         "cargo":  "Supervisora Comedor",
-        "correo":  "garo.somiver@promesecal.gob.do"
+        "departamento":  "Servicios Generales"
     },
     {
         "id":  384,
+        "extension":  "Ext.1271",
         "nombre":  "Lucy Cuevas Santana",
-        "telefono":  "",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "809-658-2849",
+        "correo":  "cuevas.lucy@promesecal.gob.do",
         "cargo":  "Analista de Nomina",
-        "correo":  "cuevas.lucy@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  385,
+        "extension":  "Ext.1035",
         "nombre":  "Genesis Claudia Landeta Perez",
         "telefono":  "",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "correo":  "landeta.genesis@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "landeta.genesis@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  386,
+        "extension":  "Ext.1290",
         "nombre":  "Rosa Jimenez Lebron",
-        "telefono":  "809-217-3388",
-        "departamento":  "Recursos Humanos",
-        "extension":  "Recursos Humanos",
+        "telefono":  "809-878-0611",
+        "correo":  "jimenez.rosa@promesecal.gob.do",
         "cargo":  "Coordinadora",
-        "correo":  "jimenez.rosa@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  387,
         "nombre":  "William Anibal Santana Terrero",
-        "telefono":  "",
+        "telefono":  "N/A",
         "departamento":  "Sección de Ingresos",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Colector",
         "correo":  "santana.william@promesecal.gob.do"
     },
@@ -3488,81 +3488,81 @@ const LDAP_DATA = [
         "nombre":  "Juan Bautista Fermin Olivero",
         "telefono":  "809-495-6611",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Tecnico Farmaceutico",
         "correo":  "fermin.juan@promesecal.gob.do"
     },
     {
         "id":  389,
+        "extension":  "Ext.1621",
         "nombre":  "Raisa Sugeira de los Angeles Pichardo Gomez",
         "telefono":  "849-885-9192",
-        "departamento":  "Almacen Santiago",
-        "extension":  "",
+        "correo":  "pichardo.raisa@promesecal.gob.do",
         "cargo":  "Recepcionista",
-        "correo":  "pichardo.raisa@promesecal.gob.do"
+        "departamento":  "Almacen Santiago"
     },
     {
         "id":  390,
+        "extension":  "Ext.1503",
         "nombre":  "Lina Patricia Montaño Peña de Feliz",
-        "telefono":  "829-340-3471",
-        "departamento":  "Dirección General",
-        "extension":  "Dirección General",
+        "telefono":  "829-920-3925",
+        "correo":  "montano.lina@promesecal.gob.do",
         "cargo":  "Asesor",
-        "correo":  ""
+        "departamento":  "Dirección General"
     },
     {
         "id":  391,
+        "extension":  "Ext.1201",
         "nombre":  "Cristal Esthefany Moreta Valdez",
         "telefono":  "829-764-0358",
-        "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "correo":  "moreta.cristal@promesecal.gob.do",
         "cargo":  "Analista de procesos farmaceuticas",
-        "correo":  ""
+        "departamento":  "Farmacia del Pueblo"
     },
     {
         "id":  392,
+        "extension":  "Ext.1137",
         "nombre":  "Alondra Teresa Moronta Abreu",
-        "telefono":  "829-671-1622",
-        "departamento":  "Administrativo",
-        "extension":  "Administrativo",
+        "telefono":  "829-308-8870",
+        "correo":  "moronta.alondra@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "moronta.alondra@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  393,
         "nombre":  "Karem Chanell Duarte Rodriguez",
-        "telefono":  "",
+        "telefono":  "829-308-8874",
         "departamento":  "Planificación y Desarrollo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista",
         "correo":  "duarte.karem@promesecal.gob.do"
     },
     {
         "id":  394,
         "nombre":  "Cynthia Marie Dominguez Hernandez",
-        "telefono":  "809-499-0035",
+        "telefono":  "829-713-7210",
         "departamento":  "Planificación y Desarrollo",
-        "extension":  "Planificación y Desarrollo",
+        "extension":  "N/A",
         "cargo":  "Analista de Proyectos",
         "correo":  ""
     },
     {
         "id":  395,
+        "extension":  "Ext.1274",
         "nombre":  "Franklyn Francisco Guerra Duran",
         "telefono":  "",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "correo":  "guerra.franklyn@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "guerra.franklyn@promesecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  396,
+        "extension":  "Ext.1221",
         "nombre":  "Luisanna De la Cruz",
-        "telefono":  "829-929-4783",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "809-972-0786",
+        "correo":  "delacruz.luisanna@promesecal.gob.do",
         "cargo":  "Analista de Beneficios y Relaciones Laborales",
-        "correo":  "delacruz.luisanna@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  397,
@@ -3575,37 +3575,37 @@ const LDAP_DATA = [
     },
     {
         "id":  398,
+        "extension":  "Ext.1050",
         "nombre":  "Elbys Alfredo Paulino King",
-        "telefono":  "829-880-7248",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "telefono":  "829-542-4388",
+        "correo":  "paulino.elbys@promesecal.gob.do",
         "cargo":  "Administrador de Redes",
-        "correo":  "paulino.elbys@promesecal.gob.do"
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
     },
     {
         "id":  399,
+        "extension":  "Ext.1025",
         "nombre":  "Milfri Manon Hernandez",
         "telefono":  "829-364-9730",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "correo":  "manon.milfri@promesecal.gob.do",
         "cargo":  "Auxiiar Administrativo",
-        "correo":  "manon.milfri@promesecal.gob.do"
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
     },
     {
         "id":  400,
+        "extension":  "Ext.1058",
         "nombre":  "Joel Alberto Aristy Montes de Oca",
         "telefono":  "809-857-4581",
-        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "correo":  "aristy.joel@promesecal.gob.do",
         "cargo":  "Tecnico Administrativo",
-        "correo":  "aristy.joel@promesecal.gob.do"
+        "departamento":  "Tecnología de la Información y Comunicaciones (TIC)"
     },
     {
         "id":  401,
         "nombre":  "Weslly Antonio Herrera Nuñez",
-        "telefono":  "",
+        "telefono":  "829-662-4528",
         "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Soporte Tecnico",
         "correo":  "herrera.weslly@promesecal.gob.do"
     },
@@ -3614,126 +3614,126 @@ const LDAP_DATA = [
         "nombre":  "Victor Manuel Perez Rodriguez",
         "telefono":  "829-819-9598",
         "departamento":  "Tecnología de la Información y Comunicaciones (TIC)",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Soporte Tecnico",
-        "correo":  ""
+        "correo":  "perez.victor@promesecal.gob.do"
     },
     {
         "id":  403,
+        "extension":  "Ext.1231",
         "nombre":  "Katherine Sharina Guerra Seri",
-        "telefono":  "809-446-9761",
-        "departamento":  "Comunicaciones",
-        "extension":  "Comunicacion",
+        "telefono":  "829-554-6892",
+        "correo":  "guerra.katherine@promesecal.gob.do",
         "cargo":  "Relacionadora Publica",
-        "correo":  ""
+        "departamento":  "Comunicaciones"
     },
     {
         "id":  404,
+        "extension":  "Ext.1408",
         "nombre":  "Lourdes Mariela Lozano Polanco",
-        "telefono":  "829-275-1514",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "829-540-8776",
+        "correo":  "lozano.lourdes@promesecal.gob.do",
         "cargo":  "Tecnico Administrativo",
-        "correo":  "lozano.lourdes@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  405,
+        "extension":  "Ext.1298",
         "nombre":  "Milciades De la Cruz Encarnacion",
-        "telefono":  "829-807-4956",
-        "departamento":  "Servicios Generales",
-        "extension":  "",
+        "telefono":  "809-881-5613",
+        "correo":  "delacruz.milciades@promesecal.gob.do",
         "cargo":  "Encargado",
-        "correo":  "delacruz.milciades@promesecal.gob.do"
+        "departamento":  "Servicios Generales"
     },
     {
         "id":  406,
         "nombre":  "Enger Eudomar Suero Fernandez",
-        "telefono":  "829-696-9181",
+        "telefono":  "809-658-2848",
         "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista",
         "correo":  "suero.enger@promesecal.gob.do"
     },
     {
         "id":  407,
+        "extension":  "Ext.1119",
         "nombre":  "Marlene Fernandez Mercedes",
-        "telefono":  "849-284-5208",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "829-922-4552",
+        "correo":  "fernandez.marlene@promesecal.gob.do",
         "cargo":  "Tecnico Administrativo",
-        "correo":  "fernandez.marlene@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  408,
         "nombre":  "Marileny Caraballo",
-        "telefono":  "829-962-8570",
+        "telefono":  "849-763-3848",
         "departamento":  "Archivo y Correspondencia",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Secretaria",
         "correo":  "caraballo.marileny@promesecal.gob.do"
     },
     {
         "id":  409,
         "nombre":  "Diala Cristina Rizik de Abreu",
-        "telefono":  "809-519-7092",
+        "telefono":  "829-887-0523",
         "departamento":  "Financiero",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista",
         "correo":  "rizik.diala@promesecal.gob.do"
     },
     {
         "id":  410,
         "nombre":  "Maria Franchesca Mejia",
-        "telefono":  "829-849-8750",
+        "telefono":  "829-858-9945",
         "departamento":  "Seguridad y Monitoreo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Agente Seguridad",
         "correo":  "mejia.maria@promesecal.gob.do"
     },
     {
         "id":  411,
+        "extension":  "Ext.1175",
         "nombre":  "Rosa Elba Laurencio Morel",
-        "telefono":  "809-545-9958",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "Compras",
+        "telefono":  "849-255-0642",
+        "correo":  "laurencio.rosa@promesecal.gob.do",
         "cargo":  "Encargada Compras Internacionales",
-        "correo":  ""
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  412,
+        "extension":  "Ext.1138",
         "nombre":  "Vareli Suleica Feliz Feliz",
-        "telefono":  "",
-        "departamento":  "Contabilidad",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "feliz.vareli@promesecal.gob.do",
         "cargo":  "Tecnico Administrativo",
-        "correo":  "feliz.vareli@promesecal.gob.do"
+        "departamento":  "Contabilidad"
     },
     {
         "id":  413,
+        "extension":  "Ext.1152",
         "nombre":  "Maria del Carmen Martinez",
-        "telefono":  "",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "telefono":  "809-903-0473",
+        "correo":  "martinez.maria@promesecal.gob.do",
         "cargo":  "Analista de Compras",
-        "correo":  "martinez.maria@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  414,
+        "extension":  "Ext.1203",
         "nombre":  "Luis Miguel Diaz Matos",
-        "telefono":  "809-235-9205",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "telefono":  "849-763-2909",
+        "correo":  "diaz.luis@promesecal.gob.do",
         "cargo":  "Tecnico",
-        "correo":  "diaz.luis@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  415,
+        "extension":  "Ext.1034",
         "nombre":  "Yolanda Tesalia Melgen Lopez",
-        "telefono":  "809-884-1667",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "849-266-2622",
+        "correo":  "melgen.yolanda@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "melgen.yolanda@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  416,
@@ -3749,34 +3749,34 @@ const LDAP_DATA = [
         "nombre":  "John Kenneth Sapir Cruzeta",
         "telefono":  "809-205-7878",
         "departamento":  "Institucional",
-        "extension":  "Tesorería",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
-        "correo":  ""
+        "correo":  "sapir.john@promesecal.gob.do"
     },
     {
         "id":  418,
         "nombre":  "Juan Leony De La Cruz Berroa",
         "telefono":  "849-287-3865",
         "departamento":  "Institucional",
-        "extension":  "Sección de Ingresos",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
-        "correo":  ""
+        "correo":  "delacruz.juan@promesecal.gob.do"
     },
     {
         "id":  419,
         "nombre":  "Yeidy Belen Florencio",
-        "telefono":  "",
+        "telefono":  "849-763-2779",
         "departamento":  "Institucional",
-        "extension":  "Sede Central",
+        "extension":  "N/A",
         "cargo":  "Colaborador",
-        "correo":  ""
+        "correo":  "belen.yeidy@promesecal.gob.do"
     },
     {
         "id":  420,
         "nombre":  "Angela Maria Lozano de la Cruz",
         "telefono":  "809-918-3501",
         "departamento":  "Farmacia del Pueblo",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Tecnico Administrativo",
         "correo":  "lozano.angela@promesecal.gob.do"
     },
@@ -3792,83 +3792,83 @@ const LDAP_DATA = [
     {
         "id":  422,
         "nombre":  "Jesi Esther Mota Rosario",
-        "telefono":  "809-790-8008",
+        "telefono":  "809-967-5634",
         "departamento":  "Ingeniería e Infraestructura",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisora de Obra",
         "correo":  "mota.jesi@promesecal.gob.do"
     },
     {
         "id":  423,
         "nombre":  "Edward Alexander Cuevas Mendez",
-        "telefono":  "829-962-4386",
+        "telefono":  "809-907-1448",
         "departamento":  "Ingeniería e Infraestructura",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Coordinador",
         "correo":  "cuevas.edward@promesecal.gob.do"
     },
     {
         "id":  424,
         "nombre":  "Milly Rubenia Sena Segura de Ruiz",
-        "telefono":  "809-602-5396",
+        "telefono":  "809-805-8484",
         "departamento":  "Almacén General",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista de despacho",
         "correo":  "sena.milly@promesecal.gob.do"
     },
     {
         "id":  425,
+        "extension":  "Ext.1622",
         "nombre":  "Yenny Mercedes Caraballo de Guzman",
-        "telefono":  "809-458-4503",
-        "departamento":  "Operaciones y Logística",
-        "extension":  "",
+        "telefono":  "809-912-9786",
+        "correo":  "caraballo.yenny@promsecal.gob.do",
         "cargo":  "Coordinadora Analista",
-        "correo":  "caraballo.yenny@promsecal.gob.do"
+        "departamento":  "Operaciones y Logística"
     },
     {
         "id":  426,
+        "extension":  "Ext.1088",
         "nombre":  "Aracelis Espinosa Mojica",
         "telefono":  "809-350-9788",
-        "departamento":  "Tramites y Servicios Santiago",
-        "extension":  "",
+        "correo":  "espinosa.aracelis@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "espinosa.aracelis@promesecal.gob.do"
+        "departamento":  "Tramites y Servicios Santiago"
     },
     {
         "id":  427,
         "nombre":  "Marino Antonio Quiroz Rosario",
         "telefono":  "849-852-1053",
         "departamento":  "Fiscalización",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisor de Mesa (Fiscalizador)",
         "correo":  "quiroz.marino@promesecal.gob.do"
     },
     {
         "id":  428,
+        "extension":  "Ext.1164",
         "nombre":  "Franchesca De la Cruz Crespo",
         "telefono":  "809-654-0306",
-        "departamento":  "Operacaiones y Logistica",
-        "extension":  "",
+        "correo":  "delacruz.franchesca@promesecal.gob.do",
         "cargo":  "Secretaria",
-        "correo":  "delacruz.franchesca@promesecal.gob.do"
+        "departamento":  "Operacaiones y Logistica"
     },
     {
         "id":  429,
         "nombre":  "Julio Gustavo Medina de Leon",
-        "telefono":  "829-527-5590",
+        "telefono":  "809-857-9642",
         "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Digitador",
         "correo":  "medina.julio@promesecal.gob.do"
     },
     {
         "id":  430,
+        "extension":  "Ext.1305",
         "nombre":  "Laren Matos Carrasco",
         "telefono":  "849-856-5514",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "correo":  "matos.laren@promesecal.gob.do",
         "cargo":  "Tecnico Administrativo",
-        "correo":  "matos.laren@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  431,
@@ -3882,99 +3882,99 @@ const LDAP_DATA = [
     {
         "id":  432,
         "nombre":  "Ramona Altagracia Calderon Placido",
-        "telefono":  "809-880-3522",
+        "telefono":  "829-678-8415",
         "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Analista de Muestra",
         "correo":  "calderon.ramona@promesecal.gob.do"
     },
     {
         "id":  433,
+        "extension":  "Ext.1189",
         "nombre":  "Yensy Carolina Bonilla Rodriguez",
-        "telefono":  "829-648-4055",
-        "departamento":  "Planificación y Desarrollo",
-        "extension":  "",
+        "telefono":  "809-991-0362",
+        "correo":  "bonilla.yensy@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativo",
-        "correo":  "bonilla.yensy@promesecal.gob.do"
+        "departamento":  "Planificación y Desarrollo"
     },
     {
         "id":  434,
         "nombre":  "Ana Massiel Rodriguez Perez",
-        "telefono":  "809-919-5033",
+        "telefono":  "809-653-7593",
         "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Tecnico Administrativo",
         "correo":  "perez.ana@promesecal.gob.do"
     },
     {
         "id":  435,
+        "extension":  "Ext.1160",
         "nombre":  "Mayerlin Susana Reynoso Cerda",
-        "telefono":  "829-906-7524",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "telefono":  "809-653-6644",
+        "correo":  "reynoso.mayerlin@promesecal.gob.do",
         "cargo":  "Analista de Compras",
-        "correo":  "reynoso.mayerlin@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  436,
+        "extension":  "Ext.1148",
         "nombre":  "Emilis De la Rosa Tiburcio",
-        "telefono":  "",
-        "departamento":  "Cuentas por Cobrar",
-        "extension":  "",
+        "telefono":  "849-763-4251",
+        "correo":  "delarosa.emilis@promesecal.gob.do",
         "cargo":  "Encargada",
-        "correo":  "delarosa.emilis@promesecal.gob.do"
+        "departamento":  "Cuentas por Cobrar"
     },
     {
         "id":  437,
         "nombre":  "Julio Daniel Aleman Silva",
-        "telefono":  "829-907-7000",
+        "telefono":  "829-858-8616",
         "departamento":  "Seguridad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Supervisor de Seguridad",
         "correo":  "aleman.julio@promesecal.gob.do"
     },
     {
         "id":  438,
+        "extension":  "Ext.1221",
         "nombre":  "Carlos Daniel Cuello Castro",
         "telefono":  "809-607-8103",
-        "departamento":  "Seguridad",
-        "extension":  "",
+        "correo":  "cuello.carlos@promesecal.gob.do",
         "cargo":  "Asistente",
-        "correo":  "cuello.carlos@promesecal.gob.do"
+        "departamento":  "Seguridad"
     },
     {
         "id":  439,
+        "extension":  "Ext.1100",
         "nombre":  "Fernando Arturo Velez Marte",
         "telefono":  "829-959-9564",
-        "departamento":  "Ingeniería e Infraestructura",
-        "extension":  "",
+        "correo":  "velez.fernando@promesecal.gob.do",
         "cargo":  "Supervisor",
-        "correo":  "velez.fernando@promesecal.gob.do"
+        "departamento":  "Ingeniería e Infraestructura"
     },
     {
         "id":  440,
+        "extension":  "Ext.1403",
         "nombre":  "Ruth Selis De los Santos Labour",
         "telefono":  "829-926-1402",
-        "departamento":  "Compras y Contrataciones",
-        "extension":  "",
+        "correo":  "delossantos.ruth@promesecal.gob.do",
         "cargo":  "Analista Legal",
-        "correo":  "delossantos.ruth@promesecal.gob.do"
+        "departamento":  "Compras y Contrataciones"
     },
     {
         "id":  441,
+        "extension":  "Ext.1062",
         "nombre":  "Eidy Melina Serrano Matos",
-        "telefono":  "",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "telefono":  "809-876-5984",
+        "correo":  "serrano.eidy@promesecal.gob.do",
         "cargo":  "Auxiliar",
-        "correo":  "serrano.eidy@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  442,
         "nombre":  "Estefany Franchesca Soler Thomas",
         "telefono":  "809-416-0816",
         "departamento":  "Contabilidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Contadora",
         "correo":  "soler.estefany@promesecal.gob.do"
     },
@@ -3983,72 +3983,72 @@ const LDAP_DATA = [
         "nombre":  "Jeannetty Jiselly Ruiz Feliz",
         "telefono":  "809-428-2550",
         "departamento":  "Contabilidad",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Contadora",
         "correo":  "ruiz.jeannetty@promesecal.gob.do"
     },
     {
         "id":  444,
+        "extension":  "Ext.1047",
         "nombre":  "Fara Slianny Perez Perez",
         "telefono":  "849-632-6513",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "correo":  "perez.fara@promesecal.gob.do",
         "cargo":  "Tecnico Administrativo",
-        "correo":  "perez.fara@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  445,
+        "extension":  "Ext.1161",
         "nombre":  "Annibelkys Peña Lantigua",
         "telefono":  "829-933-7241",
-        "departamento":  "Administrativo",
-        "extension":  "",
+        "correo":  "pena.annibelkys@promesecal.gob.do",
         "cargo":  "Analista de Proceso",
-        "correo":  "pena.annibelkys@promesecal.gob.do"
+        "departamento":  "Administrativo"
     },
     {
         "id":  446,
+        "extension":  "Ext.1215",
         "nombre":  "Miguelina Barrera Sanchez",
-        "telefono":  "809-984-6596",
-        "departamento":  "Recursos Humanos",
-        "extension":  "",
+        "telefono":  "809-991-0568",
+        "correo":  "barrera.miguelina@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "barrera.miguelina@promesecal.gob.do"
+        "departamento":  "Recursos Humanos"
     },
     {
         "id":  447,
         "nombre":  "Rosidania Medina Rodriguez",
         "telefono":  "829-343-7477",
         "departamento":  "Comunicaciones",
-        "extension":  "",
+        "extension":  "N/A",
         "cargo":  "Secretaria",
         "correo":  "medina.rosidania@promesecal.gob.do"
     },
     {
         "id":  448,
+        "extension":  "Ext.1022",
         "nombre":  "Emilio Ramirez Mercedes",
         "telefono":  "809-441-0978",
-        "departamento":  "Comunicaciones",
-        "extension":  "",
+        "correo":  "ramirez.emilio@promesecal.gob.do",
         "cargo":  "Tecnico",
-        "correo":  "ramirez.emilio@promesecal.gob.do"
+        "departamento":  "Comunicaciones"
     },
     {
         "id":  449,
+        "extension":  "Ext.1174",
         "nombre":  "Christian Emmanuel LLorca Figueroa",
         "telefono":  "809-899-4762",
-        "departamento":  "Comunicaciones",
-        "extension":  "",
+        "correo":  "llorca.christian@promesecal.gob.do",
         "cargo":  "Auxiliar Administrativa",
-        "correo":  "llorca.christian@promesecal.gob.do"
+        "departamento":  "Comunicaciones"
     },
     {
         "id":  450,
+        "extension":  "Ext.1309",
         "nombre":  "Jennifer De Dios Diaz",
         "telefono":  "829-719-3904",
-        "departamento":  "Comunicaciones",
-        "extension":  "",
+        "correo":  "dedios.jennifer@promesecal.gob.do",
         "cargo":  "Analista de Redes Sociales",
-        "correo":  "dedios.jennifer@promesecal.gob.do"
+        "departamento":  "Comunicaciones"
     },
     {
         "id":  451,
@@ -4061,20 +4061,20 @@ const LDAP_DATA = [
     },
     {
         "id":  452,
+        "extension":  "Ext.1410",
         "nombre":  "Francisco Antonio Calderón Alcántara",
-        "telefono":  "",
-        "departamento":  "Institucional",
-        "extension":  "",
+        "telefono":  "N/A",
+        "correo":  "calderon.francisco@promesecal.gob.do",
         "cargo":  "Colaborador",
-        "correo":  ""
+        "departamento":  "Institucional"
     },
     {
         "id":  453,
+        "extension":  "Ext.1144",
         "nombre":  "Xiomara Rijo Isabel",
-        "telefono":  "",
-        "departamento":  "Contabilidad",
-        "extension":  "",
+        "telefono":  "-",
+        "correo":  "",
         "cargo":  "Encargada de Cuentas por Pagar",
-        "correo":  ""
+        "departamento":  "Contabilidad"
     }
 ];

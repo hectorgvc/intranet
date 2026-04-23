@@ -6,7 +6,7 @@
 <title>Intranet PROMESE/CAL — Medicinas que dan Calidad de Vida</title>
 <meta name="description" content="Portal interno de PROMESE/CAL - Programa de Medicamentos Esenciales y Central de Apoyo a la Logística de Insumos">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Monotype+Corsiva&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="js/config/tailwind.config.js"></script>
@@ -20,7 +20,7 @@
 
 <div class="flex min-h-screen">
   <!-- Sidebar -->
-  <aside id="sidebar" class="sidebar bg-[#0f4c5c] flex flex-col fixed md:sticky top-0 h-screen z-50">
+  <aside id="sidebar" class="sidebar bg-[#50788A] flex flex-col fixed md:sticky top-0 h-screen z-50">
     <!-- Logo area -->
     <div class="px-5 py-4 border-b border-[rgba(255,255,255,0.1)] flex items-center justify-center bg-white m-3 rounded-xl shadow-lg border border-gray-100/10">
       <img src="assets/Logo-promesecal.png" alt="PROMESE/CAL Logo" class="max-w-full h-auto max-h-[60px] object-contain" />
@@ -32,6 +32,8 @@
       <a href="#" class="sidebar-link rounded-md" data-view="portales" onclick="navigateTo('portales', this)"><i data-lucide="grid" class="w-5 h-5"></i> Integraciones</a>
       <a href="#" class="sidebar-link rounded-md" data-view="directorio" onclick="navigateTo('directorio', this)"><i data-lucide="users" class="w-5 h-5"></i> Directorio</a>
       <a href="#" class="sidebar-link rounded-md" data-view="firma" onclick="navigateTo('firma', this)"><i data-lucide="mail-check" class="w-5 h-5"></i> Firma Correo</a>
+      <a href="#" class="sidebar-link rounded-md mt-6!" data-view="enlaces" onclick="navigateTo('enlaces', this)"><i data-lucide="external-link" class="w-5 h-5"></i> Enlaces Externos</a>
+      <a href="#" class="sidebar-link rounded-md" data-view="capacitaciones" onclick="navigateTo('capacitaciones', this)"><i data-lucide="play-circle" class="w-5 h-5"></i> Capacitaciones</a>
       <a href="#" class="sidebar-link rounded-md mt-6!" data-view="admin" onclick="navigateTo('admin', this)"><i data-lucide="settings" class="w-5 h-5"></i> Admin Hub</a>
     </nav>
   </aside>
@@ -39,7 +41,7 @@
   <!-- Main Content -->
   <main class="flex-1 min-h-screen relative w-full overflow-hidden">
     <!-- Mobile Header -->
-    <header class="md:hidden bg-[#0f4c5c] text-white p-3 flex items-center justify-between sticky top-0 z-30 shadow-md">
+    <header class="md:hidden bg-[#50788A] text-white p-3 flex items-center justify-between sticky top-0 z-30 shadow-md">
       <button onclick="toggleSidebar()"><i data-lucide="menu" class="w-6 h-6"></i></button>
       <div class="bg-white rounded px-2 py-1 flex items-center h-10">
         <img src="assets/Logo-promesecal.png" alt="PROMESE/CAL" class="h-full object-contain max-w-[150px]">
@@ -133,11 +135,33 @@
       </div>
 
       <!-- ================================ -->
-      <!-- VISTA 6: ADMIN -->
+      <!-- VISTA 5: ENLACES EXTERNOS -->
+      <!-- ================================ -->
+      <div id="view-enlaces" class="view">
+        <div class="mb-6">
+          <h2 class="text-3xl font-bold text-[#111] uppercase tracking-tight">Aplicaciones Externas</h2>
+          <p class="text-gray-500 mt-1">Portales y sistemas del gobierno dominicano</p>
+        </div>
+        <div id="enlacesContainer" class="space-y-10"></div>
+      </div>
+
+      <!-- ================================ -->
+      <!-- VISTA 6: CAPACITACIONES -->
+      <!-- ================================ -->
+      <div id="view-capacitaciones" class="view">
+        <div class="mb-6">
+          <h2 class="text-3xl font-bold text-[#111] uppercase tracking-tight">Centro de Capacitaciones</h2>
+          <p class="text-gray-500 mt-1">Tutoriales y cursos sobre herramientas institucionales</p>
+        </div>
+        <div id="capacitacionesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+
+      <!-- ================================ -->
+      <!-- VISTA 7: ADMIN -->
       <!-- ================================ -->
       <div id="view-admin" class="view">
         <div id="adminLogin" class="max-w-md mx-auto mt-20 card p-8 text-center border-gray-200 shadow-lg">
-          <div class="w-16 h-16 bg-[#eefbfa] rounded-full flex items-center justify-center mx-auto mb-5 text-[#2a7d7b]">
+          <div class="w-16 h-16 bg-[#e0ebeef] rounded-full flex items-center justify-center mx-auto mb-5 text-[#50788A]">
             <i data-lucide="shield" class="w-8 h-8"></i>
           </div>
           <h2 class="text-2xl font-bold mb-2">Panel de Control</h2>
@@ -146,7 +170,7 @@
           <button onclick="loginAdmin()" class="btn-primary w-full py-2.5">Autenticar</button>
           <p id="adminError" class="text-[#e63329] text-sm mt-3 hidden font-medium">Acceso denegado</p>
         </div>
-        
+
         <div id="adminPanel" class="hidden">
           <div class="flex items-center border-b border-gray-200 mb-6 justify-between gap-4 flex-wrap">
             <div class="flex">
@@ -171,6 +195,8 @@
 <script src="js/controllers/portales.js"></script>
 <script src="js/controllers/directorio.js"></script>
 <script src="js/controllers/firma.js"></script>
+<script src="js/controllers/enlaces.js"></script>
+<script src="js/controllers/capacitaciones.js"></script>
 <script src="js/controllers/admin.js"></script>
 <script src="js/app.js"></script>
 </body>

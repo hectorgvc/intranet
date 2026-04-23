@@ -82,7 +82,7 @@ function renderDashboard() {
           <span>·</span>
           <span>${n.fecha}</span>
         </div>
-        <button onclick="openNoticiaModal(${n.id})" class="mt-3 text-[#0f4c5c] font-semibold text-sm hover:underline">
+        <button onclick="openNoticiaModal(${n.id})" class="mt-3 text-[#50788A] font-semibold text-sm hover:underline">
           Ver más
         </button>
       </div>
@@ -93,16 +93,16 @@ function renderDashboard() {
   container.innerHTML = `
     <div class="hero-banner shadow-lg">
       <div class="hero-content w-full md:w-1/2 text-center md:text-left px-4 md:px-8 flex flex-col justify-center">
-        <div class="relative z-10 w-full max-w-sm rounded-full bg-white flex items-center px-4 py-2.5 border border-gray-200 shadow-sm transition hover:shadow-md focus-within:shadow-md focus-within:border-[#2a7d7b] mb-4">
+        <div class="relative z-10 w-full max-w-sm rounded-full bg-white flex items-center px-4 py-2.5 border border-gray-200 shadow-sm transition hover:shadow-md focus-within:shadow-md focus-within:border-[#50788A] mb-4">
           <i data-lucide="search" class="w-5 h-5 text-gray-400 mr-3"></i>
           <input type="text" placeholder="Buscar portales o contactos..." class="flex-1 bg-transparent border-none outline-none text-sm font-medium text-black placeholder-gray-500" onkeydown="if(event.key==='Enter') navigateTo('directorio')">
         </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight">${saludo}, Equipo!</h1>
-        <h2 class="text-3xl md:text-4xl font-bold text-[#e63329] mb-3">Intranet Institucional</h2>
-        <p class="text-lg opacity-90 mb-8 font-medium tracking-wide max-w-lg leading-relaxed">Un espacio creado para conectarnos, informarnos y trabajar mejor.</p>
-        <button onclick="openMenuDelDiaPopup()" class="bg-white text-[#0f4c5c] font-bold py-3.5 px-8 rounded-full transition shadow-md hover:shadow-lg hover:bg-gray-50 text-sm tracking-wide w-full md:w-auto">VER MENÚ DEL DÍA</button>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-1 tracking-tight" style="color: #50788A;">${saludo}, Equipo!</h1>
+        <h2 class="text-3xl md:text-4xl font-bold italic mb-3" style="color: #50788A; font-size: 2.25rem;">Intranet Institucional</h2>
+        <p class="mb-8" style="font-family: 'Monotype Corsiva', 'Comic Sans MS', cursive; font-size: 18px; font-style: italic; color: white; max-width: 28rem; line-height: 1.6; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">Un espacio creado para conectarnos, informarnos y trabajar mejor.</p>
+        <button onclick="openMenuDelDiaPopup()" class="bg-[#50788A] text-white font-bold py-3.5 px-8 rounded-full transition shadow-md hover:shadow-lg hover:bg-[#3d5f6d] text-sm tracking-wide w-full md:w-auto">VER MENÚ DEL DÍA</button>
       </div>
-      <div class="hero-slider border-l-8 border-[#0a3541] w-full md:w-1/2 h-48 md:h-96">
+      <div class="hero-slider border-l-8 border-[#3d5f6d] w-full md:w-1/2 h-48 md:h-96">
         <div class="hero-overlay"></div>
         ${HERO_SLIDES.map((src, i) => `
           <div class="hero-slide" style="opacity: ${i === 0 ? '1' : '0'};">
@@ -113,19 +113,19 @@ function renderDashboard() {
     </div>
 
     <div class="quick-links-band shadow-sm mb-12">
-      <div class="ql-item hover:bg-[#155b6e]" onclick="window.open('https://mesadeayuda.promesecal.gob.do/front/central.php', '_blank')">
+      <div class="ql-item hover:bg-[#3d5f6d]" onclick="window.open('https://mesadeayuda.promesecal.gob.do/front/central.php', '_blank')">
         <div class="ql-circle"><i data-lucide="headphones" class="w-7 h-7 text-white"></i></div>
         <span class="text-[11px] font-bold tracking-widest uppercase mt-1">Mesa de Ayuda</span>
       </div>
-      <div class="ql-item hover:bg-[#1a5e72]" onclick="navigateTo('directorio')">
+      <div class="ql-item hover:bg-[#50788A]" onclick="navigateTo('directorio')">
         <div class="ql-circle"><i data-lucide="users" class="w-6 h-6 text-white"></i></div>
         <span class="text-[11px] font-bold tracking-widest uppercase mt-1">Directorio</span>
       </div>
-      <div class="ql-item hover:bg-[#267188]" onclick="window.open('https://outlook.cloud.microsoft/mail/', '_blank')">
+      <div class="ql-item hover:bg-[#648296]" onclick="window.open('https://outlook.cloud.microsoft/mail/', '_blank')">
         <div class="ql-circle"><i data-lucide="mail" class="w-6 h-6 text-white"></i></div>
         <span class="text-[11px] font-bold tracking-widest uppercase mt-1">Correo</span>
       </div>
-      <div class="ql-item hover:bg-[#34849e]" onclick="window.open('https://promesecal1.sharepoint.com/Documentos%20compartidos/Forms/AllItems.aspx', '_blank')">
+      <div class="ql-item hover:bg-[#7a96a8]" onclick="window.open('https://promesecal1.sharepoint.com/Documentos%20compartidos/Forms/AllItems.aspx', '_blank')">
         <div class="ql-circle"><i data-lucide="file-text" class="w-6 h-6 text-white"></i></div>
         <span class="text-[11px] font-bold tracking-widest uppercase mt-1">Documentos</span>
       </div>
@@ -161,11 +161,15 @@ function renderDashboard() {
 
     <!-- KPIs -->
     <div class="kpi-band">
-      <div class="kpi-card bg-[#0f4c5c]">
+      <div class="kpi-card bg-[#50788A] relative group cursor-help">
         <h4>Total Empleados</h4>
-        <div class="val">${totalEmp}<small>activos</small></div>
+        <div class="val">${totalEmp}<small>activos (con acceso PC)</small></div>
+        <!-- Tooltip -->
+        <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition pointer-events-none z-10">
+          Usuarios con acceso a equipos y sistemas internos
+        </div>
       </div>
-      <div class="kpi-card bg-[#226563]">
+      <div class="kpi-card bg-[#3d5f6d]">
         <h4>Noticias Activas</h4>
         <div class="val">${totalNot}<small>activas</small></div>
       </div>
@@ -319,7 +323,7 @@ function openNoticiaModal(id) {
     <div style="background:#fff;border-radius:12px;max-width:920px;width:100%;max-height:90vh;overflow:auto;position:relative;padding:16px;">
       <button onclick="document.getElementById('noticiaModal').remove()" style="position:absolute;top:10px;right:10px;border:none;background:#e5e7eb;border-radius:999px;width:32px;height:32px;font-weight:700;cursor:pointer;">✕</button>
       <img src="${n.imagen}" alt="${n.titulo}" style="width:100%;height:auto;max-height:320px;object-fit:cover;border-radius:8px;border:1px solid #e5e7eb;margin-bottom:12px;" />
-      <h3 style="font-size:20px;font-weight:800;margin:0 0 8px 0;color:#0f4c5c;">${n.titulo}</h3>
+      <h3 style="font-size:20px;font-weight:800;margin:0 0 8px 0;color:#50788A;">${n.titulo}</h3>
       <p style="font-size:13px;color:#6b7280;margin:0 0 14px 0;">${n.autor} · ${n.fecha}</p>
       <div class="news-rich-content" style="font-size:15px;line-height:1.7;color:#111;">${detalle}</div>
     </div>
@@ -356,7 +360,7 @@ function openMenuDelDiaPopup() {
   modal.innerHTML = `
     <div style="background:#fff;border-radius:12px;max-width:900px;width:100%;max-height:90vh;overflow:auto;position:relative;padding:16px;">
       <button onclick="document.getElementById('menuDiaModal').remove()" style="position:absolute;top:10px;right:10px;border:none;background:#e5e7eb;border-radius:999px;width:32px;height:32px;font-weight:700;cursor:pointer;">✕</button>
-      <h3 style="font-size:18px;font-weight:700;margin:0 0 10px 0;color:#0f4c5c;">Menú del Día</h3>
+      <h3 style="font-size:18px;font-weight:700;margin:0 0 10px 0;color:#50788A;">Menú del Día</h3>
       <img src="${menu.src}" alt="Menú del Día" style="width:100%;height:auto;border-radius:8px;border:1px solid #e5e7eb;" />
     </div>
   `;

@@ -25,6 +25,8 @@ function navigateTo(view, linkEl) {
   if (view === 'inicio') renderDashboard();
   if (view === 'firma') updateFirmaPreview();
   if (view === 'admin') renderAdmin();
+  if (view === 'enlaces') renderEnlaces();
+  if (view === 'capacitaciones') renderCapacitaciones();
 }
 
 function toggleSidebar() {

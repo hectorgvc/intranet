@@ -29,7 +29,7 @@ function buildFirmaHTML({ nombre, cargo, unidad, ext, flota, correo }) {
   const flotaHTML   = flota   ? flota : '(809) 123-4567';
   const correoHTML  = correo  ? correo : 'apellido.nombre@promesecal.gob.do';
 
-  const nombreColor = nombre  ? '#00788a' : '#aaa';
+  const nombreColor = nombre  ? '#50788A' : '#aaa';
   const cargoStyle  = cargo   ? 'font-weight:bold;' : 'color:#aaa;';
 
   return `<div id="promese-firma-root" style="background:#fff;padding:8px 0;max-width:100%;">
@@ -54,7 +54,7 @@ function buildFirmaHTML({ nombre, cargo, unidad, ext, flota, correo }) {
         <td style="padding-right:4px;"><a href="https://www.youtube.com/promesecalrd" target="_blank"><img src="${ICONS.yt}" alt="youtube" style="display:block;" /></a></td>
         <td style="padding-right:4px;"><a href="https://twitter.com/promesecalrd" target="_blank"><img src="${ICONS.tw}" alt="twitter" style="display:block;" /></a></td>
         <td style="padding-right:10px;"><a href="https://www.linkedin.com/company/promesecalrd" target="_blank"><img src="${ICONS.li}" alt="linkedin" style="display:block;" /></a></td>
-        <td><span style="font-family:'Gill Sans MT',sans-serif;font-size:11pt;font-weight:bold;color:#00788a;margin-left:20px;">@promesecalrd</span></td>
+        <td><span style="font-family:'Gill Sans MT',sans-serif;font-size:11pt;font-weight:bold;color:#50788A;margin-left:20px;">@promesecalrd</span></td>
       </tr>
     </table>
   </td>
