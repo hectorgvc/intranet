@@ -97,12 +97,12 @@ function renderDashboard() {
           <i data-lucide="search" class="w-5 h-5 text-gray-400 mr-3"></i>
           <input type="text" placeholder="Buscar portales o contactos..." class="flex-1 bg-transparent border-none outline-none text-sm font-medium text-black placeholder-gray-500" onkeydown="if(event.key==='Enter') navigateTo('directorio')">
         </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-1 tracking-tight" style="color: #50788A;">${saludo}, Equipo!</h1>
-        <h2 class="text-3xl md:text-4xl font-bold italic mb-3" style="color: #50788A; font-size: 2.25rem;">Intranet Institucional</h2>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-1 tracking-tight" style="color: white;">${saludo}, Equipo!</h1>
+        <h2 class="text-3xl md:text-4xl font-bold italic mb-3" style="color: #e63329; font-size: 2.25rem;">Intranet Institucional</h2>
         <p class="mb-8" style="font-family: 'Monotype Corsiva', 'Comic Sans MS', cursive; font-size: 18px; font-style: italic; color: white; max-width: 28rem; line-height: 1.6; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">Un espacio creado para conectarnos, informarnos y trabajar mejor.</p>
-        <button onclick="openMenuDelDiaPopup()" class="bg-[#50788A] text-white font-bold py-3.5 px-8 rounded-full transition shadow-md hover:shadow-lg hover:bg-[#3d5f6d] text-sm tracking-wide w-full md:w-auto">VER MENÚ DEL DÍA</button>
+        <button onclick="openMenuDelDiaPopup()" class="bg-[#00788A] text-white font-bold py-3.5 px-8 rounded-full transition shadow-md hover:shadow-lg hover:bg-[#005a66] text-sm tracking-wide w-full md:w-auto">VER MENÚ DEL DÍA</button>
       </div>
-      <div class="hero-slider border-l-8 border-[#3d5f6d] w-full md:w-1/2 h-48 md:h-96">
+      <div class="hero-slider border-l-8 border-[#005a66] w-full md:w-1/2 h-48 md:h-96">
         <div class="hero-overlay"></div>
         ${HERO_SLIDES.map((src, i) => `
           <div class="hero-slide" style="opacity: ${i === 0 ? '1' : '0'};">
